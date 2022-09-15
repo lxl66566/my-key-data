@@ -10,5 +10,5 @@ cp -r -f "C:/Users/lxl/AppData/Roaming/NEKO WORKs/nekopara3" ./galgame/nekopara3
 cp -r -f "G:/galgame/May-Be SOFT/CHANGE/Save" ./galgame/Save-CHANGE
 git add -A
 git commit -m $(date "+%Y%m%d-%H:%M:%S")
-git push origin main -f
+git push origin main
 exec /bin/bash
