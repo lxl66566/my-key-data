@@ -46,7 +46,7 @@
 (08)DeviceId : 000046a6
 (09)SubSysId : 866d1558
 (10)Revision : 0000000c
-(11)DeviceIdentifier : d7b78e66:000005e6:000011cf:00edd778
+(11)DeviceIdentifier : d7b78e66:000005e6:000011cf:00f04820
 (12)WHQLLevel : 00000000
 
 {09}-- now display info --
@@ -355,7 +355,7 @@ full screen : 1
 screen bpp : -1
 game bpp : 32
 font : ＭＳ ゴシック
-font shadow : 16442424
+font shadow : 16544152
 font bold : 0
 use proportional : 1
 width : 1280
