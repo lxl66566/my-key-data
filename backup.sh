@@ -7,6 +7,7 @@ cp -r -f G:/galgame/魔女的夜宴/savedata ./galgame/savedata-sanobawichi
 cp -r -f "C:/Users/lxl/AppData/Roaming/NEKO WORKs/nekopara3" ./galgame/nekopara3
 cp -r -f "G:/galgame/May-Be SOFT/CHANGE/Save" ./galgame/Save-CHANGE
 cp -r -f C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC-1454445547
+cp -r -f "G:\galgame\灵感满溢的甜蜜创想\savedata_cn" ./galgame/savedata_cn-hamidashi-creative
 git add -A
 git commit -m $(date "+%Y%m%d-%H:%M:%S")
 git push origin main
