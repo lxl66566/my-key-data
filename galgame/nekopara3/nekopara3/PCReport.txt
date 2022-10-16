@@ -46,7 +46,7 @@
 (08)DeviceId : 000046a6
 (09)SubSysId : 866d1558
 (10)Revision : 0000000c
-(11)DeviceIdentifier : d7b78e66:000005e6:000011cf:0110e1e8
+(11)DeviceIdentifier : d7b78e66:000005e6:000011cf:00f9abb0
 (12)WHQLLevel : 00000000
 
 {09}-- now display info --
@@ -334,7 +334,7 @@
 device(0) : 主声音驱动程序
 module(0) : 
 device(1) : 扬声器 (Realtek(R) Audio)
-module(1) : {0.0.0.00000000}.{b1e79ac1-a5c4-45c3-bcb3-2cce1bfef522}
+module(1) : {0.0.0.00000000}.{0e801cb9-fad3-4451-8c17-d36d4d3c2d41}
 
 -- config --
 texture bpp : 32
@@ -355,7 +355,7 @@ full screen : 1
 screen bpp : -1
 game bpp : 32
 font : ＭＳ ゴシック
-font shadow : 19588360
+font shadow : 17473816
 font bold : 0
 use proportional : 1
 width : 1280
