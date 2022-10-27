@@ -1,5 +1,5 @@
-cp -rf -u "D:\no_install_software\tai.1.3.0.0\Data" ./Tai
-cp -rf -u "D:\no_install_software\tai.1.3.0.0\AppIcons" ./Tai
+cp -rf -u "D:\no_install_software\Tai.1.3.0.0\Data" ./Tai
+cp -rf -u "D:\no_install_software\Tai.1.3.0.0\AppIcons" ./Tai
 cp -f D:/Documents/password.kdbx ./
 cp -rf -u G:/galgame/哥哥，早上起床之前都要抱紧我哦！/savedata ./galgame/哥哥，早上起床之前都要抱紧我哦！
 cp -rf -u G:/galgame/魔女的夜宴/savedata ./galgame/魔女的夜宴
