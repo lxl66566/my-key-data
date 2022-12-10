@@ -7,6 +7,7 @@ cp -rfn -u "G:/galgame/May-Be SOFT/CHANGE/Save" ./galgame/CHANGE
 cp -rfn -u C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
 cp -rfn -u "C:\Users\lxl\Saved Games\WillPlus\見上げてごらん、夜空の星を" ./galgame/
 cp -rfn -u "G:\galgame\常轨脱离Creative\savedata" ./galgame/常轨脱离Creative
+cp -rfn -u "G:\galgame\euphoria\save" ./galgame/euphoria
 bash compress.sh
 git add -A
 git commit -m $(date "+%Y%m%d-%H:%M:%S")
