@@ -5,4 +5,4 @@ and to memorize my experiences, like galgame times.
 
 * Publlic?
 
-To sync my data without github login.
+To sync my data without github login. Important data has been encrypted.
