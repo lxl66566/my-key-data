@@ -36,9 +36,9 @@
 
 {06}-- memory info --
 (01)全物理メモリ : 16088 MB
-(02)空き物理メモリ : 8202 MB
+(02)空き物理メモリ : 7526 MB
 (03)全仮想メモリ : 17112 MB
-(04)空き仮想メモリ : 5848 MB
+(04)空き仮想メモリ : 4878 MB
 
 {07}-- DirectX info --
 (01)Version : 11.0
@@ -55,7 +55,7 @@
 (08)DeviceId : 000046a6
 (09)SubSysId : 866d1558
 (10)Revision : 0000000c
-(11)DeviceIdentifier : d7b78e66:000005e6:000011cf:00d704e0
+(11)DeviceIdentifier : d7b78e66:000005e6:000011cf:00ed4dd8
 (12)WHQLLevel : 00000000
 
 {09}-- now display info --
@@ -364,7 +364,7 @@ full screen : 0
 screen bpp : -1
 game bpp : 32
 font : ＭＳ ゴシック
-font shadow : 15231684
+font shadow : 16735540
 font bold : 0
 use proportional : 1
 width : 1280
