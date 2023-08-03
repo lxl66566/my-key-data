@@ -1,0 +1,189 @@
+{
+  "policy": {
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "info"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10449,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10450,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "api",
+      "port": 54054,
+      "listen": "127.0.0.1",
+      "protocol": "dokodemo-door",
+      "settings": {
+        "udp": false,
+        "address": "127.0.0.1",
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "vpn.absx.online",
+            "method": "chacha20",
+            "ota": false,
+            "password": "lxllxl716",
+            "port": 12138,
+            "level": 1,
+            "flow": ""
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "show": false
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      }
+    }
+  ],
+  "stats": {},
+  "api": {
+    "tag": "api",
+    "services": [
+      "StatsService"
+    ]
+  },
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "enabled": true
+      },
+      {
+        "id": "4685664012612463944",
+        "type": "field",
+        "outboundTag": "proxy",
+        "domain": [
+          "geosite:google",
+          "domain:answers.microsoft.com",
+          "domain:leetcode.com"
+        ],
+        "enabled": true
+      },
+      {
+        "id": "4870040223539137367",
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "geosite:cn",
+          "domain:baidu.com",
+          "domain:login.live.com",
+          "domain:unleash.codeium.com",
+          "regexp:bili\\w+\\.com",
+          "domain:memfiredb.com",
+          "domain:cloudflare.com",
+          "domain:unleash.codeium.com",
+          "domain:array610.prod.do.dsp.mp.microsoft.com",
+          "domain:v10.events.data.microsoft.com",
+          "domain:miui.com",
+          "domain:mi-img.com",
+          "domain:dolfincdnx.net",
+          "domain:jamcz.com",
+          "domain:tonzhon.com",
+          "domain:scpc.fun",
+          "domain:zhihu.com"
+        ],
+        "enabled": true
+      },
+      {
+        "id": "4870040223539137367",
+        "type": "field",
+        "outboundTag": "direct",
+        "ip": [
+          "geoip:private",
+          "geoip:cn"
+        ],
+        "enabled": true
+      },
+      {
+        "id": "5510633745615495216",
+        "type": "field",
+        "outboundTag": "block",
+        "domain": [
+          "geosite:category-ads-all",
+          "domain:assets.msn.cn",
+          "domain:strict.bing.com",
+          "domain:ogs.google.com",
+          "domain:msn.cn"
+        ],
+        "enabled": true
+      }
+    ]
+  }
+}

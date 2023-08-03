@@ -1,0 +1,34 @@
+m.hujiang.com###uzt_ad_1014 > div:last-child
+m.hujiang.com###uzt_ad_1014 > a:first-child
+m.hujiang.com###uzt_ad_1014
+manongjc.com###float_course
+blog.csdn.net###passportbox > iframe:first-child
+! mooc1.chaoxing.com##*[onmouseout]
+liaoxuefeng.com###x-sidebar-left-bottom > div.uk-margin-top:first-child
+liaoxuefeng.com###x-content > p:nth-child(6) > img
+wap.cnki.net###fix-bottom > div.fix-bottom-content > div.tempWrap > div.fix-bottom-content-slide > div.fix-bottom-content-slide-item:nth-child(6) > a.fix-bottom-content-inner > div.fix-top-main
+wap.cnki.net###fix-bottom > div.fix-bottom-content > div.tempWrap > div.fix-bottom-content-slide > div.fix-bottom-content-slide-item:nth-child(8) > a.fix-bottom-content-inner
+wap.cnki.net###fix-bottom > div.fix-bottom-content > div.tempWrap > div.fix-bottom-content-slide > div.fix-bottom-content-slide-item:nth-child(6)
+wap.cnki.net###fix-bottom > div.fix-bottom-content > div.tempWrap > div.fix-bottom-content-slide
+finclip.com###ZF_ad__tips_lower_left_id > a:first-child > img
+juejin.cn###juejin > div.login-guide-wrap.login-guide-popup:last-child
+setn.com##div.rightFloat.hidden-print:nth-child(10) > div.rightFloatContent > div.rides-cs
+product.pconline.com.cn##div.fixLeftQRcode:nth-child(11) > div.QRwrap:nth-child(2)
+product.pconline.com.cn##.fixLeftQRcode
+product.pconline.com.cn###JfixRightWrap
+product.pconline.com.cn###Jwrap > div.lay-ab:nth-child(2) > div.box.box-art:first-child > div.article:first-child > div.artBottomQRcode:nth-child(3) > img.qrcode
+product.pconline.com.cn###JartBdJCZ
+blog.51cto.com###page_center > aside.detail-content-right:last-child > section.common-fix:last-child > a.ac-box.mb24 > img
+zhuanlan.zhihu.com###root > div.App > main.App-main:nth-child(3) > div.Post-content > article.Post-Main.Post-NormalMain:nth-child(3) > div.Post-RichTextContainer:nth-child(2) > div.css-1yuhvjn > div.css-376mun > div.css-h7wqi8:first-child > div.css-1n7jiz > div.css-lcgmxk > div > div.Catalog.isCatalogV2.css-2hy5iv > div.css-8kjoqe > div.css-150y75m
+iknow.lenovo.com.cn###app > div.page-wrapper > div.qrcode-page-wrapper:last-child > div.dialog-wrapper > img:first-child
+zhuanlan.zhihu.com###root > div.App > main.App-main:nth-child(3) > div.Post-content > article.Post-Main.Post-NormalMain:nth-child(3) > div.Post-RichTextContainer:nth-child(2) > div.css-1yuhvjn > div.css-376mun > div.css-h7wqi8:first-child > div.css-1t64ar7 > div.css-lcgmxk > div > div.Catalog.isCatalogV2.css-2hy5iv > div.css-8kjoqe > div.css-150y75m
+builtin.com###__layout > div.nav-subapp-wrapper > div.brand-boost-banner:last-child
+huke88.com###body-container > div.new-guide-bottom.isShow:nth-child(5) > div.layout-cont.clearfix
+huke88.com###body-container > div.bk-wrap.layout-cont:nth-child(4) > div.bksort-cont.clearfix:last-child > div.bksort-cr.fr:nth-child(3)
+m.elecfans.com##div.wrap:first-child > div.login-reg-fixed.inAppHide:nth-child(16) > a.login-reg-btn
+wenku.baidu.com###app > div.content-wrapper:nth-child(2) > div.center-wrapper.zoom-scale.classic.small-side-center-wrapper:nth-child(2) > div.no-full-screen:nth-child(5) > div.tool-bar-wrap > div.comp-vip-pop.inner-vip:last-child
+wenku.baidu.com###app > div.header-wrapper.no-full-screen.new-header.is-top:first-child > div.header-wrapper.no-full-screen.is-top.new-header > div.search-box-wrapper.v-202205.small.small-flow-1.search-box-tool > div.search-box-inner-wrapper > div.right-box:last-child > div.vip-activity-wrap-new:nth-child(2) > div.vip-activity-content:first-child
+wenku.baidu.com###app > div.header-wrapper.no-full-screen.new-header.is-top:first-child > div.header-wrapper.no-full-screen.is-top.new-header > div.search-box-wrapper.v-202205.small.small-flow-1.search-box-tool > div.search-box-inner-wrapper > div:first-child > div.search-tab-wrap:last-child > div.search-tab-content > div.vip-center:nth-child(3)
+baidu.com###s_main
+bilibili.com###bilibili-player > div.bpx-docker.bpx-docker-major > div.bpx-player-container.bpx-state-paused > div.bpx-player-primary-area:first-child > div.bpx-player-video-area:first-child > div.bpx-player-top-wrap:nth-child(7) > div.bpx-player-top-left:nth-child(4) > div.bpx-player-top-left-follow:nth-child(2) > div.bpx-player-follow
+bilibili.com###bilibili-player > div.bpx-docker.bpx-docker-major > div.bpx-player-container.bpx-state-paused > div.bpx-player-primary-area:first-child > div.bpx-player-video-area:first-child > div.bpx-player-top-wrap:nth-child(7) > div.bpx-player-top-issue:last-child
