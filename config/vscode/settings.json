@@ -177,5 +177,8 @@
     }
   },
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
-  "terminal.integrated.enableMultiLinePasteWarning": false
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "update.enableWindowsBackgroundUpdates": false
 }

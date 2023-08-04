@@ -12,6 +12,7 @@ cp -rfu  C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
 # 近月少女的礼仪 use savePath so not need to cp it
 # cp -rfu "D:\Documents\近月少女的礼仪" ./galgame
 cp -rfu "G:\galgame\アンレス テルミナリア\save" "./galgame/アンレス テルミナリア"
+cp -rfu "C:\Users\lxl\AppData\Roaming\Nitroplus\你与彼女和彼女之恋。" ./galgame
 
 # config
     # vscode
