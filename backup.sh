@@ -3,9 +3,6 @@
 cp -rfu  "D:\no_install_software\Tai1.3.0.0\Data" ./Tai
 cp -rfu  "D:\no_install_software\Tai1.3.0.0\AppIcons" ./Tai
 
-# single file
-cp -fu D:/Documents/password.kdbx ./
-
 # galgame
 cp -rfu  G:/galgame/哥哥，早上起床之前都要抱紧我哦！/savedata ./galgame/哥哥，早上起床之前都要抱紧我哦！
 cp -rfu  C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
