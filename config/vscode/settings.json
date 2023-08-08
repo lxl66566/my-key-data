@@ -34,7 +34,7 @@
     "editor.formatOnSave": true
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "ms-python.python",
     "editor.formatOnType": true,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -123,6 +123,12 @@
       "level": "off"
     },
     "typescript:S125": {
+      "level": "off"
+    },
+    "python:S1192": {
+      "level": "off"
+    },
+    "python:S1542": {
       "level": "off"
     }
   },
