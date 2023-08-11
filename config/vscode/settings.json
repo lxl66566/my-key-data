@@ -34,7 +34,7 @@
     "editor.formatOnSave": true
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -53,9 +53,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "[verilog]": {
-    "editor.defaultFormatter": "mshr-h.veriloghdl"
-  },
+  // "[verilog]": {
+  //   "editor.defaultFormatter": "mshr-h.veriloghdl"
+  // },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -133,6 +133,7 @@
     }
   },
   "errorLens.excludeBySource": ["Java(1610612976)"],
+  "ruff.args": ["--ignore E501"],
 
   // vim
 
