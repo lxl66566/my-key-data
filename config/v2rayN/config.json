@@ -51,7 +51,7 @@
     },
     {
       "tag": "api",
-      "port": 54059,
+      "port": 54064,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
@@ -178,7 +178,6 @@
         "domain": [
           "geosite:category-ads-all",
           "domain:assets.msn.cn",
-          "domain:strict.bing.com",
           "domain:ogs.google.com",
           "domain:msn.cn"
         ],
