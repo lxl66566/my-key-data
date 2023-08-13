@@ -1,6 +1,6 @@
 {
   "indexId": "5415621873596302144",
-  "subIndexId": "5571179896835549398",
+  "subIndexId": "4656355953266098056",
   "remoteDNS": "",
   "domainStrategy4Freedom": null,
   "sysProxyType": 1,
@@ -83,17 +83,17 @@
     "mainColumnItem": [
       {
         "Name": "configType",
-        "Width": 63,
+        "Width": 66,
         "Index": 0
       },
       {
         "Name": "remarks",
-        "Width": 102,
+        "Width": 108,
         "Index": 1
       },
       {
         "Name": "address",
-        "Width": 123,
+        "Width": 136,
         "Index": 2
       },
       {
