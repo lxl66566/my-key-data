@@ -83,17 +83,17 @@
     "mainColumnItem": [
       {
         "Name": "configType",
-        "Width": 66,
+        "Width": 63,
         "Index": 0
       },
       {
         "Name": "remarks",
-        "Width": 108,
+        "Width": 102,
         "Index": 1
       },
       {
         "Name": "address",
-        "Width": 136,
+        "Width": 123,
         "Index": 2
       },
       {
