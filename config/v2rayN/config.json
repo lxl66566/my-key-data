@@ -51,7 +51,7 @@
     },
     {
       "tag": "api",
-      "port": 54062,
+      "port": 54052,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
