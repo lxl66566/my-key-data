@@ -1,190 +1,187 @@
 {
-	"editor.formatOnSave": true,
-	"editor.guides.bracketPairs": true,
-	"editor.cursorSmoothCaretAnimation": "on",
-	"editor.smoothScrolling": true,
-	"editor.accessibilitySupport": "off",
-	"editor.linkedEditing": true,
-	"editor.cursorBlinking": "smooth",
-	"editor.fontSize": 15,
-	"editor.fontFamily": "Fira Code, Consolas, monospace",
-	"workbench.colorTheme": "Monokai Dimmed",
-	"workbench.list.smoothScrolling": true,
-	"workbench.startupEditor": "none",
-	"workbench.editorAssociations": {
-		"*.db": "sqlite-viewer.option"
-	},
-	"explorer.confirmDelete": false,
-	"markdown-preview-enhanced.previewTheme": "atom-dark.css",
-	"files.autoGuessEncoding": true,
-	"explorer.confirmDragAndDrop": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.guides.bracketPairs": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.accessibilitySupport": "off",
+  "editor.linkedEditing": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Fira Code, Consolas, monospace",
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.list.smoothScrolling": true,
+  "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.option"
+  },
+  "explorer.confirmDelete": false,
+  "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+  "files.autoGuessEncoding": true,
+  "explorer.confirmDragAndDrop": false,
+  "window.commandCenter": false,
 
-	// for languages
+  // for languages
 
-	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.formatOnSave": true
-	},
-	"[css]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.formatOnSave": true
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.formatOnSave": true
-	},
-	"[python]": {
-		"editor.defaultFormatter": "ms-python.black-formatter",
-		"editor.formatOnType": true,
-		"editor.formatOnSave": true,
-		"editor.codeActionsOnSave": {
-			"source.fixAll": true,
-			"source.organizeImports": true
-		}
-	},
-	"[java]": {
-		"editor.defaultFormatter": "redhat.java",
-		"editor.formatOnSave": true
-	},
-	"[markdown]": {
-		"editor.formatOnSave": false
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.formatOnSave": true
-	},
-	// "[verilog]": {
-	//   "editor.defaultFormatter": "mshr-h.veriloghdl"
-	// },
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[cpp]": {
-		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-	},
-	"C_Cpp.intelliSenseEngine": "disabled",
-	"rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    }
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  // "[markdown]": {
+  //   "editor.formatOnSave": false
+  // },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "[verilog]": {
+  //   "editor.defaultFormatter": "mshr-h.veriloghdl"
+  // },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
 
-	// lint
+  // lint
 
-	"sonarlint.rules": {
-		"python:S125": {
-			"level": "off"
-		},
-		"java:S106": {
-			"level": "off"
-		},
-		"java:S100": {
-			"level": "off"
-		},
-		"java:S125": {
-			"level": "off"
-		},
-		"java:S2293": {
-			"level": "off"
-		},
-		"java:S101": {
-			"level": "off"
-		},
-		"java:S1602": {
-			"level": "off"
-		},
-		"java:S1659": {
-			"level": "off"
-		},
-		"java:S3973": {
-			"level": "off"
-		},
-		"java:S117": {
-			"level": "off"
-		},
-		"java:S135": {
-			"level": "off"
-		},
-		"java:S115": {
-			"level": "off"
-		},
-		"python:S3776": {
-			"level": "off"
-		},
-		"java:S1186": {
-			"level": "off"
-		},
-		"python:S117": {
-			"level": "off"
-		},
-		"java:S116": {
-			"level": "off"
-		},
-		"java:S3776": {
-			"level": "off"
-		},
-		"javascript:S125": {
-			"level": "off"
-		},
-		"typescript:S125": {
-			"level": "off"
-		},
-		"python:S1192": {
-			"level": "off"
-		},
-		"python:S1542": {
-			"level": "off"
-		}
-	},
-	"errorLens.excludeBySource": ["Java(1610612976)"],
-	"ruff.args": ["--ignore E501"],
+  "sonarlint.rules": {
+    "python:S125": {
+      "level": "off"
+    },
+    "java:S106": {
+      "level": "off"
+    },
+    "java:S100": {
+      "level": "off"
+    },
+    "java:S125": {
+      "level": "off"
+    },
+    "java:S2293": {
+      "level": "off"
+    },
+    "java:S101": {
+      "level": "off"
+    },
+    "java:S1602": {
+      "level": "off"
+    },
+    "java:S1659": {
+      "level": "off"
+    },
+    "java:S3973": {
+      "level": "off"
+    },
+    "java:S117": {
+      "level": "off"
+    },
+    "java:S135": {
+      "level": "off"
+    },
+    "java:S115": {
+      "level": "off"
+    },
+    "python:S3776": {
+      "level": "off"
+    },
+    "java:S1186": {
+      "level": "off"
+    },
+    "python:S117": {
+      "level": "off"
+    },
+    "java:S116": {
+      "level": "off"
+    },
+    "java:S3776": {
+      "level": "off"
+    },
+    "javascript:S125": {
+      "level": "off"
+    },
+    "typescript:S125": {
+      "level": "off"
+    },
+    "python:S1192": {
+      "level": "off"
+    },
+    "python:S1542": {
+      "level": "off"
+    }
+  },
+  "errorLens.excludeBySource": ["Java(1610612976)"],
+  "ruff.args": ["--ignore E501"],
+  "prettier.printWidth": 160,
+  "prettier.trailingComma": "all",
 
-	// vim
+  // vim
 
-	"vim.useSystemClipboard": true,
-	"vim.history": 100,
-	"vim.visualModeKeyBindingsNonRecursive": [
-		{ "before": ["x"], "after": ["\"", "_", "x"] },
-		{ "before": ["X"], "after": ["\"", "_", "X"] },
-		{ "before": ["("], "after": ["s", "(", ")", "<esc>", "h", "p", "l"] },
-		{ "before": ["["], "after": ["s", "[", "]", "<esc>", "h", "p", "l"] },
-		{ "before": ["{"], "after": ["s", "{", "}", "<esc>", "h", "p", "l"] }
-	],
-	"vim.insertModeKeyBindings": [
-		{ "before": ["j", "j"], "after": ["<Esc>"] },
-		{ "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
-		{ "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
-		{ "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] }
-	],
-	"vim.normalModeKeyBindings": [
-		{ "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
-		{ "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] }
-	],
-	"vim.normalModeKeyBindingsNonRecursive": [
-		{ "before": ["x"], "after": ["\"", "_", "x"] },
-		{ "before": ["X"], "after": ["\"", "_", "X"] },
-		{ "before": ["d", "x"], "after": [":delete<CR>"] }
-	],
+  "vim.useSystemClipboard": true,
+  "vim.history": 100,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["x"], "after": ["\"", "_", "x"] },
+    { "before": ["X"], "after": ["\"", "_", "X"] },
+    { "before": ["("], "after": ["s", "(", ")", "<esc>", "h", "p", "l"] },
+    { "before": ["["], "after": ["s", "[", "]", "<esc>", "h", "p", "l"] },
+    { "before": ["{"], "after": ["s", "{", "}", "<esc>", "h", "p", "l"] }
+  ],
+  "vim.insertModeKeyBindings": [
+    { "before": ["j", "j"], "after": ["<Esc>"] },
+    { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
+    { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
+    { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] }
+  ],
+  "vim.normalModeKeyBindings": [
+    { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
+    { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["x"], "after": ["\"", "_", "x"] },
+    { "before": ["X"], "after": ["\"", "_", "X"] },
+    { "before": ["d", "x"], "after": [":delete<CR>"] }
+  ],
 
-	// terminal
+  // terminal
 
-	"terminal.integrated.profiles.windows": {
-		"PowerShell": {
-			"source": "PowerShell",
-			"icon": "terminal-powershell"
-			// "args": ["/K chcp 65501 >nul", "\n"]
-		},
-		"Command Prompt": {
-			"path": ["${env:windir}\\System32\\cmd.exe", "${env:windir}\\Sysnative\\cmd.exe"],
-			"args": ["/K chcp 65001 >nul", "\n"],
-			"icon": "terminal-cmd"
-		},
-		"Git Bash": {
-			"source": "Git Bash",
-			"path": ["C:\\Program Files\\Git\\usr\\bin\\bash.exe"]
-		}
-	},
-	"terminal.integrated.defaultProfile.windows": "Command Prompt",
-	"terminal.integrated.enableMultiLinePasteWarning": false,
-	"workbench.layoutControl.enabled": false,
-	"window.commandCenter": false,
-	"update.enableWindowsBackgroundUpdates": false,
-	"prettier.printWidth": 100,
-	"prettier.trailingComma": "all"
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+      // "args": ["/K chcp 65501 >nul", "\n"]
+    },
+    "Command Prompt": {
+      "path": ["${env:windir}\\System32\\cmd.exe", "${env:windir}\\Sysnative\\cmd.exe"],
+      "args": ["/K chcp 65001 >nul", "\n"],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "path": ["C:\\Program Files\\Git\\usr\\bin\\bash.exe"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.enableMultiLinePasteWarning": false
 }
