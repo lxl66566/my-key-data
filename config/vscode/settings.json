@@ -146,7 +146,11 @@
     { "before": ["X"], "after": ["\"", "_", "X"] },
     { "before": ["("], "after": ["s", "(", ")", "<esc>", "h", "p", "l"] },
     { "before": ["["], "after": ["s", "[", "]", "<esc>", "h", "p", "l"] },
-    { "before": ["{"], "after": ["s", "{", "}", "<esc>", "h", "p", "l"] }
+    { "before": ["{"], "after": ["s", "{", "}", "<esc>", "h", "p", "l"] },
+    { "before": ["h"], "after": ["i"] },
+    { "before": ["i"], "after": ["k"] },
+    { "before": ["k"], "after": ["j"] },
+    { "before": ["j"], "after": ["h"] }
   ],
   "vim.insertModeKeyBindings": [
     { "before": ["j", "j"], "after": ["<Esc>"] },
@@ -160,6 +164,10 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["x"], "after": ["\"", "_", "x"] },
+    { "before": ["h"], "after": ["i"] },
+    { "before": ["i"], "after": ["k"] },
+    { "before": ["k"], "after": ["j"] },
+    { "before": ["j"], "after": ["h"] },
     { "before": ["X"], "after": ["\"", "_", "X"] },
     { "before": ["d", "x"], "after": [":delete<CR>"] }
   ],
