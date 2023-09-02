@@ -3,7 +3,7 @@
   "subIndexId": "4656355953266098056",
   "remoteDNS": "",
   "domainStrategy4Freedom": null,
-  "sysProxyType": 1,
+  "sysProxyType": 0,
   "systemProxyExceptions": "",
   "systemProxyAdvancedProtocol": null,
   "coreBasicItem": {
@@ -83,7 +83,7 @@
     "mainColumnItem": [
       {
         "Name": "configType",
-        "Width": 80,
+        "Width": 63,
         "Index": 0
       },
       {
