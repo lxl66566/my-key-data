@@ -51,7 +51,7 @@
     },
     {
       "tag": "api",
-      "port": 54101,
+      "port": 54087,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
@@ -72,7 +72,7 @@
             "method": "chacha20",
             "ota": false,
             "password": "lxllxl716",
-            "port": 40006,
+            "port": 12138,
             "level": 1,
             "flow": ""
           }

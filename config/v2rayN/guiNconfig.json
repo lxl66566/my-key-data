@@ -3,7 +3,7 @@
   "subIndexId": "4656355953266098056",
   "remoteDNS": "",
   "domainStrategy4Freedom": null,
-  "sysProxyType": 0,
+  "sysProxyType": 1,
   "systemProxyExceptions": "",
   "systemProxyAdvancedProtocol": null,
   "coreBasicItem": {

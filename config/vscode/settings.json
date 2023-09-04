@@ -17,29 +17,25 @@
     "*.db": "sqlite-viewer.option"
   },
   "explorer.confirmDelete": false,
-  "markdown-preview-enhanced.previewTheme": "atom-dark.css",
   "files.autoGuessEncoding": true,
   "explorer.confirmDragAndDrop": false,
   "window.commandCenter": false,
 
+  // extension
+
+  "rome_lsp.trace.server": "messages",
+  "rome.rename": true,
+  "rome.requireConfiguration": false,
+  "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+
   // for languages
 
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {},
+  "[css]": {},
+  "[jsonc]": {},
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnType": true,
-    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll": true,
       "source.organizeImports": true
@@ -48,20 +44,17 @@
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
-  // "[markdown]": {
-  //   "editor.formatOnSave": false
-  // },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "rome.rome"
   },
-  // "[verilog]": {
-  //   "editor.defaultFormatter": "mshr-h.veriloghdl"
-  // },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "rome.rome"
   },
   "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
 
@@ -175,6 +168,10 @@
   // terminal
 
   "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "source": "Git Bash",
+      "path": ["C:\\Program Files\\Git\\usr\\bin\\bash.exe"]
+    },
     "PowerShell": {
       "source": "PowerShell",
       "icon": "terminal-powershell"
@@ -185,11 +182,11 @@
       "args": ["/K chcp 65001 >nul", "\n"],
       "icon": "terminal-cmd"
     },
-    "Git Bash": {
-      "source": "Git Bash",
-      "path": ["C:\\Program Files\\Git\\usr\\bin\\bash.exe"]
+    "Fish": {
+      "path": "/usr/bin/fish"
     }
   },
-  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.linux": "Fish",
   "terminal.integrated.enableMultiLinePasteWarning": false
 }
