@@ -143,17 +143,22 @@
     { "before": ["h"], "after": ["i"] },
     { "before": ["i"], "after": ["k"] },
     { "before": ["k"], "after": ["j"] },
-    { "before": ["j"], "after": ["h"] }
+    { "before": ["j"], "after": ["h"] },
+    { "before": ["<C-x>"], "commands": ["editor.action.clipboardCutAction"] }
   ],
   "vim.insertModeKeyBindings": [
     { "before": ["j", "j"], "after": ["<Esc>"] },
     { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
     { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
-    { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] }
+    { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
+    { "before": ["<C-x>"], "commands": ["editor.action.clipboardCutAction"] },
+    { "before": ["<C-a>"], "commands": ["editor.action.selectAll"] }
   ],
   "vim.normalModeKeyBindings": [
+    { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
     { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
-    { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] }
+    { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
+    { "before": ["<C-a>"], "commands": ["editor.action.selectAll"] }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["x"], "after": ["\"", "_", "x"] },
@@ -188,5 +193,6 @@
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.defaultProfile.linux": "Fish",
-  "terminal.integrated.enableMultiLinePasteWarning": false
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "svelte.enable-ts-plugin": true
 }

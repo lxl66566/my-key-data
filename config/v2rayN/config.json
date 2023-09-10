@@ -51,7 +51,7 @@
     },
     {
       "tag": "api",
-      "port": 54087,
+      "port": 54114,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
@@ -157,7 +157,8 @@
           "domain:jamcz.com",
           "domain:tonzhon.com",
           "domain:scpc.fun",
-          "domain:zhihu.com"
+          "domain:zhihu.com",
+          "domain:absx.pages.dev"
         ],
         "enabled": true
       },
