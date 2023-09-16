@@ -194,5 +194,11 @@
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.defaultProfile.linux": "Fish",
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  }
 }

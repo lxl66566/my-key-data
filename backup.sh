@@ -11,7 +11,6 @@ cp -rfu  C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
 cp -rfu "G:\galgame\アンレス テルミナリア\save" "./galgame/アンレス テルミナリア"
 cp -rfu "C:\Users\lxl\AppData\Roaming\Nitroplus\你与彼女和彼女之恋。" ./galgame
 cp -rfu "C:\Users\lxl\AppData\LocalLow\AnimalHerb\Nekomimi Sweet Housemates\Utage\SaveMyPetProject2" ./galgame/家喵二三事
-cp -rfu "D:\Documents\AliceSoft\兰斯03汉化版V1.00【哈尼喵汉化组】" ./galgame
 
 # config
     # vscode
