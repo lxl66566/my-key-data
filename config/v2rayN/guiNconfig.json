@@ -123,12 +123,12 @@
       },
       {
         "Name": "delayVal",
-        "Width": 95,
+        "Width": 75,
         "Index": 4
       },
       {
         "Name": "speedVal",
-        "Width": 102,
+        "Width": 64,
         "Index": 5
       },
       {
