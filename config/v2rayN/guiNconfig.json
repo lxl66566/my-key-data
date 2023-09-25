@@ -1,5 +1,5 @@
 {
-  "indexId": "5415621873596302144",
+  "indexId": "5761193709172992512",
   "subIndexId": "4656355953266098056",
   "remoteDNS": "",
   "domainStrategy4Freedom": null,
@@ -56,7 +56,7 @@
     "enableStatistics": true,
     "statisticsFreshRate": 1,
     "keepOlderDedupl": false,
-    "ignoreGeoUpdateCore": true,
+    "ignoreGeoUpdateCore": false,
     "autoUpdateInterval": 10,
     "checkPreReleaseUpdate": false,
     "enableSecurityProtocolTls13": true,
@@ -68,8 +68,8 @@
     "enableAutoAdjustMainLvColWidth": true,
     "mainWidth": 968.0,
     "mainHeight": 727.2,
-    "mainGirdHeight1": 167.0,
-    "mainGirdHeight2": 368.0,
+    "mainGirdHeight1": 173.0,
+    "mainGirdHeight2": 362.0,
     "colorModeDark": true,
     "colorPrimaryName": null,
     "currentLanguage": "zh-Hans",
@@ -123,12 +123,12 @@
       },
       {
         "Name": "delayVal",
-        "Width": 75,
+        "Width": 95,
         "Index": 4
       },
       {
         "Name": "speedVal",
-        "Width": 64,
+        "Width": 102,
         "Index": 5
       },
       {

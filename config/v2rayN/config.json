@@ -51,7 +51,7 @@
     },
     {
       "tag": "api",
-      "port": 54099,
+      "port": 54113,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
@@ -71,8 +71,8 @@
             "address": "vpn.absx.online",
             "method": "chacha20",
             "ota": false,
-            "password": "lxllxl716",
-            "port": 40008,
+            "password": "friend123456",
+            "port": 40010,
             "level": 1,
             "flow": ""
           }
@@ -132,7 +132,8 @@
         "domain": [
           "geosite:google",
           "domain:answers.microsoft.com",
-          "domain:leetcode.com"
+          "domain:leetcode.com",
+          "domain:absx.online"
         ],
         "enabled": true
       },
@@ -159,7 +160,8 @@
           "domain:scpc.fun",
           "domain:zhihu.com",
           "domain:absx.pages.dev",
-          "domain:coding.net"
+          "domain:coding.net",
+          "domain:msn.cn"
         ],
         "enabled": true
       },
@@ -179,9 +181,7 @@
         "outboundTag": "block",
         "domain": [
           "geosite:category-ads-all",
-          "domain:assets.msn.cn",
-          "domain:ogs.google.com",
-          "domain:msn.cn"
+          "domain:ogs.google.com"
         ],
         "enabled": true
       }

@@ -28,6 +28,11 @@
   "rome.requireConfiguration": false,
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
   "Codegeex.Privacy": true,
+  "Codegeex.Comment.LanguagePreference": "zh-CN",
+  "svelte.enable-ts-plugin": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
 
   // for languages
 
@@ -64,6 +69,19 @@
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "markdown.validate.enabled": false,
 
   // lint
 
@@ -200,9 +218,5 @@
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.defaultProfile.linux": "Fish",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "svelte.enable-ts-plugin": true,
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  }
+  "terminal.integrated.enableMultiLinePasteWarning": false
 }
