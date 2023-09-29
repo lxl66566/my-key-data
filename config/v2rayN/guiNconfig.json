@@ -1,5 +1,5 @@
 {
-  "indexId": "5761193709172992512",
+  "indexId": "5415621873596302144",
   "subIndexId": "4656355953266098056",
   "remoteDNS": "",
   "domainStrategy4Freedom": null,
@@ -66,10 +66,10 @@
   },
   "uiItem": {
     "enableAutoAdjustMainLvColWidth": true,
-    "mainWidth": 968.0,
-    "mainHeight": 727.2,
-    "mainGirdHeight1": 173.0,
-    "mainGirdHeight2": 362.0,
+    "mainWidth": 966.0,
+    "mainHeight": 726.0,
+    "mainGirdHeight1": 207.0,
+    "mainGirdHeight2": 325.0,
     "colorModeDark": true,
     "colorPrimaryName": null,
     "currentLanguage": "zh-Hans",
@@ -83,7 +83,7 @@
     "mainColumnItem": [
       {
         "Name": "configType",
-        "Width": 63,
+        "Width": 80,
         "Index": 0
       },
       {

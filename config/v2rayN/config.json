@@ -51,7 +51,7 @@
     },
     {
       "tag": "api",
-      "port": 54113,
+      "port": 54088,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
@@ -71,8 +71,8 @@
             "address": "vpn.absx.online",
             "method": "chacha20",
             "ota": false,
-            "password": "friend123456",
-            "port": 40010,
+            "password": "lxllxl716",
+            "port": 12138,
             "level": 1,
             "flow": ""
           }
@@ -161,7 +161,9 @@
           "domain:zhihu.com",
           "domain:absx.pages.dev",
           "domain:coding.net",
-          "domain:msn.cn"
+          "domain:msn.cn",
+          "domain:coding.net",
+          "domain:itdep.tech"
         ],
         "enabled": true
       },

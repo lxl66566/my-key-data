@@ -148,6 +148,9 @@
     },
     "python:S1542": {
       "level": "off"
+    },
+    "python:S101": {
+      "level": "off"
     }
   },
   "errorLens.excludeBySource": ["Java(1610612976)"],
@@ -172,18 +175,18 @@
     { "before": ["<C-x>"], "commands": ["editor.action.clipboardCutAction"] }
   ],
   "vim.insertModeKeyBindings": [
-    { "before": ["j", "j"], "after": ["<Esc>"] },
-    { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
-    { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
-    { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
-    { "before": ["<C-x>"], "commands": ["editor.action.clipboardCutAction"] },
-    { "before": ["<C-a>"], "commands": ["editor.action.selectAll"] }
+    { "before": ["j", "j"], "after": ["<Esc>"] }
+    // { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
+    // { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
+    // { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
+    // { "before": ["<C-x>"], "commands": ["editor.action.clipboardCutAction"] },
+    // { "before": ["<C-a>"], "commands": ["editor.action.selectAll"] }
   ],
   "vim.normalModeKeyBindings": [
-    { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
-    { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
-    { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
-    { "before": ["<C-a>"], "commands": ["editor.action.selectAll"] }
+    // { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
+    // { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
+    // { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
+    // { "before": ["<C-a>"], "commands": ["editor.action.selectAll"] }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["x"], "after": ["\"", "_", "x"] },
@@ -194,6 +197,16 @@
     { "before": ["X"], "after": ["\"", "_", "X"] },
     { "before": ["d", "x"], "after": [":delete<CR>"] }
   ],
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-e>": false,
+    "<C-s>": false,
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-w>": false,
+    "<C-x>": false,
+    "<C-r>": false
+  },
 
   // terminal
 
