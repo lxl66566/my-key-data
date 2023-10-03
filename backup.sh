@@ -4,7 +4,6 @@ cp -rfu  "D:\no_install_software\Tai1.3.0.0\Data" ./Tai
 cp -rfu  "D:\no_install_software\Tai1.3.0.0\AppIcons" ./Tai
 
 # galgame
-cp -rfu  G:/galgame/哥哥，早上起床之前都要抱紧我哦！/savedata ./galgame/哥哥，早上起床之前都要抱紧我哦！
 cp -rfu  C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
 # 近月少女的礼仪 use savePath so not need to cp it
 # cp -rfu "D:\Documents\近月少女的礼仪" ./galgame
