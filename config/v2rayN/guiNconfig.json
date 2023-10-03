@@ -66,9 +66,9 @@
   },
   "uiItem": {
     "enableAutoAdjustMainLvColWidth": true,
-    "mainWidth": 966.0,
-    "mainHeight": 726.0,
-    "mainGirdHeight1": 207.0,
+    "mainWidth": 964.0,
+    "mainHeight": 724.8000000000001,
+    "mainGirdHeight1": 208.0,
     "mainGirdHeight2": 325.0,
     "colorModeDark": true,
     "colorPrimaryName": null,
