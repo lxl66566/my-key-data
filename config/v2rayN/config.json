@@ -51,7 +51,7 @@
     },
     {
       "tag": "api",
-      "port": 54130,
+      "port": 54096,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
@@ -163,7 +163,13 @@
           "domain:coding.net",
           "domain:msn.cn",
           "domain:coding.net",
-          "domain:itdep.tech"
+          "domain:itdep.tech",
+          "domain:pushplus.plus",
+          "domain:microsoftedge.microsoft.com",
+          "domain:tsubakidev.cc",
+          "domain:v2ex.com",
+          "domain:shinnku.com",
+          "domain:fedai.org"
         ],
         "enabled": true
       },
@@ -183,7 +189,8 @@
         "outboundTag": "block",
         "domain": [
           "geosite:category-ads-all",
-          "domain:ogs.google.com"
+          "domain:ogs.google.com",
+          "domain:c.bing.com"
         ],
         "enabled": true
       }

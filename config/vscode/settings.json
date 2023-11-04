@@ -151,6 +151,12 @@
     },
     "python:S101": {
       "level": "off"
+    },
+    "javascript:S3358": {
+      "level": "off"
+    },
+    "Web:TableWithoutCaptionCheck": {
+      "level": "off"
     }
   },
   "errorLens.excludeBySource": ["Java(1610612976)"],
@@ -231,5 +237,8 @@
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.defaultProfile.linux": "Fish",
-  "terminal.integrated.enableMultiLinePasteWarning": false
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  }
 }

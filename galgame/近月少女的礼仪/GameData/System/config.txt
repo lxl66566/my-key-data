@@ -55,7 +55,7 @@ AutoPlayClickTime=900
 
 //Sound Volume
 //・BGM
-BGMVolume=17
+BGMVolume=0
 BGMMute=0
 //・ボイス
 VOICEVolume=179
