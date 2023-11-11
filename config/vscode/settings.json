@@ -28,7 +28,7 @@
   "rome.requireConfiguration": false,
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
   "Codegeex.Privacy": true,
-  "Codegeex.Comment.LanguagePreference": "zh-CN",
+  "Codegeex.Comment.LanguagePreference": "中文",
   "svelte.enable-ts-plugin": true,
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
@@ -55,6 +55,9 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "rome.rome"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
@@ -160,7 +163,7 @@
     }
   },
   "errorLens.excludeBySource": ["Java(1610612976)"],
-  "ruff.args": ["--ignore E501"],
+  "ruff.lint.args": ["--ignore E501"],
   "prettier.printWidth": 160,
   "prettier.trailingComma": "all",
 
@@ -217,9 +220,8 @@
   // terminal
 
   "terminal.integrated.profiles.windows": {
-    "Git Bash": {
-      "source": "Git Bash",
-      "path": ["C:\\Program Files\\Git\\usr\\bin\\bash.exe"]
+    "Msys2": {
+      "path": "D:\\scoop\\apps\\msys2\\current"
     },
     "PowerShell": {
       "source": "PowerShell",
@@ -235,10 +237,13 @@
       "path": "/usr/bin/fish"
     }
   },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.defaultProfile.linux": "Fish",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
+  },
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hant": true
   }
 }

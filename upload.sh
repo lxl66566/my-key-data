@@ -28,5 +28,5 @@ cp -fu 'D:/software/osu!/scores.db' "./other_games/osu"
 git add -A
 git commit -m $(date "+%Y%m%d-%H:%M:%S")
 git push origin main
-git push origin2 main
+# git push origin2 main
 exec /bin/bash

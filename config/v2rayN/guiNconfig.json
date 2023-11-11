@@ -3,7 +3,7 @@
   "subIndexId": "4656355953266098056",
   "remoteDNS": "",
   "domainStrategy4Freedom": null,
-  "sysProxyType": 1,
+  "sysProxyType": 0,
   "systemProxyExceptions": "",
   "systemProxyAdvancedProtocol": null,
   "coreBasicItem": {
@@ -68,7 +68,7 @@
     "enableAutoAdjustMainLvColWidth": true,
     "mainWidth": 901.6,
     "mainHeight": 700.8000000000001,
-    "mainGirdHeight1": 199.0,
+    "mainGirdHeight1": 200.0,
     "mainGirdHeight2": 309.0,
     "colorModeDark": true,
     "colorPrimaryName": null,
@@ -83,7 +83,7 @@
     "mainColumnItem": [
       {
         "Name": "configType",
-        "Width": 63,
+        "Width": 80,
         "Index": 0
       },
       {
