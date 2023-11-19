@@ -51,7 +51,7 @@
     },
     {
       "tag": "api",
-      "port": 54109,
+      "port": 54112,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
@@ -64,32 +64,42 @@
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "vpn.absx.online",
-            "method": "chacha20",
-            "ota": false,
-            "password": "lxllxl716",
-            "port": 12138,
-            "level": 1,
-            "flow": ""
+            "address": "shinnku.us",
+            "port": 443,
+            "users": [
+              {
+                "id": "c1825068-f572-4d64-aa36-97f6e088dddd",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
+          "serverName": "shinnku.us",
           "fingerprint": "randomized",
           "show": false
+        },
+        "wsSettings": {
+          "path": "/shinnku/",
+          "headers": {
+            "Host": "shinnku.us"
+          }
         }
       },
       "mux": {
-        "enabled": false,
-        "concurrency": -1
+        "enabled": true,
+        "concurrency": 8
       }
     },
     {
@@ -161,7 +171,6 @@
           "domain:zhihu.com",
           "domain:absx.pages.dev",
           "domain:coding.net",
-          "domain:msn.cn",
           "domain:coding.net",
           "domain:itdep.tech",
           "domain:pushplus.plus",
@@ -169,7 +178,10 @@
           "domain:tsubakidev.cc",
           "domain:v2ex.com",
           "domain:shinnku.com",
-          "domain:fedai.org"
+          "domain:fedai.org",
+          "domain:raindrop.io",
+          "domain:asset.msn.cn",
+          "domain:itdep.tech"
         ],
         "enabled": true
       },

@@ -184,7 +184,6 @@
     { "before": ["<C-x>"], "commands": ["editor.action.clipboardCutAction"] }
   ],
   "vim.insertModeKeyBindings": [
-    { "before": ["j", "j"], "after": ["<Esc>"] }
     // { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
     // { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
     // { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
@@ -204,7 +203,7 @@
     { "before": ["k"], "after": ["j"] },
     { "before": ["j"], "after": ["h"] },
     { "before": ["X"], "after": ["\"", "_", "X"] },
-    { "before": ["d", "x"], "after": [":delete<CR>"] }
+    { "before": ["d", "x"], "after": ["\"", "_", "d", "d"] }
   ],
   "vim.handleKeys": {
     "<C-p>": false,
@@ -245,5 +244,8 @@
   },
   "editor.unicodeHighlight.allowedLocales": {
     "zh-hant": true
+  },
+  "[octave]": {
+    "editor.defaultFormatter": "tusindfryd.octave-formatter"
   }
 }

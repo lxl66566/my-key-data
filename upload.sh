@@ -9,7 +9,7 @@ cp -rfu  C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
 # cp -rfu "D:\Documents\近月少女的礼仪" ./galgame
 cp -rfu "G:\galgame\アンレス テルミナリア\save" "./galgame/アンレス テルミナリア"
 cp -rfu "C:\Users\lxl\AppData\LocalLow\AnimalHerb\Nekomimi Sweet Housemates\Utage\SaveMyPetProject2" ./galgame/家喵二三事
-cp -fu "D:\galgame\樱色之云 绯色之恋\BGI.gdb" "./galgame/樱色之云 绯色之恋"
+cp -rfu "D:\Documents\CHAOS-R\神聖昂燐ダクリュオン・ルナ-save" ./galgame/
 # config
     # vscode
 cp -rfu "C:\Users\lxl\AppData\Roaming\Code\User\settings.json" ./config/vscode

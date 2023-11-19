@@ -1,9 +1,9 @@
 {
-  "indexId": "5415621873596302144",
+  "indexId": "4724488346879775899",
   "subIndexId": "4656355953266098056",
   "remoteDNS": "",
   "domainStrategy4Freedom": null,
-  "sysProxyType": 0,
+  "sysProxyType": 1,
   "systemProxyExceptions": "",
   "systemProxyAdvancedProtocol": null,
   "coreBasicItem": {
@@ -66,10 +66,10 @@
   },
   "uiItem": {
     "enableAutoAdjustMainLvColWidth": true,
-    "mainWidth": 901.6,
+    "mainWidth": 906.4000000000001,
     "mainHeight": 700.8000000000001,
-    "mainGirdHeight1": 200.0,
-    "mainGirdHeight2": 309.0,
+    "mainGirdHeight1": 261.0,
+    "mainGirdHeight2": 248.0,
     "colorModeDark": true,
     "colorPrimaryName": null,
     "currentLanguage": "zh-Hans",
@@ -93,7 +93,7 @@
       },
       {
         "Name": "address",
-        "Width": 123,
+        "Width": 351,
         "Index": 2
       },
       {
