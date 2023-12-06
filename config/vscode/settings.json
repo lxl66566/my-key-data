@@ -9,6 +9,9 @@
   "editor.cursorBlinking": "smooth",
   "editor.fontSize": 15,
   "editor.fontFamily": "Fira Code, Consolas, monospace",
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hant": true
+  },
   "workbench.layoutControl.enabled": false,
   "workbench.colorTheme": "Monokai Dimmed",
   "workbench.list.smoothScrolling": true,
@@ -33,6 +36,9 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
+  "clangd.checkUpdates": true,
+  "code-runner.runInTerminal": true,
+  "remote.SSH.connectTimeout": 30,
 
   // for languages
 
@@ -41,7 +47,7 @@
   "[css]": {},
   "[jsonc]": {},
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
       "source.fixAll": true,
       "source.organizeImports": true
@@ -57,10 +63,10 @@
     "editor.defaultFormatter": "rome.rome"
   },
   "[c]": {
-    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    "editor.defaultFormatter": "xaver.clang-format"
   },
   "[cpp]": {
-    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    "editor.defaultFormatter": "xaver.clang-format"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -69,6 +75,7 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
+  "rust-analyzer.check.command": "clippy",
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
@@ -85,8 +92,17 @@
     }
   },
   "markdown.validate.enabled": false,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[octave]": {
+    "editor.defaultFormatter": "tusindfryd.octave-formatter"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "shakram02.bash-beautify"
+  },
 
-  // lint
+  // linter
 
   "sonarlint.rules": {
     "python:S125": {
@@ -159,6 +175,9 @@
       "level": "off"
     },
     "Web:TableWithoutCaptionCheck": {
+      "level": "off"
+    },
+    "python:S2208": {
       "level": "off"
     }
   },
@@ -238,14 +257,5 @@
   },
   "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.defaultProfile.linux": "Fish",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  },
-  "editor.unicodeHighlight.allowedLocales": {
-    "zh-hant": true
-  },
-  "[octave]": {
-    "editor.defaultFormatter": "tusindfryd.octave-formatter"
-  }
+  "terminal.integrated.enableMultiLinePasteWarning": false
 }

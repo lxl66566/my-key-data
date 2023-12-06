@@ -10,6 +10,7 @@ cp -rfu  C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
 cp -rfu "G:\galgame\アンレス テルミナリア\save" "./galgame/アンレス テルミナリア"
 cp -rfu "C:\Users\lxl\AppData\LocalLow\AnimalHerb\Nekomimi Sweet Housemates\Utage\SaveMyPetProject2" ./galgame/家喵二三事
 cp -rfu "D:\Documents\CHAOS-R\神聖昂燐ダクリュオン・ルナ-save" ./galgame/
+cp -rfu "D:\galgame\初雪樱\savedata" ./galgame/初雪樱
 # config
     # vscode
 cp -rfu "C:\Users\lxl\AppData\Roaming\Code\User\settings.json" ./config/vscode

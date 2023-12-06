@@ -1,8 +1,6 @@
 {
-  "indexId": "4724488346879775899",
+  "indexId": "5377924872875466006",
   "subIndexId": "4656355953266098056",
-  "remoteDNS": "",
-  "domainStrategy4Freedom": null,
   "sysProxyType": 1,
   "systemProxyExceptions": "",
   "systemProxyAdvancedProtocol": null,
@@ -16,19 +14,10 @@
   },
   "tunModeItem": {
     "enableTun": false,
-    "showWindow": true,
-    "enabledLog": false,
     "strictRoute": false,
     "stack": null,
     "mtu": 9000,
-    "customTemplate": "",
-    "bypassMode": true,
-    "directIP": [],
-    "directProcess": [],
-    "directDNS": "",
-    "proxyIP": [],
-    "proxyProcess": [],
-    "proxyDNS": ""
+    "enableExInbound": false
   },
   "kcpItem": {
     "mtu": 1350,
@@ -47,14 +36,14 @@
   },
   "routingBasicItem": {
     "domainStrategy": "AsIs",
+    "domainStrategy4Singbox": null,
     "domainMatcher": null,
     "routingIndexId": "5158291601765611759",
     "enableRoutingAdvanced": false
   },
   "guiItem": {
-    "autoRun": true,
+    "autoRun": false,
     "enableStatistics": true,
-    "statisticsFreshRate": 1,
     "keepOlderDedupl": false,
     "ignoreGeoUpdateCore": false,
     "autoUpdateInterval": 10,
@@ -66,11 +55,12 @@
   },
   "uiItem": {
     "enableAutoAdjustMainLvColWidth": true,
-    "mainWidth": 906.4000000000001,
+    "mainWidth": 933.6,
     "mainHeight": 700.8000000000001,
-    "mainGirdHeight1": 261.0,
+    "mainGirdHeight1": 260.0,
     "mainGirdHeight2": 248.0,
     "colorModeDark": true,
+    "followSystemTheme": false,
     "colorPrimaryName": null,
     "currentLanguage": "zh-Hans",
     "currentFontFamily": null,
@@ -88,7 +78,7 @@
       },
       {
         "Name": "remarks",
-        "Width": 102,
+        "Width": 98,
         "Index": 1
       },
       {
@@ -104,22 +94,22 @@
       {
         "Name": "security",
         "Width": 94,
-        "Index": 11
+        "Index": 13
       },
       {
         "Name": "network",
         "Width": 94,
-        "Index": 9
+        "Index": 11
       },
       {
         "Name": "streamSecurity",
         "Width": 59,
-        "Index": 10
+        "Index": 12
       },
       {
         "Name": "subRemarks",
         "Width": 94,
-        "Index": 8
+        "Index": 10
       },
       {
         "Name": "delayVal",
@@ -134,22 +124,22 @@
       {
         "Name": "todayUp",
         "Width": 94,
-        "Index": 7
+        "Index": 9
       },
       {
         "Name": "todayDown",
         "Width": 94,
-        "Index": 6
+        "Index": 8
       },
       {
         "Name": "totalUp",
         "Width": 79,
-        "Index": 12
+        "Index": 6
       },
       {
         "Name": "totalDown",
         "Width": 79,
-        "Index": 13
+        "Index": 7
       }
     ]
   },
@@ -161,6 +151,13 @@
     "speedTestTimeout": 10,
     "speedTestUrl": "http://cachefly.cachefly.net/10mb.test",
     "speedPingTestUrl": "https://www.google.com/generate_204"
+  },
+  "mux4Sbox": {
+    "protocol": "h2mux",
+    "max_connections": 4,
+    "min_streams": 4,
+    "max_streams": 0,
+    "padding": true
   },
   "inbound": [
     {
