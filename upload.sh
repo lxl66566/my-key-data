@@ -5,16 +5,16 @@ cp -rfu  "D:\no_install_software\Tai1.5.0.4\AppIcons" ./Tai
 
 # galgame
 cp -rfu  C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
-# 近月少女的礼仪 use savePath so not need to cp it
-# cp -rfu "D:\Documents\近月少女的礼仪" ./galgame
 cp -rfu "G:\galgame\アンレス テルミナリア\save" "./galgame/アンレス テルミナリア"
 cp -rfu "C:\Users\lxl\AppData\LocalLow\AnimalHerb\Nekomimi Sweet Housemates\Utage\SaveMyPetProject2" ./galgame/家喵二三事
 cp -rfu "D:\Documents\CHAOS-R\神聖昂燐ダクリュオン・ルナ-save" ./galgame/
-cp -rfu "D:\galgame\初雪樱\savedata" ./galgame/初雪樱
+
 # config
-    # vscode
+# windows
+cp -rfu "C:\Users\lxl\alias.cmd" ./config/cmd
+# vscode
 cp -rfu "C:\Users\lxl\AppData\Roaming\Code\User\settings.json" ./config/vscode
-    # v2rayN
+# v2rayN
 cp -rfu "D:\no_install_software\v2rayN\guiConfigs\config.json" ./config/v2rayN
 cp -rfu "D:\no_install_software\v2rayN\guiConfigs\guiNconfig.json" ./config/v2rayN
 
