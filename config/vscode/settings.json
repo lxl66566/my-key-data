@@ -29,9 +29,19 @@
   "rome_lsp.trace.server": "messages",
   "rome.rename": true,
   "rome.requireConfiguration": false,
+  "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
+  "rust-analyzer.cargo.sysroot": "discover",
+  "rust-analyzer.diagnostics.experimental.enable": true,
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.showUnlinkedFileNotification": false,
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+  "markdown.validate.enabled": false,
   "Codegeex.Privacy": true,
   "Codegeex.Comment.LanguagePreference": "中文",
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.callArgumentNames": "all",
   "svelte.enable-ts-plugin": true,
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
@@ -39,6 +49,8 @@
   "clangd.checkUpdates": true,
   "code-runner.runInTerminal": true,
   "remote.SSH.connectTimeout": 30,
+  "typst-lsp.experimentalFormatterMode": "on",
+  "typst-preview.pinPreviewFile": true,
 
   // for languages
 
@@ -74,8 +86,6 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
-  "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
-  // "rust-analyzer.check.command": "clippy",
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
@@ -91,7 +101,6 @@
       "other": "on"
     }
   },
-  "markdown.validate.enabled": false,
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
@@ -182,7 +191,6 @@
     }
   },
   "errorLens.excludeBySource": ["Java(1610612976)"],
-  "ruff.lint.args": ["--ignore E501"],
   "prettier.printWidth": 160,
   "prettier.trailingComma": "all",
 
@@ -256,6 +264,6 @@
     }
   },
   "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
-  "terminal.integrated.defaultProfile.linux": "Fish",
+  "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.enableMultiLinePasteWarning": false
 }

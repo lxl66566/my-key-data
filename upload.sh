@@ -17,6 +17,8 @@ cp -rfu "C:\Users\lxl\AppData\Roaming\Code\User\settings.json" ./config/vscode
 # v2rayN
 cp -rfu "D:\no_install_software\v2rayN\guiConfigs\config.json" ./config/v2rayN
 cp -rfu "D:\no_install_software\v2rayN\guiConfigs\guiNconfig.json" ./config/v2rayN
+# wsl
+cp -rfu "%USERPROFILE%\.wslconfig" ./config/.wslconfig
 
 # other games
 cp -fu 'D:/software/osu!/collection.db' "./other_games/osu"
