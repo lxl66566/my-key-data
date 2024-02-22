@@ -75,10 +75,10 @@
     "editor.defaultFormatter": "rome.rome"
   },
   "[c]": {
-    "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "[cpp]": {
-    "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -244,11 +244,8 @@
   },
 
   // terminal
-
+  // windows
   "terminal.integrated.profiles.windows": {
-    "Msys2": {
-      "path": "D:\\scoop\\apps\\msys2\\current"
-    },
     "PowerShell": {
       "source": "PowerShell",
       "icon": "terminal-powershell"
@@ -259,11 +256,23 @@
       "args": ["/K chcp 65001 >nul", "\n"],
       "icon": "terminal-cmd"
     },
-    "Fish": {
+    "Bash": {
+      "path": "D:\\scoop\\shims\\bash.exe"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Bash",
+  "terminal.external.windowsExec": "D:\\scoop\\shims\\bash.exe",
+
+  // linux
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "fish": {
       "path": "/usr/bin/fish"
     }
   },
-  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.enableMultiLinePasteWarning": false
+  "terminal.integrated.enableMultiLinePasteWarning": "never"
 }

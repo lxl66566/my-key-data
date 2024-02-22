@@ -7,18 +7,18 @@ cp -rfu  "D:\no_install_software\Tai1.5.0.4\AppIcons" ./Tai
 cp -rfu  C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
 cp -rfu "G:\galgame\アンレス テルミナリア\save" "./galgame/アンレス テルミナリア"
 cp -rfu "C:\Users\lxl\AppData\LocalLow\AnimalHerb\Nekomimi Sweet Housemates\Utage\SaveMyPetProject2" ./galgame/家喵二三事
-cp -rfu "D:\Documents\CHAOS-R\神聖昂燐ダクリュオン・ルナ-save" ./galgame/
 
 # config
 # windows
 cp -rfu "C:\Users\lxl\alias.cmd" ./config/cmd
+cp -rfu "C:\Users\lxl\.bashrc" ./config/.bashrc
 # vscode
 cp -rfu "C:\Users\lxl\AppData\Roaming\Code\User\settings.json" ./config/vscode
 # v2rayN
 cp -rfu "D:\no_install_software\v2rayN\guiConfigs\config.json" ./config/v2rayN
 cp -rfu "D:\no_install_software\v2rayN\guiConfigs\guiNconfig.json" ./config/v2rayN
 # wsl
-cp -rfu "%USERPROFILE%\.wslconfig" ./config/.wslconfig
+cp -rfu "C:\Users\lxl\.wslconfig" ./config/.wslconfig
 
 # other games
 cp -fu 'D:/software/osu!/collection.db' "./other_games/osu"
