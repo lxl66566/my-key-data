@@ -1,3 +1,4 @@
+#!/bin/bash
 # 精简仓库时请不要直接删除！有非 cp 的文件在仓库内！
 # tai
 cp -rfu  "D:\no_install_software\Tai1.5.0.4\Data" ./Tai
@@ -7,6 +8,7 @@ cp -rfu  "D:\no_install_software\Tai1.5.0.4\AppIcons" ./Tai
 cp -rfu  C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
 cp -rfu "G:\galgame\アンレス テルミナリア\save" "./galgame/アンレス テルミナリア"
 cp -rfu "C:\Users\lxl\AppData\LocalLow\AnimalHerb\Nekomimi Sweet Housemates\Utage\SaveMyPetProject2" ./galgame/家喵二三事
+cp -rfu "D:\galgame\樱之诗 －樱花林上飞舞－\SaveData" ./galgame/樱之诗
 
 # config
 # windows

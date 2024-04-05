@@ -26,6 +26,7 @@
 
   // extension
 
+  "clangd.path": "c:\\Users\\lxl\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\17.0.3\\clangd_17.0.3\\bin\\clangd.exe",
   "rome_lsp.trace.server": "messages",
   "rome.rename": true,
   "rome.requireConfiguration": false,
@@ -34,6 +35,7 @@
   "rust-analyzer.diagnostics.experimental.enable": true,
   "rust-analyzer.checkOnSave.command": "clippy",
   "rust-analyzer.showUnlinkedFileNotification": false,
+  // "rust-analyzer.check.targets": ["x86_64-unknown-linux-gnu", "x86_64-pc-windows-msvc"],
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
   "markdown.validate.enabled": false,
   "Codegeex.Privacy": true,
@@ -42,6 +44,7 @@
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.callArgumentNames": "all",
+  "pylyzer.inlayHints": true,
   "svelte.enable-ts-plugin": true,
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
@@ -51,6 +54,7 @@
   "remote.SSH.connectTimeout": 30,
   "typst-lsp.experimentalFormatterMode": "on",
   "typst-preview.pinPreviewFile": true,
+  "accessibility.voice.speechLanguage": "zh-CN",
 
   // for languages
 
@@ -211,6 +215,7 @@
     { "before": ["<C-x>"], "commands": ["editor.action.clipboardCutAction"] }
   ],
   "vim.insertModeKeyBindings": [
+    { "before": ["j", "j"], "after": ["<esc>"] }
     // { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
     // { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
     // { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
@@ -274,5 +279,6 @@
     }
   },
   "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.enableMultiLinePasteWarning": "never"
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "diffEditor.hideUnchangedRegions.enabled": true
 }
