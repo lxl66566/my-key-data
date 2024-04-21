@@ -19,9 +19,10 @@
   "workbench.editorAssociations": {
     "*.db": "sqlite-viewer.option"
   },
+  "diffEditor.hideUnchangedRegions.enabled": false,
   "explorer.confirmDelete": false,
-  "files.autoGuessEncoding": true,
   "explorer.confirmDragAndDrop": false,
+  "files.autoGuessEncoding": true,
   "window.commandCenter": false,
 
   // extension
@@ -113,6 +114,9 @@
   },
   "[shellscript]": {
     "editor.defaultFormatter": "shakram02.bash-beautify"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
   },
 
   // linter
@@ -279,6 +283,5 @@
     }
   },
   "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "diffEditor.hideUnchangedRegions.enabled": true
+  "terminal.integrated.enableMultiLinePasteWarning": "never"
 }

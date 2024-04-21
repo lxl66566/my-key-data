@@ -10,4 +10,4 @@ alias gp='git pull'
 alias l='ls -lAF --color=auto'
 alias e=$EDITOR
 alias gfixup='git commit -a --fixup HEAD && GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash HEAD~2'
-
+alias grep='grep --color=auto'

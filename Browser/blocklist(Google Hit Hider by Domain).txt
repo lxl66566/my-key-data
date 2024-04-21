@@ -1,3 +1,5 @@
+ngabbs.com
+www.itxm.cn
 www.infoxiao.com
 medium.com
 m.888ppt.com
@@ -928,7 +930,6 @@ jiuwei.kuaiso.com
 jixiangfang.ws
 jiyifa.com
 jjj.gra-bnoqp.mianfeiwenku.com
-jk.zhihu.la
 jkyeg.com
 jlytgs.com
 jmjiedai.com
@@ -1720,7 +1721,6 @@ xmaustar.com
 xmtx88.com
 xmyt88.com
 xrbi.net
-xs.zhihu.la
 xshdkj.com
 xtoolsoft.com
 xuehua.us
@@ -1876,7 +1876,4 @@ zzyyo.com
 39.108.60.68
 47.241.89.120
 cloud.tencent.com
-cloud.tencent.com
-support.huaweicloud.com
 www.cnpython.com
-www.huaweicloud.com
