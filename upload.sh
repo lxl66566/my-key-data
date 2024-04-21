@@ -8,7 +8,6 @@ cp -rfu  "D:\no_install_software\Tai1.5.0.4\AppIcons" ./Tai
 cp -rfu  C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
 cp -rfu "G:\galgame\アンレス テルミナリア\save" "./galgame/アンレス テルミナリア"
 cp -rfu "C:\Users\lxl\AppData\LocalLow\AnimalHerb\Nekomimi Sweet Housemates\Utage\SaveMyPetProject2" ./galgame/家喵二三事
-cp -rfu "D:\galgame\樱之诗 －樱花林上飞舞－\SaveData" ./galgame/樱之诗
 
 # config
 # windows
@@ -21,6 +20,8 @@ cp -rfu "D:\no_install_software\v2rayN\guiConfigs\config.json" ./config/v2rayN
 cp -rfu "D:\no_install_software\v2rayN\guiConfigs\guiNconfig.json" ./config/v2rayN
 # wsl
 cp -rfu "C:\Users\lxl\.wslconfig" ./config/.wslconfig
+# mpv
+find "D:\scoop\persist\mpv\portable_config" -maxdepth 1 -mindepth 1 -exec cp -rfu {} ./config/mpv \;
 
 # other games
 cp -fu 'D:/software/osu!/collection.db' "./other_games/osu"
