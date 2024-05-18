@@ -9,6 +9,7 @@
   "editor.cursorBlinking": "smooth",
   "editor.fontSize": 15,
   "editor.fontFamily": "Fira Code, Consolas, monospace",
+  "editor.inlayHints.enabled": "onUnlessPressed",
   "editor.unicodeHighlight.allowedLocales": {
     "zh-hant": true
   },
@@ -27,7 +28,7 @@
 
   // extension
 
-  "clangd.path": "c:\\Users\\lxl\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\17.0.3\\clangd_17.0.3\\bin\\clangd.exe",
+  "clangd.path": "c:\\Users\\lxl\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\18.1.3\\clangd_18.1.3\\bin\\clangd.exe",
   "rome_lsp.trace.server": "messages",
   "rome.rename": true,
   "rome.requireConfiguration": false,
@@ -36,6 +37,9 @@
   "rust-analyzer.diagnostics.experimental.enable": true,
   "rust-analyzer.checkOnSave.command": "clippy",
   "rust-analyzer.showUnlinkedFileNotification": false,
+  "rust-analyzer.runnables.extraEnv": { "RUST_LOG": "debug" },
+  "rust-analyzer.testExplorer": true,
+  "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
   // "rust-analyzer.check.targets": ["x86_64-unknown-linux-gnu", "x86_64-pc-windows-msvc"],
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
   "markdown.validate.enabled": false,
@@ -55,7 +59,13 @@
   "remote.SSH.connectTimeout": 30,
   "typst-lsp.experimentalFormatterMode": "on",
   "typst-preview.pinPreviewFile": true,
+  "tinymist.exportPdf": "onSave",
+  "tinymist.formatterMode": "typstyle",
   "accessibility.voice.speechLanguage": "zh-CN",
+  "fittencode.languagePreference.displayPreference": "zh-cn",
+  "fittencode.languagePreference.commentPreference": "zh-cn",
+  "fittencode.action.startChat.showInEditorContextMenu": false,
+  "fittencode.Unit Test Framework.Python": "unittest",
 
   // for languages
 
@@ -117,6 +127,9 @@
   },
   "[lua]": {
     "editor.defaultFormatter": "sumneko.lua"
+  },
+  "[typst]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist"
   },
 
   // linter

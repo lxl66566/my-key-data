@@ -11,3 +11,16 @@ alias l='ls -lAF --color=auto'
 alias e=$EDITOR
 alias gfixup='git commit -a --fixup HEAD && GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash HEAD~2'
 alias grep='grep --color=auto'
+alias rv='revertversion'
+function revertversion(){
+    if [ $# -ne 1 ]; then
+        echo "Usage: revertversion <version>"
+        return 1
+    fi
+    echo "Reverting version $@"
+    git push origin :refs/tags/$@
+    git tag -d $@
+    git tag $@
+    git push --tags
+}
+

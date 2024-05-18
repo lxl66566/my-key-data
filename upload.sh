@@ -22,6 +22,8 @@ cp -rfu "D:\no_install_software\v2rayN\guiConfigs\guiNconfig.json" ./config/v2ra
 cp -rfu "C:\Users\lxl\.wslconfig" ./config/.wslconfig
 # mpv
 find "D:\scoop\persist\mpv\portable_config" -maxdepth 1 -mindepth 1 -exec cp -rfu {} ./config/mpv \;
+# cargo
+cp -rfu "C:\Users\lxl\.cargo\config.toml" ./config/.cargo
 
 # other games
 cp -fu 'D:/software/osu!/collection.db' "./other_games/osu"
