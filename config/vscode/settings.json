@@ -13,6 +13,7 @@
   "editor.unicodeHighlight.allowedLocales": {
     "zh-hant": true
   },
+  "editor.minimap.enabled": true,
   "workbench.layoutControl.enabled": false,
   "workbench.colorTheme": "Monokai Dimmed",
   "workbench.list.smoothScrolling": true,
