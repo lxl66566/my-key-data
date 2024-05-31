@@ -1,5 +1,8 @@
 #!/bin/bash
 # 精简仓库时请不要直接删除！有非 cp 的文件在仓库内！
+
+set -euxo pipefail
+
 # tai
 cp -rfu  "D:\no_install_software\Tai1.5.0.4\Data" ./Tai
 cp -rfu  "D:\no_install_software\Tai1.5.0.4\AppIcons" ./Tai
@@ -28,6 +31,7 @@ cp -rfu "C:\Users\lxl\.cargo\config.toml" ./config/.cargo
 # other games
 cp -fu 'D:/software/osu!/collection.db' "./other_games/osu"
 cp -fu 'D:/software/osu!/scores.db' "./other_games/osu"
+cp -rfu 'C:\ProgramData\PopCap Games\PlantsVsZombies\pvzHE\yourdata' "./other_games/PVZ_hybrid"
 
 # browser
 # cp -rfu "C:\Users\lxl\AppData\Local\Microsoft\Edge\User Data\Default\Bookmarks" ./Browser/Bookmarks

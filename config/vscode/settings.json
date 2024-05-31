@@ -36,10 +36,10 @@
   "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
   "rust-analyzer.cargo.sysroot": "discover",
   "rust-analyzer.diagnostics.experimental.enable": true,
-  "rust-analyzer.checkOnSave.command": "clippy",
   "rust-analyzer.showUnlinkedFileNotification": false,
   "rust-analyzer.runnables.extraEnv": { "RUST_LOG": "debug" },
   "rust-analyzer.testExplorer": true,
+  "rust-analyzer.check.command": "clippy",
   "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
   // "rust-analyzer.check.targets": ["x86_64-unknown-linux-gnu", "x86_64-pc-windows-msvc"],
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
@@ -297,5 +297,6 @@
     }
   },
   "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.enableMultiLinePasteWarning": "never"
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "git.openRepositoryInParentFolders": "never"
 }
