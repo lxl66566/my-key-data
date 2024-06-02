@@ -7,6 +7,7 @@ export https_proxy='http://127.0.0.1:10450'
 
 alias eenv='rundll32 sysdm.cpl,EditEnvironmentVariables'
 alias gp='git pull'
+alias gc='git clone'
 alias l='ls -lAF --color=auto'
 alias e=$EDITOR
 alias gfixup='git commit -a --fixup HEAD && GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash HEAD~2'
