@@ -16,6 +16,7 @@ cp -rfu "C:\Users\lxl\AppData\LocalLow\AnimalHerb\Nekomimi Sweet Housemates\Utag
 # windows
 cp -rfu "C:\Users\lxl\alias.cmd" ./config/cmd
 cp -rfu "C:\Users\lxl\.bashrc" ./config/.bashrc
+cp -rfu "C:\Users\lxl\.gitconfig" ./config/.gitconfig
 # vscode
 cp -rfu "C:\Users\lxl\AppData\Roaming\Code\User\settings.json" ./config/vscode
 # v2rayN

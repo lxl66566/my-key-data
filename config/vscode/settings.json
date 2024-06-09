@@ -26,6 +26,7 @@
   "explorer.confirmDragAndDrop": false,
   "files.autoGuessEncoding": true,
   "window.commandCenter": false,
+  "git.openRepositoryInParentFolders": "never",
 
   // extension
 
@@ -84,6 +85,13 @@
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
+  "java.configuration.runtimes": [
+    {
+      "name": "OpenJDK-22",
+      "path": "D:/scoop/apps/openjdk22/current",
+      "default": true
+    }
+  ],
   "[javascript]": {
     "editor.defaultFormatter": "rome.rome"
   },
@@ -104,6 +112,13 @@
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "ktfmt.path-to-jar": "D:/no_install_software/ktfmt-0.50-jar-with-dependencies.jar",
+  "[kotlin]": {
+    "editor.defaultFormatter": "crdrost.ktfmt"
+  },
+  "[kotlinscript]": {
+    "editor.defaultFormatter": "crdrost.ktfmt"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -259,6 +274,7 @@
     "<C-p>": false,
     "<C-e>": false,
     "<C-s>": false,
+    "<C-d>": false,
     "<C-a>": false,
     "<C-c>": false,
     "<C-w>": false,
@@ -297,6 +313,5 @@
     }
   },
   "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "git.openRepositoryInParentFolders": "never"
+  "terminal.integrated.enableMultiLinePasteWarning": "never"
 }
