@@ -297,9 +297,13 @@
     },
     "Bash": {
       "path": "D:\\scoop\\shims\\bash.exe"
+    },
+    "Nushell": {
+      "path": "C:/Users/lxl/bpm/bin/nu.cmd",
+      "icon": "star-add"
     }
   },
-  "terminal.integrated.defaultProfile.windows": "Bash",
+  "terminal.integrated.defaultProfile.windows": "Nushell",
   "terminal.external.windowsExec": "D:\\scoop\\shims\\bash.exe",
 
   // linux

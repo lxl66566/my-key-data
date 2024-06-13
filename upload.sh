@@ -30,6 +30,9 @@ find "D:\scoop\persist\mpv\portable_config" -maxdepth 1 -mindepth 1 -exec cp -rf
 cp -rfu "C:\Users\lxl\.cargo\config.toml" ./config/.cargo
 # tabby
 cp -rfu "D:\scoop\apps\tabby\current\data\config.yaml" ./config/tabby
+# nushell
+cp -rfu "C:\Users\lxl\AppData\Roaming\nushell\config.nu" ./config/nushell
+cp -rfu "C:\Users\lxl\AppData\Roaming\nushell\env.nu" ./config/nushell
 
 # other games
 cp -fu 'D:/software/osu!/collection.db' "./other_games/osu"
