@@ -924,9 +924,8 @@ def gfixup [] {
     GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash HEAD~2
 }
 
-
 alias l = ls
 alias gp = git pull
 alias gc = git clone
-alias e = env.$EDITOR
+# alias e = $EDITOR
 alias grep = rg
