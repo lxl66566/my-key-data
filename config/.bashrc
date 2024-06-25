@@ -4,6 +4,7 @@ export HISTFILESIZE=-1
 export all_proxy='http://127.0.0.1:10450'
 export http_proxy='http://127.0.0.1:10450'
 export https_proxy='http://127.0.0.1:10450'
+export MSYS=enable_pcon
 
 alias eenv='rundll32 sysdm.cpl,EditEnvironmentVariables'
 alias gp='git pull'
