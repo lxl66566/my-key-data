@@ -1,0 +1,2293 @@
+{
+    "loadbalance": false,
+    "loadbalance_oncenum": 1,
+    "ocrafterrangeselect": true,
+    "excule_from_self": true,
+    "excule_from_exe": [],
+    "only_from_exe": [],
+    "showrangeafterrangeselect": true,
+    "autodisappear": false,
+    "WindowBackdrop": 0,
+    "read_raw": true,
+    "read_trans": false,
+    "read_translator": 0,
+    "disappear_delay": 5,
+    "network": 1,
+    "hookmagpie": true,
+    "imagewrapmode": 0,
+    "relationlinks": [
+        [
+            "LunaTranslator",
+            "https://github.com/HIllya51/LunaTranslator"
+        ],
+        [
+            "vndb",
+            "https://vndb.org/"
+        ]
+    ],
+    "hooklossless": true,
+    "direct_filterrepeat": false,
+    "allow_set_text_name": false,
+    "textoutputer": {
+        "clipboard": {
+            "use": false
+        },
+        "websocket": {
+            "use": false,
+            "port": 2333
+        }
+    },
+    "embedded": {
+        "safecheck_use": true,
+        "safecheckregexs": [
+            "(.*?)\\{(.*?)\\}(.*?)",
+            "(.*?)\\[(.*?)\\](.*?)"
+        ],
+        "translator": 0,
+        "as_fast_as_posible": true,
+        "timeout_translate": 2,
+        "trans_kanji": true,
+        "keeprawtext": false,
+        "insertspace_policy": 0,
+        "changefont": false,
+        "changefont_font": "",
+        "changecharset": false,
+        "changecharset_charset": 2,
+        "limittextlength_use": false,
+        "limittextlength_length": 40
+    },
+    "requestinterval": 1,
+    "keepontop": true,
+    "buttonsize": 20,
+    "language_setted_2.4.5": true,
+    "postprocess_rank": [
+        "_remove_non_shiftjis_char",
+        "_remove_latin",
+        "_remove_ascii",
+        "_remove_control",
+        "_remove_chaos",
+        "_remove_not_in_ja_bracket",
+        "_1",
+        "_2",
+        "_3",
+        "_3_2",
+        "_4",
+        "_6",
+        "_6EX",
+        "_91",
+        "_92",
+        "_7",
+        "_7_zhuanyi",
+        "_8",
+        "_10",
+        "_13",
+        "_13EX",
+        "_11",
+        "stringreplace",
+        "_remove_symbo",
+        "length_threshold",
+        "lines_threshold",
+        "dedump"
+    ],
+    "transoptimi": {
+        "noundict": false,
+        "transerrorfix": false,
+        "gongxiangcishu": false,
+        "vndbnamemap": false,
+        "myprocess": false,
+        "arabic_reshaper": false,
+        "gptpromptdict": false
+    },
+    "uselongtermcache": true,
+    "fixedheight": false,
+    "showintab": true,
+    "remove_useless_hook": false,
+    "button_color_close": "#D32424",
+    "button_color_normal": "#FFFFFF",
+    "textthreaddelay": 300,
+    "maxBufferSize": 3000,
+    "maxHistorySize": 1000000,
+    "yuanjiao_r": 0,
+    "yuanjiao_merge": false,
+    "transuigeo": [
+        214,
+        699,
+        1200,
+        108
+    ],
+    "hist_geo": [
+        100,
+        100,
+        1000,
+        300
+    ],
+    "edit_geo": [
+        100,
+        100,
+        1000,
+        300
+    ],
+    "showocrgeo": [
+        100,
+        100,
+        1000,
+        300
+    ],
+    "attachprocessgeo": [
+        100,
+        100,
+        800,
+        400
+    ],
+    "selecthookgeo": [
+        100,
+        100,
+        1200,
+        600
+    ],
+    "memorydialoggeo": [
+        100,
+        100,
+        1200,
+        600
+    ],
+    "savegamedialoggeo": [
+        100,
+        100,
+        1200,
+        600
+    ],
+    "browserwidget": [
+        100,
+        100,
+        1300,
+        800
+    ],
+    "sw_geo": [
+        782,
+        114,
+        500,
+        500
+    ],
+    "multiregion": false,
+    "rememberocrregions": false,
+    "ocrregions": [],
+    "textboxreadonly": true,
+    "ocr_stable_sim": 0,
+    "ocr_diff_sim": 0.95,
+    "ocr_text_diff": 3,
+    "autorun": true,
+    "usewebview": 0,
+    "transparent": 80,
+    "fontsize": 17.0,
+    "localeswitchmethod": 0,
+    "hide_not_exists": false,
+    "startgamenototop": true,
+    "showgametitle": true,
+    "extra_space": 0,
+    "fonttype": "Arial",
+    "fonttype2": "BIZ UDMincho Medium",
+    "miaobianwidth2": 3,
+    "miaobianwidth": 1,
+    "miaobiancolor": "#eeeeee",
+    "zitiyangshi2": 5,
+    "hira_vis_type": 0,
+    "iskongxin": true,
+    "isshowrawtext": true,
+    "kanarate": 0.5,
+    "rawtextcolor": "#000000",
+    "backcolor": "#3f3f3f",
+    "isshowhira": true,
+    "locktools": true,
+    "showfanyisource": false,
+    "use_yapi": false,
+    "showfanyi": true,
+    "autoread": false,
+    "ttsnointerrupt": false,
+    "show_fenci": true,
+    "jiamingcolor": "#55aa00",
+    "ankiconnect": {
+        "port": 8765,
+        "ModelName5": "lunamodel5",
+        "allowDuplicate": true,
+        "autoUpdateModel": true,
+        "ocrcroped": false,
+        "autoruntts": false,
+        "autoruntts2": false,
+        "simulate_key": {
+            "1": {
+                "use": false,
+                "keycode": 120
+            },
+            "2": {
+                "use": false,
+                "keycode": 120
+            }
+        },
+        "autocrop": false,
+        "boldword": false,
+        "DeckName_i": 0,
+        "DeckNameS": [
+            "lunadeck"
+        ],
+        "addsuccautoclose": false,
+        "tags": []
+    },
+    "imageformat": 8,
+    "ankiwindow": [
+        100,
+        100,
+        600,
+        600
+    ],
+    "searchwordusewebview": false,
+    "settingfonttype": "Arial",
+    "showintab_sub": false,
+    "setting_geo_2": [
+        194,
+        115,
+        1200,
+        600
+    ],
+    "settingfontsize": 12,
+    "filter_chaos_code": false,
+    "accept_encoding": [
+        "shift-jis"
+    ],
+    "accept_character": "♪",
+    "accept_use_unicode": false,
+    "accept_use_unicode_start": 0,
+    "accept_use_unicode_end": 65535,
+    "premtsimiuse": false,
+    "buttoncolor": "#001f9f",
+    "premtsimi2": 100,
+    "ocrrangecolor": "#000000",
+    "ocrrangewidth": 2,
+    "useproxy": true,
+    "usesysproxy": true,
+    "fullscreenmethod_4": 0,
+    "dialog_savegame_layout": {
+        "itemw": 250,
+        "itemh": 350,
+        "margin": 10,
+        "textH": 50,
+        "backcolor": "#c38282",
+        "onselectcolor": "#007fff",
+        "onfilenoexistscolor": "#acacac",
+        "backcolor1": "#c38282",
+        "onselectcolor1": "#007fff",
+        "onfilenoexistscolor1": "#acacac",
+        "transparent": 25,
+        "transparentselect": 25,
+        "transparentnotexits": 25,
+        "listitemheight": 40,
+        "listitemwidth": 300
+    },
+    "profiles_index": 0,
+    "ocrautobindwindow": true,
+    "toolbutton": {
+        "rank2": [
+            "move",
+            "retrans",
+            "automodebutton",
+            "setting",
+            "copy",
+            "edit",
+            "showraw",
+            "history",
+            "noundict",
+            "fix",
+            "langdu",
+            "mousetransbutton",
+            "backtransbutton",
+            "locktoolsbutton",
+            "gamepad_new",
+            "selectgame",
+            "selecttext",
+            "selectocrrange",
+            "hideocrrange",
+            "bindwindow",
+            "fullscreen",
+            "grabwindow",
+            "muteprocess",
+            "memory",
+            "keepontop",
+            "simulate_key_ctrl",
+            "simulate_key_enter",
+            "copy_once",
+            "open_relative_link",
+            "open_game_setting",
+            "ocr_once",
+            "minmize",
+            "quit",
+            "ocr_once_follow",
+            "noundict_direct",
+            "noundict_sakura",
+            "noundict_2",
+            "fix_2",
+            "showtrans",
+            "edittrans",
+            "selectable",
+            "searchwordW"
+        ],
+        "buttons": {
+            "retrans": {
+                "use": true,
+                "tip": "手动翻译",
+                "icon": "fa.rotate-right",
+                "align": 0
+            },
+            "automodebutton": {
+                "use": true,
+                "tip": "自动翻译",
+                "icon": "fa.forward",
+                "icon2": "fa.play",
+                "align": 0
+            },
+            "setting": {
+                "use": true,
+                "tip": "打开设置",
+                "icon": "fa.gear",
+                "align": 0
+            },
+            "copy_once": {
+                "use": false,
+                "tip": "读取剪贴板",
+                "icon": "fa.file-o",
+                "align": 0
+            },
+            "open_relative_link": {
+                "use": false,
+                "tip": "打开关联页面",
+                "icon": "fa.sitemap",
+                "align": 0
+            },
+            "open_game_setting": {
+                "use": false,
+                "tip": "游戏设置",
+                "icon": "fa.futbol-o",
+                "align": 0
+            },
+            "mousetransbutton": {
+                "use": true,
+                "tip": "鼠标穿透窗口",
+                "icon": "fa.mouse-pointer",
+                "align": 0
+            },
+            "backtransbutton": {
+                "use": true,
+                "tip": "背景窗口透明",
+                "icon": "fa.lightbulb-o",
+                "align": 0
+            },
+            "locktoolsbutton": {
+                "use": true,
+                "tip": "锁定工具栏",
+                "icon": "fa.lock",
+                "icon2": "fa.unlock",
+                "align": 0
+            },
+            "selectgame": {
+                "use": true,
+                "tip": "选择游戏",
+                "belong": [
+                    "texthook"
+                ],
+                "icon": "fa.link",
+                "align": 0
+            },
+            "selecttext": {
+                "use": true,
+                "tip": "选择文本",
+                "belong": [
+                    "texthook"
+                ],
+                "icon": "fa.tasks",
+                "align": 0
+            },
+            "selectocrrange": {
+                "use": true,
+                "tip": "选取OCR范围",
+                "belong": [
+                    "ocr"
+                ],
+                "icon": "fa.crop",
+                "align": 0
+            },
+            "ocr_once": {
+                "use": false,
+                "tip": "进行一次OCR",
+                "icon": "fa.crop",
+                "align": 0
+            },
+            "hideocrrange": {
+                "use": true,
+                "tip": "显示/隐藏范围框",
+                "belong": [
+                    "ocr"
+                ],
+                "icon": "fa.square",
+                "align": 0
+            },
+            "fix": {
+                "use": false,
+                "tip": "翻译结果修正_全局",
+                "icon": "fa.won",
+                "align": 0
+            },
+            "noundict": {
+                "use": false,
+                "tip": "专有名词翻译_占位符_全局",
+                "icon": "fa.book",
+                "align": 0
+            },
+            "minmize": {
+                "use": true,
+                "tip": "最小化到托盘",
+                "icon": "fa.minus",
+                "align": 1
+            },
+            "quit": {
+                "use": true,
+                "tip": "退出",
+                "icon": "fa.times",
+                "align": 1
+            },
+            "move": {
+                "use": false,
+                "tip": "移动",
+                "icon": "fa.hand-paper-o",
+                "align": 0
+            },
+            "fullscreen": {
+                "use": true,
+                "tip": "窗口缩放",
+                "icon": "fa.compress",
+                "icon2": "fa.expand",
+                "align": 0
+            },
+            "grabwindow": {
+                "use": false,
+                "tip": "窗口截图",
+                "icon": "fa.camera",
+                "align": 0
+            },
+            "resize": {
+                "use": false,
+                "tip": "调整游戏窗口",
+                "icon": "fa.arrows",
+                "align": 0
+            },
+            "muteprocess": {
+                "use": false,
+                "tip": "游戏静音",
+                "icon": "fa.volume-off",
+                "icon2": "fa.volume-up",
+                "align": 0
+            },
+            "showraw": {
+                "use": true,
+                "tip": "显示/隐藏原文",
+                "icon": "fa.eye",
+                "icon2": "fa.eye-slash",
+                "align": 0
+            },
+            "langdu": {
+                "use": true,
+                "tip": "朗读",
+                "icon": "fa.music",
+                "align": 0
+            },
+            "copy": {
+                "use": true,
+                "tip": "复制到剪贴板",
+                "icon": "fa.copy",
+                "align": 0
+            },
+            "history": {
+                "use": true,
+                "tip": "显示/隐藏历史翻译",
+                "icon": "fa.rotate-left",
+                "align": 0
+            },
+            "gamepad_new": {
+                "use": true,
+                "tip": "游戏管理",
+                "icon": "fa.gamepad",
+                "align": 0
+            },
+            "edit": {
+                "use": false,
+                "tip": "编辑",
+                "icon": "fa.edit",
+                "align": 0
+            },
+            "simulate_key_ctrl": {
+                "use": false,
+                "tip": "模拟按键Ctrl",
+                "icon": "fa.download",
+                "align": 0
+            },
+            "simulate_key_enter": {
+                "use": false,
+                "tip": "模拟按键Enter",
+                "icon": "fa.download",
+                "align": 0
+            },
+            "memory": {
+                "use": false,
+                "tip": "备忘录",
+                "icon": "fa.list-ul",
+                "align": 0
+            },
+            "bindwindow": {
+                "use": true,
+                "tip": "绑定窗口（部分软件不支持）（点击自己取消）",
+                "icon": "fa.windows",
+                "align": 0
+            },
+            "keepontop": {
+                "use": true,
+                "tip": "窗口置顶",
+                "icon": "fa.neuter",
+                "align": 0
+            },
+            "ocr_once_follow": {
+                "use": false,
+                "tip": "再次进行OCR",
+                "icon": "fa.spinner",
+                "align": 0
+            },
+            "noundict_direct": {
+                "use": false,
+                "tip": "专有名词翻译_直接替换",
+                "icon": "fa.book",
+                "align": 0
+            },
+            "noundict_sakura": {
+                "use": false,
+                "tip": "专有名词翻译_sakura_gpt_词典",
+                "icon": "fa.book",
+                "align": 0
+            },
+            "noundict_2": {
+                "use": false,
+                "tip": "专有名词翻译_占位符",
+                "icon": "fa.book",
+                "align": 0
+            },
+            "fix_2": {
+                "use": false,
+                "tip": "翻译结果修正",
+                "icon": "fa.won",
+                "align": 0
+            },
+            "showtrans": {
+                "use": false,
+                "tip": "显示/隐藏翻译",
+                "icon": "fa.eye",
+                "icon2": "fa.eye-slash",
+                "align": 2
+            },
+            "edittrans": {
+                "use": false,
+                "tip": "编辑_翻译记录",
+                "icon": "fa.edit",
+                "align": 0
+            },
+            "selectable": {
+                "use": false,
+                "tip": "可选取的",
+                "icon": "fa.i-cursor",
+                "align": 0
+            },
+            "searchwordW": {
+                "use": false,
+                "tip": "查词",
+                "icon": "fa.search",
+                "align": 0
+            }
+        }
+    },
+    "showtranexception": true,
+    "refresh_on_get_trans": false,
+    "languageuse": 0,
+    "proxy": "",
+    "showbold": false,
+    "showShadow": false,
+    "shadowcolor": "blue",
+    "ocr_hori_extend": true,
+    "shadowforce": 5,
+    "traceoffset": 2,
+    "showcixing_touming": 30,
+    "cixingcolor": {
+        "形容詞": "aliceblue",
+        "形状詞": "antiquewhite",
+        "副詞": "aqua",
+        "名詞": "aquamarine",
+        "代名詞": "azure",
+        "動詞": "beige",
+        "助詞": "bisque",
+        "助動詞": "black",
+        "感動詞": "blanchedalmond",
+        "接頭辞": "blue",
+        "接尾辞": "blueviolet",
+        "接続詞": "brown",
+        "指示詞": "burlywood",
+        "連体詞": "cadetblue",
+        "判定詞": "chartreuse",
+        "補助記号": "chocolate",
+        "記号": "coral",
+        "空白": "white"
+    },
+    "chromepath": "",
+    "debugport": 9222,
+    "cixingcolorshow": {
+        "形容詞": true,
+        "形状詞": true,
+        "副詞": true,
+        "名詞": true,
+        "代名詞": true,
+        "動詞": true,
+        "助詞": true,
+        "助動詞": true,
+        "感動詞": true,
+        "接頭辞": true,
+        "接尾辞": true,
+        "接続詞": true,
+        "指示詞": true,
+        "連体詞": true,
+        "判定詞": true,
+        "補助記号": false,
+        "記号": false,
+        "空白": false
+    },
+    "quick_setting": {
+        "use": false,
+        "all": {
+            "_A": {
+                "use": false,
+                "name": "选择翻译源_剪贴板",
+                "keystring": ""
+            },
+            "_B": {
+                "use": false,
+                "name": "选择翻译源_OCR",
+                "keystring": ""
+            },
+            "_C": {
+                "use": false,
+                "name": "选择翻译源_HOOK",
+                "keystring": ""
+            },
+            "_1": {
+                "use": false,
+                "name": "手动翻译",
+                "keystring": ""
+            },
+            "_2": {
+                "use": false,
+                "name": "自动翻译",
+                "keystring": ""
+            },
+            "_3": {
+                "use": false,
+                "name": "打开设置",
+                "keystring": ""
+            },
+            "_4": {
+                "use": false,
+                "name": "复制到剪贴板",
+                "keystring": ""
+            },
+            "_5": {
+                "use": false,
+                "name": "显示/隐藏原文",
+                "keystring": ""
+            },
+            "_6": {
+                "use": false,
+                "name": "显示/隐藏历史翻译",
+                "keystring": ""
+            },
+            "_7": {
+                "use": false,
+                "name": "朗读",
+                "keystring": ""
+            },
+            "_8": {
+                "use": false,
+                "name": "鼠标穿透窗口",
+                "keystring": ""
+            },
+            "_9": {
+                "use": false,
+                "name": "锁定工具栏",
+                "keystring": ""
+            },
+            "_10": {
+                "use": false,
+                "name": "游戏管理",
+                "keystring": ""
+            },
+            "_11": {
+                "use": false,
+                "name": "选择游戏",
+                "keystring": ""
+            },
+            "_12": {
+                "use": false,
+                "name": "选择文本",
+                "keystring": ""
+            },
+            "_13": {
+                "use": false,
+                "name": "选取OCR范围",
+                "keystring": ""
+            },
+            "_14": {
+                "use": false,
+                "name": "显示/隐藏范围框",
+                "keystring": ""
+            },
+            "_15": {
+                "use": false,
+                "name": "绑定截图窗口",
+                "keystring": ""
+            },
+            "_16": {
+                "use": false,
+                "name": "显示/隐藏翻译窗口",
+                "keystring": ""
+            },
+            "_17": {
+                "use": false,
+                "name": "退出",
+                "keystring": ""
+            },
+            "_18": {
+                "use": false,
+                "name": "字体增大（可长按）",
+                "keystring": ""
+            },
+            "_19": {
+                "use": false,
+                "name": "字体缩小（可长按）",
+                "keystring": ""
+            },
+            "_20": {
+                "use": false,
+                "name": "窗口缩放",
+                "keystring": ""
+            },
+            "_21": {
+                "use": false,
+                "name": "窗口截图",
+                "keystring": ""
+            },
+            "_22": {
+                "use": false,
+                "name": "游戏静音",
+                "keystring": ""
+            },
+            "_23": {
+                "use": false,
+                "name": "选取OCR范围——立即",
+                "keystring": ""
+            },
+            "_25": {
+                "use": false,
+                "name": "Magpie_游戏内叠加层",
+                "keystring": ""
+            },
+            "_26": {
+                "use": false,
+                "name": "进行一次OCR",
+                "keystring": ""
+            },
+            "_27": {
+                "use": false,
+                "name": "模拟按键Enter",
+                "keystring": ""
+            },
+            "_51": {
+                "use": false,
+                "name": "显示/隐藏翻译",
+                "keystring": ""
+            },
+            "_26_1": {
+                "use": false,
+                "name": "再次进行OCR",
+                "keystring": ""
+            },
+            "_28": {
+                "use": false,
+                "name": "复制到剪贴板_翻译",
+                "keystring": ""
+            },
+            "_29": {
+                "use": false,
+                "name": "Anki_录音",
+                "keystring": ""
+            },
+            "_30": {
+                "use": false,
+                "name": "Anki_录音_例句",
+                "keystring": ""
+            },
+            "_31": {
+                "use": false,
+                "name": "画廊_录音",
+                "keystring": ""
+            },
+            "_32": {
+                "use": false,
+                "name": "自动朗读",
+                "keystring": ""
+            }
+        }
+    },
+    "reader": {
+        "huoshantts": {
+            "use": false,
+            "voice": "",
+            "name": "火山TTS",
+            "useproxy": false
+        },
+        "edgetts": {
+            "use": false,
+            "voice": "",
+            "name": "edgeTTS"
+        },
+        "youdaotts": {
+            "use": false,
+            "voice": "",
+            "name": "有道TTS",
+            "useproxy": false
+        },
+        "windowstts": {
+            "use": false,
+            "voice": "",
+            "name": "WindowsTTS",
+            "type": "offline"
+        },
+        "NeoSpeech": {
+            "use": false,
+            "voice": "",
+            "name": "NeoSpeech",
+            "type": "offline"
+        },
+        "voiceroid2": {
+            "use": false,
+            "voice": "",
+            "name": "VoiceRoid2/VoiceRoid+",
+            "args": {
+                "path": ""
+            },
+            "argstype": {
+                "path": {
+                    "type": "file",
+                    "name": "路径",
+                    "dir": true
+                }
+            },
+            "type": "offline"
+        },
+        "voicevox": {
+            "use": false,
+            "voice": "",
+            "name": "VOICEVOX",
+            "args": {
+                "Port": 50021
+            },
+            "argstype": {
+                "Port": {
+                    "type": "intspin",
+                    "min": 1,
+                    "max": 65535,
+                    "step": 1,
+                    "name": "端口号"
+                }
+            },
+            "type": "offline"
+        },
+        "vitsSimpleAPI": {
+            "use": false,
+            "voice": "",
+            "name": "vits-simple-api",
+            "args": {
+                "URL": "http://127.0.0.1:23456",
+                "voices": "/voice/speakers",
+                "speak": "/voice/{model_lower}?text={text}&id={id}&lang=auto&prompt_lang=auto&format=wav&preset=default"
+            },
+            "type": "offline"
+        },
+        "gtts": {
+            "use": false,
+            "name": "GoogleTTS",
+            "voice": ""
+        }
+    },
+    "hirasetting": {
+        "mecab": {
+            "use": true,
+            "name": "MeCab",
+            "args": {
+                "path": "K:/galgame/unidic-csj-MeCab",
+                "downloadlink": "{main_server}/Resource/dictionary/Mecab.zip"
+            },
+            "argstype": {
+                "path": {
+                    "type": "file",
+                    "name": "路径",
+                    "dir": true
+                },
+                "downloadlink": {
+                    "type": "label",
+                    "islink": true,
+                    "name": "下载"
+                }
+            },
+            "type": "offline"
+        },
+        "mojinlt": {
+            "use": false,
+            "name": "mojinlt",
+            "args": {
+                "Moji NLT Token": ""
+            }
+        },
+        "latin": {
+            "use": false,
+            "name": "标点",
+            "type": "offline",
+            "args": {
+                "punctuations": [
+                    " ",
+                    ",",
+                    ".",
+                    "'",
+                    "\"",
+                    "?",
+                    "/",
+                    ";",
+                    ":",
+                    "|",
+                    "\\",
+                    "[",
+                    "]",
+                    "{",
+                    "}",
+                    "-",
+                    "_",
+                    "=",
+                    "+",
+                    "`",
+                    "~",
+                    "!",
+                    "#",
+                    "$",
+                    "%",
+                    "^",
+                    "&",
+                    "*",
+                    "(",
+                    ")"
+                ]
+            },
+            "argstype": {
+                "punctuations": {
+                    "type": "textlist",
+                    "name": "标点",
+                    "header": "标点"
+                }
+            }
+        }
+    },
+    "cishu": {
+        "xiaoxueguan": {
+            "args": {
+                "path": "",
+                "distance": 0,
+                "max_num": 10
+            },
+            "argstype": {
+                "path": {
+                    "type": "file",
+                    "name": "路径",
+                    "dir": false,
+                    "filter": "*.db"
+                },
+                "distance": {
+                    "type": "intspin",
+                    "name": "模糊匹配_编辑距离",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1
+                },
+                "max_num": {
+                    "type": "intspin",
+                    "name": "最大结果条数",
+                    "min": 0,
+                    "max": 9999,
+                    "step": 1
+                }
+            },
+            "use": false,
+            "name": "小学馆",
+            "type": "offline"
+        },
+        "edict": {
+            "use": false,
+            "name": "EDICT",
+            "args": {
+                "path": "",
+                "distance": 0,
+                "max_num": 10
+            },
+            "argstype": {
+                "path": {
+                    "type": "file",
+                    "name": "路径",
+                    "dir": false,
+                    "filter": "*.db"
+                },
+                "distance": {
+                    "type": "intspin",
+                    "name": "模糊匹配_编辑距离",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1
+                },
+                "max_num": {
+                    "type": "intspin",
+                    "name": "最大结果条数",
+                    "min": 0,
+                    "max": 9999,
+                    "step": 1
+                }
+            },
+            "type": "offline"
+        },
+        "edict2": {
+            "use": false,
+            "name": "EDICT2",
+            "args": {
+                "path": "",
+                "distance": 0,
+                "max_num": 10
+            },
+            "argstype": {
+                "path": {
+                    "type": "file",
+                    "name": "路径",
+                    "dir": false
+                },
+                "distance": {
+                    "type": "intspin",
+                    "name": "模糊匹配_编辑距离",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1
+                },
+                "max_num": {
+                    "type": "intspin",
+                    "name": "最大结果条数",
+                    "min": 0,
+                    "max": 9999,
+                    "step": 1
+                }
+            },
+            "type": "offline"
+        },
+        "linggesi": {
+            "use": false,
+            "name": "灵格斯词典",
+            "args": {
+                "path": "",
+                "distance": 0,
+                "max_num": 10
+            },
+            "argstype": {
+                "path": {
+                    "type": "file",
+                    "name": "路径",
+                    "dir": true
+                },
+                "distance": {
+                    "type": "intspin",
+                    "name": "模糊匹配_编辑距离",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1
+                },
+                "max_num": {
+                    "type": "intspin",
+                    "name": "最大结果条数",
+                    "min": 0,
+                    "max": 9999,
+                    "step": 1
+                }
+            },
+            "type": "offline"
+        },
+        "mojidict": {
+            "use": true,
+            "name": "Moji辞书",
+            "useproxy": false
+        },
+        "youdao": {
+            "use": false,
+            "name": "有道词典",
+            "useproxy": false
+        },
+        "jisho": {
+            "use": false,
+            "name": "jisho"
+        },
+        "weblio": {
+            "use": false,
+            "name": "weblio"
+        },
+        "yomichan": {
+            "use": false,
+            "name": "yomichan termbank",
+            "args": {
+                "path": "",
+                "distance": 0,
+                "priority": 100
+            },
+            "argstype": {
+                "path": {
+                    "type": "file",
+                    "name": "路径",
+                    "dir": true
+                },
+                "distance": {
+                    "type": "intspin",
+                    "name": "模糊匹配_编辑距离",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1
+                },
+                "priority": {
+                    "type": "intspin",
+                    "name": "优先级",
+                    "min": 0,
+                    "max": 10000,
+                    "step": 1
+                }
+            }
+        },
+        "goo": {
+            "use": false,
+            "name": "goo"
+        },
+        "mdict": {
+            "use": false,
+            "name": "MDict",
+            "args": {
+                "distance": 0,
+                "paths": [],
+                "max_num": 10,
+                "stylehv": 0
+            },
+            "argstype": {
+                "paths": {
+                    "type": "file",
+                    "name": "路径",
+                    "dirorfile": true,
+                    "multi": true,
+                    "filter": "*.mdx"
+                },
+                "distance": {
+                    "type": "intspin",
+                    "name": "模糊匹配_编辑距离",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1
+                },
+                "max_num": {
+                    "type": "intspin",
+                    "name": "最大结果条数",
+                    "min": 0,
+                    "max": 9999,
+                    "step": 1
+                },
+                "stylehv": {
+                    "type": "combo",
+                    "name": "样式",
+                    "list": [
+                        "Tab",
+                        "Flow"
+                    ]
+                }
+            },
+            "type": "offline"
+        }
+    },
+    "darklight": 0,
+    "darktheme": 0,
+    "lighttheme": 0,
+    "usesearchword": true,
+    "usecopyword": false,
+    "usewordorigin": false,
+    "ttscommon": {
+        "rate": 1,
+        "volume": 100,
+        "tts_repair": false,
+        "tts_repair_regex": [],
+        "tts_repair_use_at_translate": false,
+        "tts_skip": false,
+        "tts_skip_regex": []
+    },
+    "allowmulti": true,
+    "sourcestatus2": {
+        "copy": {
+            "use": false
+        },
+        "ocr": {
+            "use": false
+        },
+        "texthook": {
+            "use": true
+        },
+        "filetrans": {
+            "use": false
+        }
+    },
+    "verticalocr": false,
+    "ocrmergelines": true,
+    "ocr": {
+        "local": {
+            "use": true,
+            "name": "本地OCR",
+            "type": "offline"
+        },
+        "windowsocr": {
+            "use": false,
+            "name": "WindowsOCR",
+            "type": "offline"
+        },
+        "tesseract5": {
+            "use": false,
+            "name": "Tesseract5",
+            "useproxy": true,
+            "type": "offline"
+        },
+        "baiduocr_X": {
+            "use": false,
+            "name": "百度OCR",
+            "useproxy": true
+        },
+        "txocr": {
+            "use": false,
+            "name": "腾讯OCR",
+            "useproxy": true
+        },
+        "txocrtrans": {
+            "use": false,
+            "name": "腾讯图片翻译",
+            "useproxy": true
+        },
+        "feishu": {
+            "use": false,
+            "name": "飞书OCR",
+            "useproxy": true
+        },
+        "ocrspace": {
+            "use": false,
+            "name": "ocrspace",
+            "useproxy": true
+        },
+        "docsumo": {
+            "use": false,
+            "name": "docsumo",
+            "useproxy": true
+        },
+        "googlecloudvision": {
+            "use": false,
+            "name": "Google Cloud Vision",
+            "useproxy": true
+        },
+        "xunfei": {
+            "use": false,
+            "name": "讯飞OCR",
+            "useproxy": true
+        },
+        "youdaocr": {
+            "use": false,
+            "name": "有道OCR",
+            "useproxy": true
+        },
+        "youdaocrtrans": {
+            "use": false,
+            "name": "有道图片翻译",
+            "useproxy": true
+        },
+        "volcengine": {
+            "use": false,
+            "name": "火山OCR",
+            "useproxy": true
+        },
+        "mangaocr": {
+            "use": false,
+            "name": "manga-ocr",
+            "useproxy": true,
+            "type": "offline"
+        },
+        "baiduocr_ts": {
+            "use": false,
+            "name": "百度图片翻译"
+        },
+        "googlelens": {
+            "use": false,
+            "name": "Google Lens"
+        },
+        "youdaodictocr": {
+            "use": false,
+            "name": "有道词典"
+        },
+        "weixinocr": {
+            "use": false,
+            "name": "WeChat/QQ OCR",
+            "type": "offline"
+        },
+        "geminiocr": {
+            "use": false,
+            "name": "GeminiOCR"
+        },
+        "chatgptlike": {
+            "use": false,
+            "name": "ChatGPT_兼容接口"
+        }
+    },
+    "fanyi": {
+        "microsoft": {
+            "use": false,
+            "color": "gray",
+            "name": "microsoft",
+            "useproxy": true
+        },
+        "azure": {
+            "type": "api",
+            "use": false,
+            "color": "pink",
+            "name": "Azure",
+            "useproxy": true
+        },
+        "baidu": {
+            "use": false,
+            "color": "#ff65db",
+            "name": "百度",
+            "useproxy": true
+        },
+        "baidu_ai": {
+            "use": false,
+            "color": "#ff65db",
+            "name": "百度_ait",
+            "useproxy": true
+        },
+        "bing": {
+            "use": false,
+            "color": "#000ff0",
+            "name": "必应",
+            "useproxy": true
+        },
+        "google": {
+            "use": false,
+            "color": "#ff0000",
+            "name": "谷歌",
+            "useproxy": true
+        },
+        "ModernMt": {
+            "use": false,
+            "color": "#ff0000",
+            "name": "ModernMt",
+            "useproxy": true
+        },
+        "qqTranSmart": {
+            "use": false,
+            "color": "#ff0000",
+            "name": "qqTranSmart",
+            "useproxy": true
+        },
+        "googleapi": {
+            "type": "api",
+            "use": false,
+            "color": "#ff0000",
+            "name": "google_api",
+            "useproxy": true
+        },
+        "ali": {
+            "use": false,
+            "color": "#0000ff",
+            "name": "阿里",
+            "useproxy": true
+        },
+        "youdao": {
+            "use": false,
+            "color": "blue",
+            "name": "有道",
+            "useproxy": true
+        },
+        "youdaodict": {
+            "use": false,
+            "color": "#95a5ff",
+            "name": "有道词典",
+            "useproxy": true
+        },
+        "google2": {
+            "use": false,
+            "color": "#95a5ff",
+            "name": "谷歌_v2",
+            "useproxy": true
+        },
+        "sougou": {
+            "use": false,
+            "color": "blue",
+            "name": "搜狗",
+            "useproxy": true
+        },
+        "caiyun": {
+            "use": false,
+            "color": "blue",
+            "name": "彩云",
+            "useproxy": true
+        },
+        "deepl": {
+            "use": false,
+            "color": "blue",
+            "name": "deepl",
+            "useproxy": true
+        },
+        "deepl2": {
+            "use": false,
+            "color": "blue",
+            "name": "deepl_v2",
+            "useproxy": true
+        },
+        "DeepLX": {
+            "use": false,
+            "color": "blue",
+            "name": "DeepLX",
+            "useproxy": false,
+            "type": "offline"
+        },
+        "dev_chatgpt": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "chatgpt",
+            "is_gpt_like": true
+        },
+        "deepl_dev": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "deepl"
+        },
+        "bing_dev": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "必应"
+        },
+        "tx_dev": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "tx"
+        },
+        "baidu_dev": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "百度"
+        },
+        "google_dev": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "谷歌"
+        },
+        "dev_youdao": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "有道"
+        },
+        "dev_sogou": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "搜狗"
+        },
+        "dev_ali": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "阿里"
+        },
+        "dev_yandex": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "yandex"
+        },
+        "dev_niutrans": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "niutrans"
+        },
+        "dev_caiyun": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "彩云"
+        },
+        "gemini": {
+            "type": "api",
+            "use": true,
+            "color": "#ff0000",
+            "name": "gemini",
+            "is_gpt_like": true,
+            "useproxy": true
+        },
+        "jb7": {
+            "type": "offline",
+            "use": false,
+            "color": "#1839f0",
+            "name": "Jbeijing7"
+        },
+        "sugoix": {
+            "type": "offline",
+            "use": false,
+            "color": "#1839f0",
+            "name": "Sugoi"
+        },
+        "kingsoft": {
+            "type": "offline",
+            "use": false,
+            "color": "#1839f0",
+            "name": "金山快译"
+        },
+        "dreye": {
+            "type": "offline",
+            "use": false,
+            "color": "#1839f0",
+            "name": "快译通"
+        },
+        "sougou2": {
+            "use": false,
+            "color": "blue",
+            "name": "搜狗_v2",
+            "useproxy": true
+        },
+        "youdao3": {
+            "use": false,
+            "color": "blue",
+            "name": "有道_v3",
+            "useproxy": true
+        },
+        "youdao5": {
+            "use": false,
+            "color": "blue",
+            "name": "有道_v5",
+            "useproxy": true
+        },
+        "itrans": {
+            "use": false,
+            "color": "blue",
+            "name": "itrans",
+            "useproxy": true
+        },
+        "lingva": {
+            "use": false,
+            "color": "blue",
+            "name": "lingva",
+            "useproxy": true
+        },
+        "reverso": {
+            "use": false,
+            "color": "blue",
+            "name": "reverso",
+            "useproxy": true
+        },
+        "reverso_context": {
+            "use": false,
+            "color": "blue",
+            "name": "reverso_context",
+            "useproxy": true
+        },
+        "TranslateCom": {
+            "use": false,
+            "color": "blue",
+            "name": "TranslateCom",
+            "useproxy": true
+        },
+        "baiduapi": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "百度api",
+            "useproxy": true
+        },
+        "aliyunapi": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "阿里api",
+            "useproxy": true
+        },
+        "tencentapi": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "腾讯api",
+            "useproxy": true
+        },
+        "yandexapi": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "yandex_api",
+            "useproxy": true
+        },
+        "qqimt": {
+            "use": false,
+            "color": "blue",
+            "name": "qqimt",
+            "useproxy": true
+        },
+        "xiaoniu": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "小牛api",
+            "useproxy": true
+        },
+        "huoshan": {
+            "use": false,
+            "color": "blue",
+            "name": "火山",
+            "useproxy": true
+        },
+        "caiyunapi": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "彩云api",
+            "useproxy": true
+        },
+        "huoshanapi": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "火山api",
+            "useproxy": true
+        },
+        "feishu": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "飞书",
+            "useproxy": true
+        },
+        "papago": {
+            "use": false,
+            "color": "blue",
+            "name": "papago",
+            "useproxy": true
+        },
+        "rengong": {
+            "type": "pre",
+            "use": false,
+            "color": "blue",
+            "name": "json翻译文件"
+        },
+        "premt": {
+            "type": "pre",
+            "use": false,
+            "color": "blue",
+            "name": "sqlite翻译记录"
+        },
+        "deeplapi-free": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "deeplapi-free",
+            "useproxy": true
+        },
+        "deeplapi": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "deeplapi",
+            "useproxy": true
+        },
+        "youdaoapi": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "有道api",
+            "useproxy": true
+        },
+        "yunyi2": {
+            "use": false,
+            "color": "blue",
+            "name": "云译_v2",
+            "useproxy": true
+        },
+        "chatgpt": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "ChatGPT",
+            "is_gpt_like": true,
+            "useproxy": true
+        },
+        "cohere": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "cohere",
+            "is_gpt_like": true,
+            "useproxy": true
+        },
+        "claude": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "claude",
+            "is_gpt_like": true,
+            "useproxy": true
+        },
+        "chatgpt-3rd-party": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "ChatGPT_兼容接口",
+            "is_gpt_like": true,
+            "useproxy": true
+        },
+        "hanshant": {
+            "type": "offline",
+            "use": false,
+            "color": "blue",
+            "name": "繁简转换"
+        },
+        "selfbuild": {
+            "type": "offline",
+            "use": false,
+            "color": "blue",
+            "name": "自定义翻译",
+            "lang": {}
+        },
+        "ibm": {
+            "use": false,
+            "type": "api",
+            "color": "blue",
+            "name": "ibm api",
+            "useproxy": true
+        },
+        "ort_sp": {
+            "use": false,
+            "type": "offline",
+            "color": "blue",
+            "name": "MT5"
+        },
+        "sakura": {
+            "use": false,
+            "type": "offline",
+            "color": "blue",
+            "name": "Sakura大模型",
+            "is_gpt_like": true
+        },
+        "chatgpt-offline": {
+            "use": false,
+            "type": "offline",
+            "color": "blue",
+            "name": "ChatGPT_兼容接口",
+            "is_gpt_like": true
+        },
+        "TGW": {
+            "use": false,
+            "type": "offline",
+            "color": "blue",
+            "name": "TGW语言模型",
+            "is_gpt_like": true
+        },
+        "dev_theb": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "Theb.ai",
+            "is_gpt_like": true
+        },
+        "dev_moonshot": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "moonshot",
+            "is_gpt_like": true
+        },
+        "dev_qwen": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "qianwen",
+            "is_gpt_like": true
+        },
+        "dev_chatglm": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "chatglm",
+            "is_gpt_like": true
+        },
+        "dev_deepseek": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "deepseek",
+            "is_gpt_like": true
+        },
+        "dev_chatgpt_mirror": {
+            "use": false,
+            "color": "blue",
+            "type": "dev",
+            "name": "chatgpt mirror",
+            "is_gpt_like": true
+        },
+        "eztrans": {
+            "type": "offline",
+            "use": false,
+            "color": "#1839f0",
+            "name": "ezTrans"
+        },
+        "txhunyuan": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "腾讯混元大模型",
+            "is_gpt_like": true
+        },
+        "baiduqianfan": {
+            "type": "api",
+            "use": false,
+            "color": "blue",
+            "name": "百度千帆大模型",
+            "is_gpt_like": true
+        },
+        "realtime_edit": {
+            "use": false,
+            "type": "pre",
+            "color": "blue",
+            "name": "实时编辑"
+        }
+    },
+    "magpiepath": "",
+    "minifollow": false,
+    "movefollow": false,
+    "focusfollow": false,
+    "focusnotop": false,
+    "autostarthook": true,
+    "minlength": 8,
+    "maxlength": 1000,
+    "maxoriginlength": 1000,
+    "srclang3": 1,
+    "tgtlang3": 0,
+    "transkiroku": false,
+    "transkirokuuse": "baidu",
+    "showatcenter": false,
+    "image_analyse": true,
+    "time_period": false,
+    "ocr_auto_method": 0,
+    "ocr_presolve_method": 0,
+    "binary_thresh": 128,
+    "ocr_interval": 5,
+    "mustocr_interval": 5,
+    "ocrmininterval": 1,
+    "selectable": false,
+    "autoupdate": true,
+    "gongxiangcishu": {
+        "use": false,
+        "path": ""
+    },
+    "proxies": null,
+    "labelset": [],
+    "backupsavedatato": "",
+    "xxxcast": true,
+    "lastapppath": "K:\\galgame\\LunaTranslator",
+    "ocrautobindhwnd": true,
+    "WindowEffect": 0,
+    "WindowEffect_shadow": false,
+    "global_list_opened": true,
+    "read_translator2": "microsoft",
+    "useextrahtml": true,
+    "network_websocket": 1,
+    "webview_textbrowser": false,
+    "primitivtemetaorigin": "vid",
+    "rendertext_using": "textbrowser",
+    "rendertext_using_internal": {
+        "webview": "yinying",
+        "textbrowser": "yinying"
+    },
+    "gptpromptdict": [],
+    "rendertext": {
+        "webview": {
+            "normal": {
+                "name": "普通字体"
+            },
+            "yinying": {
+                "name": "阴影字体",
+                "args": {
+                    "fillcolor": "#eeeeee",
+                    "shadowforce": 5,
+                    "shadowR": 0.1,
+                    "shadowR_ex": 3
+                },
+                "argstype": {
+                    "fillcolor": {
+                        "name": "填充颜色",
+                        "type": "colorselect"
+                    },
+                    "shadowforce": {
+                        "name": "阴影强度",
+                        "type": "intspin",
+                        "min": 1,
+                        "max": 100,
+                        "step": 1
+                    },
+                    "shadowR": {
+                        "name": "阴影半径",
+                        "type": "spin",
+                        "min": 0,
+                        "max": 10,
+                        "step": 0.01
+                    },
+                    "shadowR_ex": {
+                        "name": "阴影半径",
+                        "type": "spin",
+                        "min": 0,
+                        "max": 100,
+                        "step": 0.1
+                    }
+                }
+            },
+            "miaobian0": {
+                "name": "描边字体_1",
+                "args": {
+                    "fillcolor": "#eeeeee",
+                    "width": 1
+                },
+                "argstype": {
+                    "fillcolor": {
+                        "name": "填充颜色",
+                        "type": "colorselect"
+                    },
+                    "width": {
+                        "name": "描边宽度",
+                        "type": "spin",
+                        "min": 0,
+                        "max": 100,
+                        "step": 0.1
+                    }
+                }
+            },
+            "miaobian1": {
+                "name": "描边字体_2",
+                "args": {
+                    "fillcolor": "#eeeeee",
+                    "width_rate": 0.1,
+                    "width": 3,
+                    "trace": 0,
+                    "reverse": true
+                },
+                "argstype": {
+                    "reverse": {
+                        "name": "反转颜色",
+                        "type": "switch"
+                    },
+                    "fillcolor": {
+                        "name": "填充颜色",
+                        "type": "colorselect"
+                    },
+                    "width": {
+                        "name": "描边宽度",
+                        "type": "spin",
+                        "min": 0,
+                        "max": 100,
+                        "step": 0.1
+                    },
+                    "width_rate": {
+                        "name": "描边宽度",
+                        "type": "spin",
+                        "min": 0,
+                        "max": 10,
+                        "step": 0.01
+                    },
+                    "trace": {
+                        "name": "投影距离",
+                        "type": "spin",
+                        "min": 0,
+                        "max": 100,
+                        "step": 0.1
+                    }
+                }
+            }
+        },
+        "textbrowser": {
+            "normal": {
+                "name": "普通字体"
+            },
+            "miaobian0": {
+                "name": "描边字体_1",
+                "args": {
+                    "fillcolor": "#eeeeee",
+                    "width": 1
+                },
+                "argstype": {
+                    "fillcolor": {
+                        "name": "填充颜色",
+                        "type": "colorselect"
+                    },
+                    "width": {
+                        "name": "描边宽度",
+                        "type": "spin",
+                        "min": 0.1,
+                        "max": 100,
+                        "step": 0.1
+                    }
+                }
+            },
+            "miaobian1": {
+                "name": "描边字体_2",
+                "args": {
+                    "fillcolor": "#eeeeee",
+                    "width_rate": 0.1,
+                    "width": 3,
+                    "trace": 0,
+                    "reverse": true
+                },
+                "argstype": {
+                    "reverse": {
+                        "name": "反转颜色",
+                        "type": "switch"
+                    },
+                    "fillcolor": {
+                        "name": "填充颜色",
+                        "type": "colorselect"
+                    },
+                    "width": {
+                        "name": "描边宽度",
+                        "type": "spin",
+                        "min": 0,
+                        "max": 100,
+                        "step": 0.1
+                    },
+                    "width_rate": {
+                        "name": "描边宽度",
+                        "type": "spin",
+                        "min": 0,
+                        "max": 10,
+                        "step": 0.01
+                    },
+                    "trace": {
+                        "name": "投影距离",
+                        "type": "spin",
+                        "min": 0,
+                        "max": 100,
+                        "step": 0.1
+                    }
+                }
+            },
+            "yinying": {
+                "name": "阴影字体",
+                "args": {
+                    "fillcolor": "#eeeeee",
+                    "shadowforce": 5,
+                    "shadowR": 1,
+                    "shadowR_ex": 3
+                },
+                "argstype": {
+                    "fillcolor": {
+                        "name": "填充颜色",
+                        "type": "colorselect"
+                    },
+                    "shadowforce": {
+                        "name": "阴影强度",
+                        "type": "intspin",
+                        "min": 1,
+                        "max": 100,
+                        "step": 1
+                    },
+                    "shadowR": {
+                        "name": "阴影半径",
+                        "type": "spin",
+                        "min": 0,
+                        "max": 10,
+                        "step": 0.01
+                    },
+                    "shadowR_ex": {
+                        "name": "阴影半径",
+                        "type": "spin",
+                        "min": 0,
+                        "max": 100,
+                        "step": 0.1
+                    }
+                }
+            }
+        }
+    },
+    "metadata": {
+        "vndb": {
+            "auto": true,
+            "name": "vndb",
+            "downloadtasks": [],
+            "searchfordatatasks": [],
+            "useproxy": false,
+            "target": "vid",
+            "args": {
+                "Token": ""
+            }
+        },
+        "dlsite": {
+            "auto": false,
+            "name": "dlsite",
+            "downloadtasks": [],
+            "searchfordatatasks": [],
+            "useproxy": true,
+            "target": "dlsiteid"
+        },
+        "bangumi": {
+            "auto": true,
+            "name": "bangumi",
+            "downloadtasks": [],
+            "searchfordatatasks": [],
+            "useproxy": true,
+            "target": "bgmsid",
+            "args": {
+                "access-token": ""
+            }
+        },
+        "fanza": {
+            "auto": false,
+            "name": "FanzaGames",
+            "downloadtasks": [],
+            "searchfordatatasks": [],
+            "useproxy": true,
+            "target": "fanzaid"
+        },
+        "steam": {
+            "auto": false,
+            "name": "steam",
+            "downloadtasks": [],
+            "searchfordatatasks": [],
+            "useproxy": true,
+            "target": "steamid",
+            "args": {
+                "userid": "",
+                "steamLoginSecure": ""
+            }
+        }
+    },
+    "buttonsize2": 18,
+    "fix_translate_rank": false,
+    "fix_translate_rank_rank": [
+        "gemini"
+    ],
+    "cishuvisrank": [
+        "mojidict"
+    ],
+    "ignoredict": [],
+    "qwebinspectgeo": [
+        100,
+        100,
+        800,
+        400
+    ],
+    "geo_extrahtml": [
+        100,
+        100,
+        1000,
+        300
+    ],
+    "savegamedialoggeo3": [
+        100,
+        100,
+        1200,
+        600
+    ],
+    "codepage_index": 0,
+    "currvislistuid": null,
+    "ocr_stable_sim2": 0,
+    "fontsizeori": 17.0,
+    "extra_space_trans": 0,
+    "backcolor_tool": "#000000",
+    "transparent_tool": 27,
+    "global_namemap2": [],
+    "buttoncolor2": "#FF69B4",
+    "buttoncolor3": "#afafaf",
+    "buttoncolor_1": "#ff03f2",
+    "gamemanageruseversion": 0,
+    "gamemanager_integrated_internal_layout": 0,
+    "disappear_delay_tool": 1,
+    "mousetransparent": false,
+    "adaptive_height": true,
+    "backtransparent": false,
+    "showbold_trans": false,
+    "github": {
+        "versioncheck": {
+            "useproxy": false
+        },
+        "download": {
+            "useproxy": true
+        }
+    },
+    "darklight2": 0,
+    "ZoomFactor": 1,
+    "realtime_edit_target": "realtime_edit",
+    "srclang4": "ja",
+    "tgtlang4": "zh",
+    "ocr_trigger_delay": 0,
+    "ocr_trigger_events": [
+        {
+            "vkey": "LBUTTON",
+            "event": 0
+        },
+        {
+            "vkey": "ENTER",
+            "event": 0
+        },
+        {
+            "vkey": "CTRL",
+            "event": 1
+        },
+        {
+            "vkey": "ALT",
+            "event": 1
+        },
+        {
+            "vkey": "SHIFT",
+            "event": 1
+        }
+    ],
+    "viewlistpos": 0,
+    "noundictconfig": [],
+    "languageuse2": "zh",
+    "lastvisday": "2024-08-23",
+    "transparent_EX": false,
+    "update": {
+        "lunatranslator": {
+            "useproxy": false,
+            "name": "lunatranslator.org"
+        },
+        "github": {
+            "useproxy": true,
+            "name": "GitHub"
+        }
+    }
+}

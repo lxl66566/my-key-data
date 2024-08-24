@@ -1,0 +1,381 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.guides.bracketPairs": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.accessibilitySupport": "off",
+  "editor.linkedEditing": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Fira Code, Consolas, monospace",
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hant": true
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+      "*.unsafe:rust": "#ecd06d"
+    }
+  },
+  "extensions.ignoreRecommendations": true,
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.list.smoothScrolling": true,
+  "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.option"
+  },
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.fileNesting.patterns": {
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "files.autoGuessEncoding": true,
+  "window.commandCenter": false,
+  "git.openRepositoryInParentFolders": "never",
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+
+  // extension
+
+  "clangd.checkUpdates": false,
+  "clangd.path": "c:\\Users\\lxl\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\18.1.3\\clangd_18.1.3\\bin\\clangd.exe",
+  "rome_lsp.trace.server": "messages",
+  "rome.rename": true,
+  "rome.requireConfiguration": false,
+  "redhat.telemetry.enabled": false,
+  "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
+  "rust-analyzer.cargo.sysroot": "discover",
+  "rust-analyzer.diagnostics.experimental.enable": true,
+  "rust-analyzer.showUnlinkedFileNotification": false,
+  "rust-analyzer.runnables.extraEnv": { "RUST_LOG": "debug" },
+  "rust-analyzer.testExplorer": true,
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
+  // "rust-analyzer.check.targets": ["x86_64-unknown-linux-gnu", "x86_64-pc-windows-msvc"],
+  "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+  "markdown.validate.enabled": false,
+  "Codegeex.Privacy": true,
+  "Codegeex.Comment.LanguagePreference": "中文",
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.callArgumentNames": "all",
+  "python.analysis.typeCheckingMode": "standard",
+  "pylyzer.inlayHints": true,
+  "svelte.enable-ts-plugin": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "evenBetterToml.schema.repositoryEnabled": false,
+  "code-runner.runInTerminal": true,
+  "remote.SSH.connectTimeout": 30,
+  "typst-lsp.experimentalFormatterMode": "on",
+  "typst-preview.pinPreviewFile": true,
+  "tinymist.exportPdf": "onSave",
+  "tinymist.formatterMode": "typstyle",
+  "accessibility.voice.speechLanguage": "zh-CN",
+  "fittencode.languagePreference.displayPreference": "zh-cn",
+  "fittencode.languagePreference.commentPreference": "zh-cn",
+  "fittencode.action.startChat.showInEditorContextMenu": false,
+  "fittencode.Unit Test Framework.Python": "unittest",
+  "nix.enableLanguageServer": true, // Enable LSP.
+  "nix.serverPath": "nil", // The path to the LSP server executable.
+  "nix.serverSettings": {
+    "nil": {
+      "formatting": { "command": ["nixfmt"] }
+    }
+  },
+  "docker.environment": {
+    "DOCKER_HOST": "ssh://xline"
+  },
+
+  // for languages
+
+  "anyformatter": {
+    "toml": { "command": "taplo fmt -" }
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {},
+  "[css]": {},
+  "[jsonc]": {},
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "java.configuration.runtimes": [
+    {
+      "name": "OpenJDK-22",
+      "path": "D:/scoop/apps/openjdk22/current",
+      "default": true
+    }
+  ],
+  // "java.configuration.runtimes": [
+  //   {
+  //     "name": "OpenJDK-22",
+  //     "path": "D:/scoop/apps/openjdk22/current",
+  //     "default": true
+  //   }
+  // ],
+  "[javascript]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[c]": {
+    // "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[h]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "lxl66566.anyformatter-vscode"
+  },
+  "ktfmt.path-to-jar": "D:/no_install_software/ktfmt-0.50-jar-with-dependencies.jar",
+  "[kotlin]": {
+    "editor.defaultFormatter": "crdrost.ktfmt"
+  },
+  "[kotlinscript]": {
+    "editor.defaultFormatter": "crdrost.ktfmt"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[octave]": {
+    "editor.defaultFormatter": "tusindfryd.octave-formatter"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "shakram02.bash-beautify"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+  "[typst]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist"
+  },
+  "[nix]": {
+    "editor.defaultFormatter": "brettm12345.nixfmt-vscode"
+  },
+  "[clojure]": {
+    "editor.defaultFormatter": "betterthantomorrow.calva"
+  },
+  "externalFormatters.languages": {
+    "toml": {
+      "command": "taplo",
+      "arguments": ["fmt"]
+    }
+  },
+
+  // linter
+
+  "sonarlint.rules": {
+    "python:S125": {
+      "level": "off"
+    },
+    "java:S106": {
+      "level": "off"
+    },
+    "java:S100": {
+      "level": "off"
+    },
+    "java:S125": {
+      "level": "off"
+    },
+    "java:S2293": {
+      "level": "off"
+    },
+    "java:S101": {
+      "level": "off"
+    },
+    "java:S1602": {
+      "level": "off"
+    },
+    "java:S1659": {
+      "level": "off"
+    },
+    "java:S3973": {
+      "level": "off"
+    },
+    "java:S117": {
+      "level": "off"
+    },
+    "java:S135": {
+      "level": "off"
+    },
+    "java:S115": {
+      "level": "off"
+    },
+    "python:S3776": {
+      "level": "off"
+    },
+    "java:S1186": {
+      "level": "off"
+    },
+    "python:S117": {
+      "level": "off"
+    },
+    "java:S116": {
+      "level": "off"
+    },
+    "java:S3776": {
+      "level": "off"
+    },
+    "javascript:S125": {
+      "level": "off"
+    },
+    "typescript:S125": {
+      "level": "off"
+    },
+    "python:S1192": {
+      "level": "off"
+    },
+    "python:S1542": {
+      "level": "off"
+    },
+    "python:S101": {
+      "level": "off"
+    },
+    "javascript:S3358": {
+      "level": "off"
+    },
+    "Web:TableWithoutCaptionCheck": {
+      "level": "off"
+    },
+    "python:S2208": {
+      "level": "off"
+    }
+  },
+  "errorLens.excludeBySource": ["Java(1610612976)"],
+  "prettier.printWidth": 160,
+  "prettier.trailingComma": "all",
+
+  // vim
+
+  "vim.useSystemClipboard": true,
+  "vim.history": 100,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["x"], "after": ["\"", "_", "x"] },
+    { "before": ["X"], "after": ["\"", "_", "X"] },
+    { "before": ["("], "after": ["s", "(", ")", "<esc>", "h", "p", "l"] },
+    { "before": ["["], "after": ["s", "[", "]", "<esc>", "h", "p", "l"] },
+    { "before": ["{"], "after": ["s", "{", "}", "<esc>", "h", "p", "l"] },
+    { "before": ["h"], "after": ["i"] },
+    { "before": ["i"], "after": ["k"] },
+    { "before": ["k"], "after": ["j"] },
+    { "before": ["j"], "after": ["h"] },
+    { "before": ["<C-x>"], "commands": ["editor.action.clipboardCutAction"] }
+  ],
+  "vim.insertModeKeyBindings": [
+    // { "before": ["j", "j"], "after": ["<esc>"] }
+    // { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
+    // { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
+    // { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
+    // { "before": ["<C-x>"], "commands": ["editor.action.clipboardCutAction"] },
+    // { "before": ["<C-a>"], "commands": ["editor.action.selectAll"] }
+  ],
+  "vim.normalModeKeyBindings": [
+    // { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
+    // { "before": ["<C-s>"], "commands": ["workbench.action.files.save"] },
+    // { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
+    // { "before": ["<C-a>"], "commands": ["editor.action.selectAll"] }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["x"], "after": ["\"", "_", "x"] },
+    { "before": ["h"], "after": ["i"] },
+    { "before": ["i"], "after": ["k"] },
+    { "before": ["k"], "after": ["j"] },
+    { "before": ["j"], "after": ["h"] },
+    { "before": ["X"], "after": ["\"", "_", "X"] },
+    { "before": ["d", "x"], "after": ["\"", "_", "d", "d"] }
+  ],
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-e>": false,
+    "<C-s>": false,
+    "<C-d>": false,
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-w>": false,
+    "<C-x>": false,
+    "<C-r>": false
+  },
+
+  // terminal
+  // windows
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+      // "args": ["/K chcp 65501 >nul", "\n"]
+    },
+    "Command Prompt": {
+      "path": ["${env:windir}\\System32\\cmd.exe", "${env:windir}\\Sysnative\\cmd.exe"],
+      "args": ["/K chcp 65001 >nul", "\n"],
+      "icon": "terminal-cmd"
+    },
+    "Bash": {
+      "path": "D:\\scoop\\shims\\bash.exe"
+    },
+    "Nushell": {
+      "path": "C:/Users/lxl/bpm/bin/nu.cmd",
+      "icon": "star-add"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Nushell",
+  "terminal.external.windowsExec": "D:\\scoop\\shims\\bash.exe",
+
+  // linux
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "fish": {
+      "path": "/usr/bin/fish"
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "fish (2)",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.persistentSessionScrollback": 1000,
+  "terminal.integrated.scrollback": 3000,
+  "clangd.arguments": ["--enable-config"]
+}

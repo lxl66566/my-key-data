@@ -1,0 +1,40 @@
+[safe]
+	directory = *
+[user]
+	email = <lxl66566@gmail.com>
+	name = lxl66566
+[credential "https://e.coding.net"]
+	provider = generic
+[core]
+	quotepath = false
+	autocrlf = true
+	pager = delta
+	excludesfile = ~/.gitignore_g
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[push]
+	default = current
+	autoSetupRemote = true
+	useForceIfIncludes = true
+[pull]
+	autoSetupRemote = true
+[http]
+	proxy = http://127.0.0.1:10450
+[diff]
+	algorithm = histogram
+	colorMoved = default
+[credential "helperselector"]
+	selected = manager
+[init]
+	defaultBranch = main
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true    # use n and N to move between diff sections
+[merge]
+  conflictstyle = diff3
+[rebase]
+	autoSquash = true
