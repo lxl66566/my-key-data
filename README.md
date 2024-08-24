@@ -38,3 +38,7 @@ time record data of my windows computer. needs [Tai](https://github.com/Planshit
 ### 手心输入法词库
 
 如题。由于包含敏感信息，故加密。
+
+## 其他加密
+
+`.enc` 结尾文件使用 [git-simple-encrypt](https://github.com/lxl66566/git-simple-encrypt) 加密，密码为我的 wifi 密码，用于不算特别重要的文件的加密。
