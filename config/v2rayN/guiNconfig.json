@@ -1,0 +1,238 @@
+{
+  "indexId": "5377924872875466006",
+  "subIndexId": "4656355953266098056",
+  "sysProxyType": 1,
+  "systemProxyExceptions": "",
+  "systemProxyAdvancedProtocol": null,
+  "coreBasicItem": {
+    "logEnabled": false,
+    "loglevel": "info",
+    "muxEnabled": true,
+    "defAllowInsecure": false,
+    "defFingerprint": "randomized",
+    "defUserAgent": null
+  },
+  "tunModeItem": {
+    "enableTun": false,
+    "strictRoute": false,
+    "stack": null,
+    "mtu": 9000,
+    "enableExInbound": false
+  },
+  "kcpItem": {
+    "mtu": 1350,
+    "tti": 50,
+    "uplinkCapacity": 12,
+    "downlinkCapacity": 100,
+    "congestion": false,
+    "readBufferSize": 2,
+    "writeBufferSize": 2
+  },
+  "grpcItem": {
+    "idle_timeout": 60,
+    "health_check_timeout": 20,
+    "permit_without_stream": false,
+    "initial_windows_size": 0
+  },
+  "routingBasicItem": {
+    "domainStrategy": "AsIs",
+    "domainStrategy4Singbox": null,
+    "domainMatcher": null,
+    "routingIndexId": "5158291601765611759",
+    "enableRoutingAdvanced": false
+  },
+  "guiItem": {
+    "autoRun": false,
+    "enableStatistics": true,
+    "keepOlderDedupl": false,
+    "ignoreGeoUpdateCore": false,
+    "autoUpdateInterval": 10,
+    "checkPreReleaseUpdate": false,
+    "enableSecurityProtocolTls13": true,
+    "trayMenuServersLimit": 20,
+    "enableHWA": false,
+    "enableLog": true
+  },
+  "uiItem": {
+    "enableAutoAdjustMainLvColWidth": true,
+    "mainWidth": 933.6,
+    "mainHeight": 700.8000000000001,
+    "mainGirdHeight1": 260.0,
+    "mainGirdHeight2": 248.0,
+    "colorModeDark": true,
+    "followSystemTheme": false,
+    "colorPrimaryName": null,
+    "currentLanguage": "zh-Hans",
+    "currentFontFamily": null,
+    "currentFontSize": 15,
+    "enableDragDropSort": true,
+    "doubleClick2Activate": true,
+    "autoHideStartup": true,
+    "mainMsgFilter": "",
+    "showTrayTip": false,
+    "mainColumnItem": [
+      {
+        "Name": "configType",
+        "Width": 80,
+        "Index": 0
+      },
+      {
+        "Name": "remarks",
+        "Width": 98,
+        "Index": 1
+      },
+      {
+        "Name": "address",
+        "Width": 351,
+        "Index": 2
+      },
+      {
+        "Name": "port",
+        "Width": 63,
+        "Index": 3
+      },
+      {
+        "Name": "security",
+        "Width": 94,
+        "Index": 13
+      },
+      {
+        "Name": "network",
+        "Width": 94,
+        "Index": 11
+      },
+      {
+        "Name": "streamSecurity",
+        "Width": 59,
+        "Index": 12
+      },
+      {
+        "Name": "subRemarks",
+        "Width": 94,
+        "Index": 10
+      },
+      {
+        "Name": "delayVal",
+        "Width": 95,
+        "Index": 4
+      },
+      {
+        "Name": "speedVal",
+        "Width": 102,
+        "Index": 5
+      },
+      {
+        "Name": "todayUp",
+        "Width": 94,
+        "Index": 9
+      },
+      {
+        "Name": "todayDown",
+        "Width": 94,
+        "Index": 8
+      },
+      {
+        "Name": "totalUp",
+        "Width": 79,
+        "Index": 6
+      },
+      {
+        "Name": "totalDown",
+        "Width": 79,
+        "Index": 7
+      }
+    ]
+  },
+  "constItem": {
+    "defIEProxyExceptions": "localhost;127.*;10.*;172.16.*;172.17.*;172.18.*;172.19.*;172.20.*;172.21.*;172.22.*;172.23.*;172.24.*;172.25.*;172.26.*;172.27.*;172.28.*;172.29.*;172.30.*;172.31.*;192.168.*",
+    "subConvertUrl": ""
+  },
+  "speedTestItem": {
+    "speedTestTimeout": 10,
+    "speedTestUrl": "http://cachefly.cachefly.net/10mb.test",
+    "speedPingTestUrl": "https://www.google.com/generate_204"
+  },
+  "mux4Sbox": {
+    "protocol": "h2mux",
+    "max_connections": 4,
+    "min_streams": 4,
+    "max_streams": 0,
+    "padding": true
+  },
+  "inbound": [
+    {
+      "localPort": 10449,
+      "protocol": "socks",
+      "udpEnabled": true,
+      "sniffingEnabled": true,
+      "routeOnly": false,
+      "allowLANConn": true,
+      "newPort4LAN": false,
+      "user": "",
+      "pass": ""
+    }
+  ],
+  "globalHotkeys": [
+    {
+      "eGlobalHotkey": 0,
+      "Alt": false,
+      "Control": false,
+      "Shift": false,
+      "KeyCode": 0
+    },
+    {
+      "eGlobalHotkey": 1,
+      "Alt": true,
+      "Control": false,
+      "Shift": true,
+      "KeyCode": 62
+    },
+    {
+      "eGlobalHotkey": 2,
+      "Alt": true,
+      "Control": false,
+      "Shift": true,
+      "KeyCode": 44
+    },
+    {
+      "eGlobalHotkey": 3,
+      "Alt": false,
+      "Control": false,
+      "Shift": false,
+      "KeyCode": 0
+    },
+    {
+      "eGlobalHotkey": 4,
+      "Alt": false,
+      "Control": false,
+      "Shift": false,
+      "KeyCode": 0
+    }
+  ],
+  "coreTypeItem": [
+    {
+      "configType": 1,
+      "coreType": 2
+    },
+    {
+      "configType": 2,
+      "coreType": 2
+    },
+    {
+      "configType": 3,
+      "coreType": 2
+    },
+    {
+      "configType": 4,
+      "coreType": 2
+    },
+    {
+      "configType": 5,
+      "coreType": 2
+    },
+    {
+      "configType": 6,
+      "coreType": 2
+    }
+  ]
+}
