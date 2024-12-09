@@ -50,7 +50,7 @@ windows_bk(){
     # other games
     cp -fu 'D:/software/osu!/collection.db' "./other_games/osu"
     cp -fu 'D:/software/osu!/scores.db' "./other_games/osu"
-    cp -rfu 'C:/ProgramData/PopCap Games/PlantsVsZombies/pvzHE/yourdata' "./other_games/PVZ_hybrid"
+    # cp -rfu 'C:/ProgramData/PopCap Games/PlantsVsZombies/pvzHE/yourdata' "./other_games/PVZ_hybrid"
     
     # browser
     # cp -rfu "C:/Users/lxl/AppData/Local/Microsoft/Edge/User Data/Default/Bookmarks" ./Browser/Bookmarks

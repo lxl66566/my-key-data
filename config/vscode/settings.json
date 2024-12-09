@@ -45,6 +45,7 @@
   "git.autofetch": false, // 开了以后在 fetch 途中执行 git 命令会出问题
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
+  "update.showReleaseNotes": false,
 
   // extension
 
@@ -56,11 +57,14 @@
     "requirements.txt": true,
     "typst": true
   },
+  "continue.enableTabAutocomplete": false,
   "Lingma.PreferredLanguage forCommitMessage": "English",
   "rome_lsp.trace.server": "messages",
   "rome.rename": true,
   "rome.requireConfiguration": false,
   "redhat.telemetry.enabled": false,
+  "ruff.lint.ignore": ["E731"],
+  "ruff.nativeServer": "auto",
   "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
   "rust-analyzer.cargo.sysroot": "discover",
   "rust-analyzer.diagnostics.experimental.enable": true,
@@ -69,6 +73,7 @@
   "rust-analyzer.testExplorer": true,
   "rust-analyzer.check.command": "clippy",
   "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
+  "rust-analyzer.initializeStopped": true,
   // "rust-analyzer.check.targets": ["x86_64-unknown-linux-gnu", "x86_64-pc-windows-msvc"],
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
   "markdown.validate.enabled": false,
@@ -87,6 +92,8 @@
   "evenBetterToml.schema.repositoryEnabled": false,
   "code-runner.runInTerminal": true,
   "remote.SSH.connectTimeout": 30,
+  "supermaven.allowGitignore": true,
+  "supermaven.enableFixWithSupermaven": false,
   "typst-lsp.experimentalFormatterMode": "on",
   "typst-preview.pinPreviewFile": true,
   "tinymist.exportPdf": "onSave",
@@ -103,18 +110,17 @@
       "formatting": { "command": ["nixfmt"] }
     }
   },
-  "docker.environment": {
-    "DOCKER_HOST": "ssh://xline"
-  },
 
   // for languages
 
-  "anyformatter": {
-    "toml": { "command": "taplo fmt -" }
-  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "java.format.enabled": false,
+  "java.format.settings.google.version": "1.24.0",
   "[html]": {},
   "[css]": {},
+  "[clojure]": {
+    "editor.defaultFormatter": "pedrorgirardi.vscode-cljfmt"
+  },
   "[jsonc]": {},
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
@@ -123,8 +129,8 @@
       "source.organizeImports": "explicit"
     }
   },
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
+  "[java][gradle]": {
+    "files.trimTrailingWhitespace": false
   },
   "java.configuration.runtimes": [
     {
@@ -133,15 +139,8 @@
       "default": true
     }
   ],
-  // "java.configuration.runtimes": [
-  //   {
-  //     "name": "OpenJDK-22",
-  //     "path": "D:/scoop/apps/openjdk22/current",
-  //     "default": true
-  //   }
-  // ],
   "[javascript][typescript]": {
-    "editor.defaultFormatter": "rome.rome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[c][h][cpp]": {
     // "editor.defaultFormatter": "xaver.clang-format"
@@ -156,7 +155,7 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[toml]": {
-    "editor.defaultFormatter": "lxl66566.anyformatter-vscode"
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "ktfmt.path-to-jar": "D:/no_install_software/ktfmt-0.50-jar-with-dependencies.jar",
   "[kotlin][kotlinscript]": {
@@ -173,9 +172,6 @@
       "strings": "on",
       "other": "on"
     }
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
   },
   "[octave]": {
     "editor.defaultFormatter": "tusindfryd.octave-formatter"

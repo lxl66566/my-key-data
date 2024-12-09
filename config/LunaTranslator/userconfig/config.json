@@ -54,7 +54,9 @@
         "changecharset": false,
         "changecharset_charset": 2,
         "limittextlength_use": false,
-        "limittextlength_length": 40
+        "limittextlength_length": 40,
+        "translator_2": 0,
+        "use_appointed_translate": false
     },
     "requestinterval": 1,
     "keepontop": true,
@@ -90,8 +92,8 @@
         "dedump"
     ],
     "transoptimi": {
-        "noundict": false,
-        "transerrorfix": false,
+        "noundict": true,
+        "transerrorfix": true,
         "gongxiangcishu": false,
         "vndbnamemap": false,
         "myprocess": false,
@@ -110,10 +112,10 @@
     "yuanjiao_r": 0,
     "yuanjiao_merge": false,
     "transuigeo": [
-        214,
-        698,
+        180,
+        660,
         1200,
-        498
+        105
     ],
     "hist_geo": [
         100,
@@ -140,8 +142,8 @@
         400
     ],
     "selecthookgeo": [
-        149,
-        430,
+        120,
+        118,
         1200,
         600
     ],
@@ -164,9 +166,9 @@
         800
     ],
     "sw_geo": [
-        630,
-        134,
-        500,
+        600,
+        73,
+        510,
         500
     ],
     "multiregion": false,
@@ -245,8 +247,8 @@
     "settingfonttype": "Arial",
     "showintab_sub": false,
     "setting_geo_2": [
-        194,
-        115,
+        201,
+        92,
         1200,
         600
     ],
@@ -870,6 +872,11 @@
                 "use": false,
                 "name": "Anki_添加",
                 "keystring": ""
+            },
+            "_14_1": {
+                "use": false,
+                "name": "清除OCR范围",
+                "keystring": ""
             }
         }
     },
@@ -1158,12 +1165,12 @@
             "type": "offline"
         },
         "mojidict": {
-            "use": false,
+            "use": true,
             "name": "Moji辞书",
             "useproxy": false
         },
         "youdao": {
-            "use": true,
+            "use": false,
             "name": "有道词典",
             "useproxy": false
         },
@@ -1250,6 +1257,10 @@
                 }
             },
             "type": "offline"
+        },
+        "japandict": {
+            "use": false,
+            "name": "JapanDict"
         }
     },
     "darklight": 0,
@@ -1303,12 +1314,12 @@
         },
         "baiduocr_X": {
             "use": false,
-            "name": "百度OCR",
+            "name": "百度",
             "useproxy": true
         },
         "txocr": {
             "use": false,
-            "name": "腾讯OCR",
+            "name": "腾讯",
             "useproxy": true
         },
         "txocrtrans": {
@@ -1318,7 +1329,7 @@
         },
         "feishu": {
             "use": false,
-            "name": "飞书OCR",
+            "name": "飞书",
             "useproxy": true
         },
         "ocrspace": {
@@ -1338,12 +1349,12 @@
         },
         "xunfei": {
             "use": false,
-            "name": "讯飞OCR",
+            "name": "讯飞",
             "useproxy": true
         },
         "youdaocr": {
             "use": false,
-            "name": "有道OCR",
+            "name": "有道",
             "useproxy": true
         },
         "youdaocrtrans": {
@@ -1353,7 +1364,7 @@
         },
         "volcengine": {
             "use": false,
-            "name": "火山OCR",
+            "name": "火山",
             "useproxy": true
         },
         "mangaocr": {
@@ -1381,7 +1392,7 @@
         },
         "geminiocr": {
             "use": false,
-            "name": "GeminiOCR"
+            "name": "Gemini"
         },
         "chatgptlike": {
             "use": false,
@@ -1405,13 +1416,13 @@
         "baidu": {
             "use": false,
             "color": "#ff65db",
-            "name": "百度",
+            "name": "百度_v1",
             "useproxy": true
         },
         "baidu_ai": {
             "use": false,
             "color": "#ff65db",
-            "name": "百度_ait",
+            "name": "百度_v2",
             "useproxy": true
         },
         "bing": {
@@ -1423,7 +1434,7 @@
         "google": {
             "use": false,
             "color": "#ff0000",
-            "name": "谷歌",
+            "name": "谷歌_v1",
             "useproxy": true
         },
         "ModernMt": {
@@ -1442,7 +1453,7 @@
             "type": "api",
             "use": false,
             "color": "#ff0000",
-            "name": "google_api",
+            "name": "谷歌",
             "useproxy": true
         },
         "ali": {
@@ -1578,7 +1589,7 @@
             "type": "api",
             "use": false,
             "color": "#ff0000",
-            "name": "gemini",
+            "name": "Gemini",
             "is_gpt_like": true,
             "useproxy": true
         },
@@ -1658,28 +1669,28 @@
             "type": "api",
             "use": false,
             "color": "blue",
-            "name": "百度api",
+            "name": "百度",
             "useproxy": true
         },
         "aliyunapi": {
             "type": "api",
             "use": false,
             "color": "blue",
-            "name": "阿里api",
+            "name": "阿里",
             "useproxy": true
         },
         "tencentapi": {
             "type": "api",
             "use": false,
             "color": "blue",
-            "name": "腾讯api",
+            "name": "腾讯",
             "useproxy": true
         },
         "yandexapi": {
             "type": "api",
             "use": false,
             "color": "blue",
-            "name": "yandex api",
+            "name": "yandex",
             "useproxy": true
         },
         "qqimt": {
@@ -1692,7 +1703,7 @@
             "type": "api",
             "use": false,
             "color": "blue",
-            "name": "小牛api",
+            "name": "小牛",
             "useproxy": true
         },
         "huoshan": {
@@ -1705,14 +1716,14 @@
             "type": "api",
             "use": false,
             "color": "blue",
-            "name": "彩云api",
+            "name": "彩云",
             "useproxy": true
         },
         "huoshanapi": {
             "type": "api",
             "use": false,
             "color": "blue",
-            "name": "火山api",
+            "name": "火山",
             "useproxy": true
         },
         "feishu": {
@@ -1744,7 +1755,7 @@
             "type": "api",
             "use": false,
             "color": "blue",
-            "name": "DeepL api",
+            "name": "DeepL",
             "useproxy": true
         },
         "deeplapi": {
@@ -1758,7 +1769,7 @@
             "type": "api",
             "use": false,
             "color": "blue",
-            "name": "有道api",
+            "name": "有道",
             "useproxy": true
         },
         "yunyi2": {
@@ -1816,7 +1827,7 @@
             "use": false,
             "type": "api",
             "color": "blue",
-            "name": "ibm api",
+            "name": "IBM",
             "useproxy": true
         },
         "ort_sp": {
@@ -1826,7 +1837,7 @@
             "name": "MT5"
         },
         "sakura": {
-            "use": false,
+            "use": true,
             "type": "offline",
             "color": "#ff0000",
             "name": "Sakura大模型",
@@ -1838,7 +1849,8 @@
             "type": "offline",
             "color": "blue",
             "name": "ChatGPT_兼容接口",
-            "is_gpt_like": true
+            "is_gpt_like": true,
+            "useproxy": false
         },
         "TGW": {
             "use": false,
@@ -1946,7 +1958,7 @@
     "focusfollow": false,
     "focusnotop": false,
     "autostarthook": true,
-    "minlength": 8,
+    "minlength": 2,
     "maxlength": 1000,
     "maxoriginlength": 1000,
     "srclang3": 1,
@@ -1963,7 +1975,7 @@
     "mustocr_interval": 5,
     "ocrmininterval": 1,
     "selectable": false,
-    "autoupdate": true,
+    "autoupdate": false,
     "gongxiangcishu": {
         "use": false,
         "path": ""
@@ -2249,9 +2261,11 @@
     },
     "buttonsize2": 18,
     "fix_translate_rank": false,
-    "fix_translate_rank_rank": [],
+    "fix_translate_rank_rank": [
+        "sakura"
+    ],
     "cishuvisrank": [
-        "youdao"
+        "mojidict"
     ],
     "ignoredict": [],
     "qwebinspectgeo": [
@@ -2346,5 +2360,20 @@
     "premtmatcheveryline": false,
     "textoutput_origin": true,
     "textoutput_trans": false,
-    "noundictconfig_ex": []
+    "noundictconfig_ex": [
+        {
+            "src": "コーシー",
+            "dst": "咖吸",
+            "info": ""
+        },
+        {
+            "src": "弓張",
+            "dst": "弓張",
+            "info": ""
+        }
+    ],
+    "translator_2": "microsoft",
+    "use_appointed_translate": false,
+    "wordlabel": [],
+    "is_search_word_auto_tts": false
 }

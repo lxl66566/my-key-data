@@ -2,5 +2,5 @@ use_zstd = true
 zstd_level = 15
 crypt_list = [
   'config/LunaTranslator/userconfig/translatorsetting.json',
-  'Browser/htu_backup_20240824_211202.tsv',
+  'Browser/htu_analyze_20241209_205745.tsv',
 ]
