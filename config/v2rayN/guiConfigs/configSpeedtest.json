@@ -1,0 +1,55 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "http10470",
+      "port": 10470,
+      "listen": "127.0.0.1",
+      "protocol": "http"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy10470",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "91.852456.xyz",
+            "method": "chacha20",
+            "ota": false,
+            "password": "absxsfriends123456",
+            "port": 40000,
+            "level": 1
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized"
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "http10470"
+        ],
+        "outboundTag": "proxy10470"
+      }
+    ]
+  }
+}
