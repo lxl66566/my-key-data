@@ -15,48 +15,49 @@ esac
 echo "running on ${machine}"
 
 windows_bk(){
+    HOME="C:/Users/lxl"
+    STANDALONE="C:/standalone_software"
+    
     # tai
-    cp -rfu  "C:/standalone_software/Tai1.5.0.4/Data" ./Tai
-    cp -rfu  "C:/standalone_software/Tai1.5.0.4/AppIcons" ./Tai
+    cp -rfu  "$STANDALONE/Tai1.5.0.4/Data" ./Tai
+    cp -rfu  "$STANDALONE/Tai1.5.0.4/AppIcons" ./Tai
     
     # galgame
-    # cp -rfu  C:/Users/lxl/AppData/Roaming/RenPy/DDLC-1454445547 ./galgame/DDLC
+    # cp -rfu "$HOME/AppData/Roaming/RenPy/DDLC-1454445547" ./galgame/DDLC
     cp -rfu "G:/galgame/アンレス テルミナリア/save" "./galgame/アンレス テルミナリア"
-    cp -rfu "C:/Users/lxl/Documents/ESCUDE/Sennagi" "./galgame"
+    cp -rfu "$HOME/Documents/ESCUDE/Sennagi" "./galgame"
     cp -rfu "G:/galgame/五彩斑斓的世界 HD 4K重置版（いろとりどりのセカイ HD）/save" "./galgame/五彩斑斓的世界"
-    cp -rfu "C:/Users/lxl/AppData/Roaming/枕/サクラノ刻" "./galgame"
+    cp -rfu "$HOME/AppData/Roaming/枕/サクラノ刻" "./galgame"
     
     # config
     # windows
-    cp -rfu "C:/Users/lxl/.bashrc" ./config/.bashrc
-    cp -rfu "C:/Users/lxl/.gitconfig" ./config/.gitconfig
+    cp -rfu "$HOME/.bashrc" ./config/.bashrc
+    cp -rfu "$HOME/.gitconfig" ./config/.gitconfig
     # vscode
-    cp -rfu "C:/Users/lxl/AppData/Roaming/Code/User/settings.json" ./config/vscode
+    cp -rfu "$HOME/AppData/Roaming/Code/User/settings.json" ./config/vscode
     # Ditto
-    cp -rfu "C:/standalone_software/Ditto/Ditto.Settings" ./config/ditto/Ditto.Settings
+    cp -rfu "$STANDALONE/Ditto/Ditto.Settings" ./config/ditto/Ditto.Settings
     # v2rayN
-    cp -rfu "C:/standalone_software/v2rayN/guiConfigs" ./config/v2rayN
+    cp -rfu "$STANDALONE/v2rayN/guiConfigs" ./config/v2rayN
     # wsl
-    # cp -rfu "C:/Users/lxl/.wslconfig" ./config/.wslconfig
+    cp -rfu "$HOME/.wslconfig" ./config/.wslconfig
     # mpv
-    find "C:/Users/lxl/scoop/apps/mpv/current/portable_config" -maxdepth 1 -mindepth 1 -exec cp -rfu {} ./config/mpv \;
+    find "$HOME/scoop/apps/mpv/current/portable_config" -maxdepth 1 -mindepth 1 -exec cp -rfu {} ./config/mpv \;
     # cargo
-    cp -rfu "C:/Users/lxl/.cargo/config.toml" ./config/.cargo
+    cp -rfu "$HOME/.cargo/config.toml" ./config/.cargo
     # tabby
     # cp -rfu "C:/scoop/apps/tabby/current/data/config.yaml" ./config/tabby
     # nushell
-    cp -rfu "C:/Users/lxl/AppData/Roaming/nushell/custom.nu" ./config/nushell
+    cp -rfu "$HOME/AppData/Roaming/nushell/custom.nu" ./config/nushell
     # luna translator
     cp -rfu "G:/galgame/LunaTranslator/userconfig" ./config/LunaTranslator
     
     # other games
-    cp -fu 'C:/game/osu/collection.db' "./other_games/osu"
-    cp -fu 'C:/game/osu/scores.db' "./other_games/osu"
+    OSU_DIR="C:/game/osu"
+    cp -fu "$OSU_DIR/collection.db" "./other_games/osu"
+    cp -fu "$OSU_DIR/scores.db" "./other_games/osu"
+    cp -fu "$OSU_DIR/osu!.lxl.cfg" "./other_games/osu"
     # cp -rfu 'C:/ProgramData/PopCap Games/PlantsVsZombies/pvzHE/yourdata' "./other_games/PVZ_hybrid"
-    
-    # browser
-    # cp -rfu "C:/Users/lxl/AppData/Local/Microsoft/Edge/User Data/Default/Bookmarks" ./Browser/Bookmarks
-    
 }
 
 case "$machine" in

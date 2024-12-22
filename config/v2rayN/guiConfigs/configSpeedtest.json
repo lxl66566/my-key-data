@@ -17,7 +17,7 @@
       "settings": {
         "servers": [
           {
-            "address": "91.852456.xyz",
+            "address": "azure.852456.xyz",
             "method": "chacha20",
             "ota": false,
             "password": "absxsfriends123456",

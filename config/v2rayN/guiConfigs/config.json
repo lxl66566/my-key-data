@@ -246,6 +246,13 @@
         "type": "field",
         "port": "0-65535",
         "outboundTag": "proxy"
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "domain:raindrop.io"
+        ]
       }
     ]
   }

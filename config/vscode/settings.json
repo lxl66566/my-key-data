@@ -188,6 +188,9 @@
   "[nix]": {
     "editor.defaultFormatter": "brettm12345.nixfmt-vscode"
   },
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
 
   // linter
 
@@ -337,15 +340,15 @@
       "icon": "terminal-cmd"
     },
     "Bash": {
-      "path": "D:\\scoop\\shims\\bash.exe"
+      "path": "bash.exe"
     },
     "Nushell": {
-      "path": "C:/Users/lxl/bpm/bin/nu.cmd",
+      "path": "C:/Users/lxl/AppData/Local/Programs/nu/bin/nu",
       "icon": "star-add"
     }
   },
   "terminal.integrated.defaultProfile.windows": "Nushell",
-  "terminal.external.windowsExec": "D:\\scoop\\shims\\bash.exe",
+  "terminal.external.windowsExec": "bash.exe",
 
   // linux
   "terminal.integrated.profiles.linux": {
@@ -360,8 +363,5 @@
   "terminal.integrated.defaultProfile.linux": "fish (2)",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.persistentSessionScrollback": 1000,
-  "terminal.integrated.scrollback": 3000,
-  "[sql]": {
-    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
-  }
+  "terminal.integrated.scrollback": 3000
 }
