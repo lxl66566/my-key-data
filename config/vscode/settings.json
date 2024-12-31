@@ -26,7 +26,6 @@
   "workbench.editorAssociations": {
     "*.db": "sqlite-viewer.option"
   },
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmPasteNative": false,
@@ -74,6 +73,53 @@
   "rust-analyzer.check.command": "clippy",
   "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
   "rust-analyzer.initializeStopped": true,
+  "rust-analyzer.completion.snippets.custom": {
+    "thiserror": {
+      "prefix": ["te"],
+      "body": ["#[derive(Error, Debug)]", "pub enum ${1:Error} {", "\t$0", "}"],
+      "requires": ["Error"],
+      "scope": "item"
+    },
+    "Arc::new": {
+      "postfix": "arc",
+      "body": "Arc::new(${receiver})",
+      "requires": "std::sync::Arc",
+      "description": "Put the expression into an `Arc`",
+      "scope": "expr"
+    },
+    "Rc::new": {
+      "postfix": "rc",
+      "body": "Rc::new(${receiver})",
+      "requires": "std::rc::Rc",
+      "description": "Put the expression into an `Rc`",
+      "scope": "expr"
+    },
+    "Box::pin": {
+      "postfix": "pinbox",
+      "body": "Box::pin(${receiver})",
+      "requires": "std::boxed::Box",
+      "description": "Put the expression into a pinned `Box`",
+      "scope": "expr"
+    },
+    "Ok": {
+      "postfix": "ok",
+      "body": "Ok(${receiver})",
+      "description": "Wrap the expression in a `Result::Ok`",
+      "scope": "expr"
+    },
+    "Err": {
+      "postfix": "err",
+      "body": "Err(${receiver})",
+      "description": "Wrap the expression in a `Result::Err`",
+      "scope": "expr"
+    },
+    "Some": {
+      "postfix": "some",
+      "body": "Some(${receiver})",
+      "description": "Wrap the expression in an `Option::Some`",
+      "scope": "expr"
+    }
+  },
   // "rust-analyzer.check.targets": ["x86_64-unknown-linux-gnu", "x86_64-pc-windows-msvc"],
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
   "markdown.validate.enabled": false,
@@ -327,8 +373,16 @@
   },
 
   // terminal
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.persistentSessionScrollback": 1000,
+  "terminal.integrated.scrollback": 3000,
+
   // windows
   "terminal.integrated.profiles.windows": {
+    "Nushell": {
+      "path": "C:/Users/lxl/AppData/Local/Programs/nu/bin/nu",
+      "icon": "star-add"
+    },
     "PowerShell": {
       "source": "PowerShell",
       "icon": "terminal-powershell"
@@ -341,10 +395,6 @@
     },
     "Bash": {
       "path": "bash.exe"
-    },
-    "Nushell": {
-      "path": "C:/Users/lxl/AppData/Local/Programs/nu/bin/nu",
-      "icon": "star-add"
     }
   },
   "terminal.integrated.defaultProfile.windows": "Nushell",
@@ -360,8 +410,6 @@
       "path": "/usr/bin/fish"
     }
   },
-  "terminal.integrated.defaultProfile.linux": "fish (2)",
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "terminal.integrated.persistentSessionScrollback": 1000,
-  "terminal.integrated.scrollback": 3000
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "diffEditor.hideUnchangedRegions.enabled": true
 }

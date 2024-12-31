@@ -146,7 +146,8 @@
         "outboundTag": "proxy",
         "domain": [
           "domain:googleapis.cn",
-          "domain:gstatic.com"
+          "domain:gstatic.com",
+          "domain:github.com"
         ]
       },
       {
@@ -252,6 +253,13 @@
         "outboundTag": "direct",
         "domain": [
           "domain:raindrop.io"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "ip": [
+          "124.152.95.232"
         ]
       }
     ]
