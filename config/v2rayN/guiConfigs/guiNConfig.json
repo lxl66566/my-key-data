@@ -1,5 +1,5 @@
 {
-  "IndexId": "4718847136042899225",
+  "IndexId": "5329097233415242224",
   "SubIndexId": null,
   "RunningCoreType": 2,
   "CoreBasicItem": {
@@ -60,10 +60,10 @@
   "UiItem": {
     "EnableAutoAdjustMainLvColWidth": true,
     "EnableUpdateSubOnlyRemarksExist": false,
-    "MainWidth": 902,
-    "MainHeight": 695,
-    "MainGirdHeight1": 320,
-    "MainGirdHeight2": 227,
+    "MainWidth": 1126,
+    "MainHeight": 698,
+    "MainGirdHeight1": 322,
+    "MainGirdHeight2": 229,
     "MainGirdOrientation": 1,
     "ColorModeDark": false,
     "FollowSystemTheme": true,
@@ -142,7 +142,7 @@
         "Index": 12
       }
     ],
-    "ShowInTaskbar": true
+    "ShowInTaskbar": false
   },
   "ConstItem": {
     "DefIEProxyExceptions": "localhost;127.*;10.*;172.16.*;172.17.*;172.18.*;172.19.*;172.20.*;172.21.*;172.22.*;172.23.*;172.24.*;172.25.*;172.26.*;172.27.*;172.28.*;172.29.*;172.30.*;172.31.*;192.168.*",

@@ -15,24 +15,7 @@ $env.config.keybindings = [
     }
 ];
 
-# starship
 
-$env.STARSHIP_SHELL = "nu"
-
-def create_left_prompt [] {
-    starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
-}
-
-# Use nushell functions to define your right and left prompt
-$env.PROMPT_COMMAND = { || create_left_prompt }
-$env.PROMPT_COMMAND_RIGHT = ""
-
-# The prompt indicators are environmental variables that represent
-# the state of the prompt
-$env.PROMPT_INDICATOR = ""
-$env.PROMPT_INDICATOR_VI_INSERT = ": "
-$env.PROMPT_INDICATOR_VI_NORMAL = "〉"
-$env.PROMPT_MULTILINE_INDICATOR = "::: "
 
 # my env
 
@@ -70,3 +53,40 @@ alias gp = git pull
 alias gc = git clone
 # alias e = $EDITOR
 alias grep = rg
+
+
+
+# starship
+$env.STARSHIP_SHELL = "nu"
+def create_left_prompt [] {
+    starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
+}
+# Use nushell functions to define your right and left prompt
+$env.PROMPT_COMMAND = { || create_left_prompt }
+$env.PROMPT_COMMAND_RIGHT = ""
+# The prompt indicators are environmental variables that represent
+# the state of the prompt
+$env.PROMPT_INDICATOR = ""
+$env.PROMPT_INDICATOR_VI_INSERT = ": "
+$env.PROMPT_INDICATOR_VI_NORMAL = "〉"
+$env.PROMPT_MULTILINE_INDICATOR = "::: "
+
+# pay-respects: https://github.com/iffse/pay-respects
+
+def --env f [] {
+    let dir = (with-env { _PR_LAST_COMMAND: (history | last).command, _PR_SHELL: nu } { "C:/Users/lxl/.cargo/bin/pay-respects.exe" })
+    # echo $"Running ($dir) ..."
+    cd $dir
+}
+
+# fnm
+
+fnm env --json | from json | load-env
+
+use std "path add"
+
+$env.FNM_BIN = $"($env.FNM_DIR)/bin"
+path add $env.FNM_BIN
+
+$env.FNM_MULTISHELL_PATH = $"($env.FNM_DIR)/nodejs"
+path add $env.FNM_MULTISHELL_PATH

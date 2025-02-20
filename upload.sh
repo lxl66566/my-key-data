@@ -19,8 +19,8 @@ windows_bk(){
     STANDALONE="C:/standalone_software"
     
     # tai
-    cp -rfu  "$STANDALONE/Tai1.5.0.4/Data" ./Tai
-    cp -rfu  "$STANDALONE/Tai1.5.0.4/AppIcons" ./Tai
+    cp -rfu  "$STANDALONE/Tai1.5.0.5/Data" ./Tai
+    cp -rfu  "$STANDALONE/Tai1.5.0.5/AppIcons" ./Tai
     
     # galgame
     # cp -rfu "$HOME/AppData/Roaming/RenPy/DDLC-1454445547" ./galgame/DDLC

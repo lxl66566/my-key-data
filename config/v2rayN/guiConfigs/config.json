@@ -58,7 +58,7 @@
       "settings": {
         "servers": [
           {
-            "address": "91.852456.xyz",
+            "address": "ali.852456.xyz",
             "method": "chacha20",
             "ota": false,
             "password": "absxsfriends123456",
@@ -126,7 +126,7 @@
       {
         "address": "223.5.5.5",
         "domains": [
-          "91.852456.xyz"
+          "ali.852456.xyz"
         ]
       }
     ]
@@ -143,11 +143,34 @@
       },
       {
         "type": "field",
+        "port": "0-65535",
+        "network": "tcp,udp",
+        "outboundTag": "direct",
+        "domain": [
+          "domain:raindrop.io",
+          "domain:xdaforums.com"
+        ]
+      },
+      {
+        "type": "field",
+        "port": "0-65535",
+        "network": "tcp,udp",
+        "outboundTag": "direct",
+        "ip": [
+          "124.152.95.232"
+        ]
+      },
+      {
+        "type": "field",
         "outboundTag": "proxy",
         "domain": [
+          "domain:github.com",
           "domain:googleapis.cn",
           "domain:gstatic.com",
-          "domain:github.com"
+          "domain:parsec.app",
+          "geosite:binance",
+          "geosite:okx",
+          "domain:tradingview.com"
         ]
       },
       {
@@ -247,20 +270,6 @@
         "type": "field",
         "port": "0-65535",
         "outboundTag": "proxy"
-      },
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "domain": [
-          "domain:raindrop.io"
-        ]
-      },
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "ip": [
-          "124.152.95.232"
-        ]
       }
     ]
   }

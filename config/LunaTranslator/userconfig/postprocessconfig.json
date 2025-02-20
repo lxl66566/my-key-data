@@ -216,5 +216,26 @@
                 "step": 1
             }
         }
+    },
+    "lines_threshold_1": {
+        "use": false,
+        "name": "截取指定行数",
+        "args": {
+            "maxzishu": 1,
+            "cut_reverse": true
+        },
+        "argstype": {
+            "maxzishu": {
+                "name": "截取行数",
+                "type": "intspin",
+                "min": -99999999,
+                "max": 99999999,
+                "step": 1
+            },
+            "cut_reverse": {
+                "name": "截取末尾",
+                "type": "switch"
+            }
+        }
     }
 }

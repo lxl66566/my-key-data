@@ -6,9 +6,11 @@
   "editor.smoothScrolling": true,
   "editor.accessibilitySupport": "off",
   "editor.linkedEditing": true,
+  "editor.minimap.enabled": true,
   "editor.cursorBlinking": "smooth",
   "editor.fontSize": 15,
   "editor.fontFamily": "Fira Code, Consolas, monospace",
+  "editor.tabCompletion": "on",
   "editor.inlayHints.enabled": "onUnlessPressed",
   "editor.unicodeHighlight.allowedLocales": {
     "zh-hant": true
@@ -18,9 +20,14 @@
       "*.unsafe:rust": "#ecd06d"
     }
   },
+  "files.associations": {
+    "*.cursorrules": "markdown"
+  },
+  "diffEditor.hideUnchangedRegions.enabled": true,
   "extensions.ignoreRecommendations": true,
-  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.orientation": "vertical", // cursor
   "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
   "workbench.editorAssociations": {
@@ -45,6 +52,7 @@
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "update.showReleaseNotes": false,
+  "update.enableWindowsBackgroundUpdates": false,
 
   // extension
 
@@ -185,7 +193,7 @@
       "default": true
     }
   ],
-  "[javascript][typescript]": {
+  "[javascript][typescript][javascriptreact][typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[c][h][cpp]": {
@@ -193,6 +201,10 @@
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     // "editor.detectIndentation": false,
     // "editor.tabSize": 8
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.formatOnSave": true
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -229,13 +241,17 @@
     "editor.defaultFormatter": "JohnnyMorganz.stylua"
   },
   "[typst]": {
-    "editor.defaultFormatter": "myriad-dreamin.tinymist"
+    "editor.defaultFormatter": "myriad-dreamin.tinymist",
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
   },
   "[nix]": {
     "editor.defaultFormatter": "brettm12345.nixfmt-vscode"
   },
   "[sql]": {
     "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
+  "[typst-code]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
   },
 
   // linter
@@ -365,6 +381,7 @@
     "<C-e>": false,
     "<C-s>": false,
     "<C-d>": false,
+    "<C-g>": false,
     "<C-a>": false,
     "<C-c>": false,
     "<C-w>": false,
@@ -411,5 +428,5 @@
     }
   },
   "terminal.integrated.defaultProfile.linux": "fish",
-  "diffEditor.hideUnchangedRegions.enabled": true
+  "terminal.integrated.sendKeybindingsToShell": false,
 }

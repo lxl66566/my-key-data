@@ -56,7 +56,8 @@
         "limittextlength_use": false,
         "limittextlength_length": 40,
         "translator_2": 0,
-        "use_appointed_translate": false
+        "use_appointed_translate": false,
+        "displaymode": 0
     },
     "requestinterval": 1,
     "keepontop": true,
@@ -89,7 +90,8 @@
         "_remove_symbo",
         "length_threshold",
         "lines_threshold",
-        "dedump"
+        "dedump",
+        "lines_threshold_1"
     ],
     "transoptimi": {
         "noundict": true,
@@ -112,10 +114,10 @@
     "yuanjiao_r": 0,
     "yuanjiao_merge": false,
     "transuigeo": [
-        203,
-        635,
+        160,
+        658,
         1200,
-        108
+        61
     ],
     "hist_geo": [
         100,
@@ -142,8 +144,8 @@
         400
     ],
     "selecthookgeo": [
-        120,
-        118,
+        149,
+        140,
         1200,
         600
     ],
@@ -232,9 +234,10 @@
         "DeckNameS": [
             "lunadeck"
         ],
-        "addsuccautoclose": false,
+        "addsuccautoclose": true,
         "tags": [],
-        "ModelName6": "modelofluna"
+        "ModelName6": "modelofluna",
+        "host": "127.0.0.1"
     },
     "imageformat": 8,
     "ankiwindow": [
@@ -247,8 +250,8 @@
     "settingfonttype": "Arial",
     "showintab_sub": false,
     "setting_geo_2": [
-        201,
-        92,
+        129,
+        83,
         1200,
         600
     ],
@@ -284,7 +287,15 @@
         "transparentselect": 25,
         "transparentnotexits": 25,
         "listitemheight": 40,
-        "listitemwidth": 300
+        "listitemwidth": 300,
+        "margin2": 6,
+        "backcolor2": "#40ffffff",
+        "onselectcolor2": "#40007fff",
+        "onfilenoexistscolor2": "#40acacac",
+        "listitemwidth_2": [
+            300,
+            500
+        ]
     },
     "profiles_index": 0,
     "ocrautobindwindow": true,
@@ -877,6 +888,21 @@
                 "use": false,
                 "name": "清除OCR范围",
                 "keystring": ""
+            },
+            "37": {
+                "use": false,
+                "name": "取词查词",
+                "keystring": ""
+            },
+            "38": {
+                "use": false,
+                "name": "取词翻译",
+                "keystring": ""
+            },
+            "39": {
+                "use": false,
+                "name": "OCR_查词",
+                "keystring": ""
             }
         }
     },
@@ -885,7 +911,11 @@
             "use": false,
             "voice": "",
             "name": "火山TTS",
-            "useproxy": false
+            "useproxy": false,
+            "arg_not_sup": [
+                "pitch",
+                "rate"
+            ]
         },
         "edgetts": {
             "use": false,
@@ -896,19 +926,29 @@
             "use": false,
             "voice": "",
             "name": "有道TTS",
-            "useproxy": false
+            "useproxy": false,
+            "arg_not_sup": [
+                "pitch",
+                "rate"
+            ]
         },
         "windowstts": {
             "use": false,
             "voice": "",
             "name": "WindowsTTS",
-            "type": "offline"
+            "type": "offline",
+            "arg_not_sup": [
+                "pitch"
+            ]
         },
         "NeoSpeech": {
             "use": false,
             "voice": "",
             "name": "NeoSpeech",
-            "type": "offline"
+            "type": "offline",
+            "arg_not_sup": [
+                "pitch"
+            ]
         },
         "voiceroid2": {
             "use": false,
@@ -951,14 +991,84 @@
             "args": {
                 "URL": "http://127.0.0.1:23456",
                 "voices": "/voice/speakers",
-                "speak": "/voice/{model_lower}?text={text}&id={id}&lang=auto&prompt_lang=auto&format=wav&preset=default"
+                "speak2": "/voice/{model_lower}?text={text}&id={id}&length={length}&lang=auto&prompt_lang=auto&format=wav&preset=default"
             },
-            "type": "offline"
+            "type": "offline",
+            "argstype": {
+                "speak2": {
+                    "name": "speak"
+                }
+            },
+            "arg_not_sup": [
+                "pitch"
+            ]
         },
         "gtts": {
             "use": false,
             "name": "GoogleTTS",
-            "voice": ""
+            "voice": "",
+            "arg_not_sup": [
+                "rate",
+                "pitch"
+            ]
+        },
+        "bcuttts": {
+            "use": false,
+            "voice": "",
+            "name": "BCUT TTS",
+            "useproxy": false,
+            "arg_not_sup": [
+                "pitch",
+                "rate"
+            ]
+        },
+        "chatgpttts": {
+            "use": false,
+            "voice": "",
+            "name": "ChatGPT_兼容接口",
+            "arg_not_sup": [
+                "pitch"
+            ],
+            "args": {
+                "model": "gpt-4o-mini",
+                "modellistcache": [],
+                "API接口地址": "https://api.openai.com",
+                "SECRET_KEY": "",
+                "voice_list": [
+                    "alloy",
+                    "ash",
+                    "coral",
+                    "echo",
+                    "fable",
+                    "onyx",
+                    "nova",
+                    "sage",
+                    "shimmer"
+                ]
+            },
+            "argstype": {
+                "API接口地址": {
+                    "rank": 0
+                },
+                "SECRET_KEY": {
+                    "rank": 1,
+                    "name": "API Key",
+                    "type": "textlist"
+                },
+                "model": {
+                    "rank": 2,
+                    "type": "lineedit_or_combo",
+                    "list_function": "list_models",
+                    "list_cache": "modellistcache"
+                },
+                "modellistcache": {
+                    "type": "list_cache"
+                },
+                "voice_list": {
+                    "name": "支持的声音",
+                    "type": "textlist"
+                }
+            }
         }
     },
     "hirasetting": {
@@ -966,19 +1076,13 @@
             "use": true,
             "name": "MeCab",
             "args": {
-                "path": "G:/galgame/unidic-csj-MeCab",
-                "downloadlink": "{main_server}/Resource/dictionary/Mecab.zip"
+                "path": "G:/galgame/unidic-csj-MeCab"
             },
             "argstype": {
                 "path": {
                     "type": "file",
-                    "name": "路径",
+                    "name": "unidic_路径",
                     "dir": true
-                },
-                "downloadlink": {
-                    "type": "label",
-                    "islink": true,
-                    "name": "下载"
                 }
             },
             "type": "offline"
@@ -1031,8 +1135,7 @@
             "argstype": {
                 "punctuations": {
                     "type": "textlist",
-                    "name": "标点",
-                    "header": "标点"
+                    "name": "标点"
                 }
             }
         }
@@ -1176,11 +1279,13 @@
         },
         "jisho": {
             "use": false,
-            "name": "jisho"
+            "name": "jisho",
+            "useproxy": false
         },
         "weblio": {
             "use": false,
-            "name": "weblio"
+            "name": "weblio",
+            "useproxy": false
         },
         "yomichan": {
             "use": false,
@@ -1243,7 +1348,7 @@
                 "max_num": {
                     "type": "intspin",
                     "name": "最大结果条数",
-                    "min": 0,
+                    "min": 1,
                     "max": 9999,
                     "step": 1
                 },
@@ -1260,7 +1365,152 @@
         },
         "japandict": {
             "use": false,
-            "name": "JapanDict"
+            "name": "JapanDict",
+            "useproxy": false
+        },
+        "gemini": {
+            "use": false,
+            "name": "Gemini",
+            "args": {
+                "SECRET_KEY": "",
+                "Temperature": 0.3,
+                "BASE_URL": "https://generativelanguage.googleapis.com",
+                "model": "gemini-1.5-flash",
+                "modellistcache": [],
+                "use_custom_prompt": false,
+                "custom_prompt": "",
+                "user_user_prompt": "{sentence}",
+                "use_user_user_prompt": false,
+                "s": "",
+                "s2": ""
+            },
+            "argstype": {
+                "BASE_URL": {
+                    "name": "API接口地址",
+                    "rank": 0
+                },
+                "user_user_prompt": {
+                    "name": "自定义_user message",
+                    "refswitch": "use_user_user_prompt",
+                    "rank": 5.1
+                },
+                "s": {
+                    "type": "split",
+                    "rank": 3.5
+                },
+                "s2": {
+                    "type": "split",
+                    "rank": 5.12
+                },
+                "custom_prompt": {
+                    "name": "自定义_system prompt",
+                    "type": "multiline",
+                    "refswitch": "use_custom_prompt",
+                    "rank": 5
+                },
+                "SECRET_KEY": {
+                    "rank": 2,
+                    "name": "API Key",
+                    "type": "textlist"
+                },
+                "model": {
+                    "rank": 3,
+                    "type": "lineedit_or_combo",
+                    "list_function": "list_models",
+                    "list_cache": "modellistcache"
+                },
+                "modellistcache": {
+                    "type": "list_cache"
+                },
+                "Temperature": {
+                    "type": "spin",
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.1
+                }
+            }
+        },
+        "chatgptlike": {
+            "use": false,
+            "name": "ChatGPT_兼容接口",
+            "args": {
+                "model": "gpt-4o-mini",
+                "modellistcache": [],
+                "API接口地址": "https://api.openai.com",
+                "SECRET_KEY": "",
+                "使用自定义promt": false,
+                "自定义promt": "",
+                "Temperature": 0.3,
+                "top_p": 0.3,
+                "max_tokens": 1024,
+                "frequency_penalty": 0,
+                "user_user_prompt": "{sentence}",
+                "use_user_user_prompt": false,
+                "s": "",
+                "s2": ""
+            },
+            "argstype": {
+                "user_user_prompt": {
+                    "name": "自定义_user message",
+                    "refswitch": "use_user_user_prompt",
+                    "rank": 5.1
+                },
+                "s": {
+                    "type": "split",
+                    "rank": 2.5
+                },
+                "s2": {
+                    "type": "split",
+                    "rank": 5.12
+                },
+                "API接口地址": {
+                    "rank": 0
+                },
+                "SECRET_KEY": {
+                    "rank": 1,
+                    "name": "API Key",
+                    "type": "textlist"
+                },
+                "model": {
+                    "rank": 2,
+                    "type": "lineedit_or_combo",
+                    "list_function": "list_models",
+                    "list_cache": "modellistcache"
+                },
+                "modellistcache": {
+                    "type": "list_cache"
+                },
+                "top_p": {
+                    "type": "spin",
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.01
+                },
+                "frequency_penalty": {
+                    "type": "spin",
+                    "min": 0,
+                    "max": 2,
+                    "step": 0.05
+                },
+                "max_tokens": {
+                    "type": "intspin",
+                    "min": 1,
+                    "max": 1000000,
+                    "step": 1
+                },
+                "自定义promt": {
+                    "type": "multiline",
+                    "refswitch": "使用自定义promt",
+                    "name": "自定义_system prompt",
+                    "rank": 5
+                },
+                "Temperature": {
+                    "type": "spin",
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.1
+                }
+            }
         }
     },
     "darklight": 0,
@@ -1276,7 +1526,8 @@
         "tts_repair_regex": [],
         "tts_repair_use_at_translate": false,
         "tts_skip": false,
-        "tts_skip_regex": []
+        "tts_skip_regex": [],
+        "pitch": 0
     },
     "allowmulti": true,
     "sourcestatus2": {
@@ -1495,7 +1746,7 @@
         "deepl": {
             "use": false,
             "color": "blue",
-            "name": "DeepL/DeepLX",
+            "name": "DeepL",
             "useproxy": true,
             "type": "free"
         },
@@ -1597,7 +1848,7 @@
             "type": "offline",
             "use": false,
             "color": "#1839f0",
-            "name": "Jbeijing7"
+            "name": "J北京7"
         },
         "sugoix": {
             "type": "offline",
@@ -1930,7 +2181,8 @@
         "yandex": {
             "use": false,
             "color": "blue",
-            "name": "yandex"
+            "name": "yandex",
+            "useproxy": true
         },
         "dev_duckduckgo": {
             "use": false,
@@ -1949,7 +2201,21 @@
             "type": "api",
             "use": false,
             "color": "blue",
-            "name": "华为云"
+            "name": "华为云",
+            "useproxy": false
+        },
+        "cdp_chatgpt": {
+            "use": false,
+            "color": "blue",
+            "name": "CDP_ChatGPT",
+            "useproxy": false,
+            "type": "free"
+        },
+        "lec": {
+            "type": "offline",
+            "use": false,
+            "color": "#1839f0",
+            "name": "LEC"
         }
     },
     "magpiepath": "",
@@ -1993,7 +2259,7 @@
     "useextrahtml": true,
     "network_websocket": 1,
     "webview_textbrowser": false,
-    "primitivtemetaorigin": "vid",
+    "primitivtemetaorigin": null,
     "rendertext_using": "textbrowser",
     "rendertext_using_internal": {
         "webview": "yinying",
@@ -2252,11 +2518,7 @@
             "downloadtasks": [],
             "searchfordatatasks": [],
             "useproxy": true,
-            "target": "steamid",
-            "args": {
-                "userid": "",
-                "steamLoginSecure": ""
-            }
+            "target": "steamid"
         }
     },
     "buttonsize2": 18,
@@ -2375,5 +2637,15 @@
     "translator_2": "microsoft",
     "use_appointed_translate": false,
     "wordlabel": [],
-    "is_search_word_auto_tts": false
+    "is_search_word_auto_tts": false,
+    "autoopenselecttext": true,
+    "ttsautoforward": false,
+    "mp3kbps": 64,
+    "opusbitrate": 10,
+    "audioformat": "mp3",
+    "tagNameRemap": {},
+    "top_align": 0,
+    "force_rect": false,
+    "darktheme2": "PyQtDarkTheme",
+    "lighttheme2": "PyQtDarkTheme"
 }
