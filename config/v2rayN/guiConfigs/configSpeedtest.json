@@ -4,24 +4,24 @@
   },
   "inbounds": [
     {
-      "tag": "http10470",
-      "port": 10470,
+      "tag": "socks10471",
+      "port": 10471,
       "listen": "127.0.0.1",
-      "protocol": "http"
+      "protocol": "socks"
     }
   ],
   "outbounds": [
     {
-      "tag": "proxy10470",
+      "tag": "proxy10471",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "ali.852456.xyz",
+            "address": "server.perrykum.top",
             "method": "chacha20",
             "ota": false,
-            "password": "absxsfriends123456",
-            "port": 40000,
+            "password": "PerryKum6",
+            "port": 50000,
             "level": 1
           }
         ]
@@ -46,9 +46,9 @@
       {
         "type": "field",
         "inboundTag": [
-          "http10470"
+          "socks10471"
         ],
-        "outboundTag": "proxy10470"
+        "outboundTag": "proxy10471"
       }
     ]
   }

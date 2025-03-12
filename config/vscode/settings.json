@@ -53,6 +53,7 @@
   "git.confirmSync": false,
   "update.showReleaseNotes": false,
   "update.enableWindowsBackgroundUpdates": false,
+  "security.workspace.trust.untrustedFiles": "open",
 
   // extension
 
@@ -70,6 +71,7 @@
   "rome.rename": true,
   "rome.requireConfiguration": false,
   "redhat.telemetry.enabled": false,
+  "python.analysis.typeEvaluation.deprecateTypingAliases": true,
   "ruff.lint.ignore": ["E731"],
   "ruff.nativeServer": "auto",
   "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
@@ -428,5 +430,5 @@
     }
   },
   "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.sendKeybindingsToShell": false,
+  "terminal.integrated.sendKeybindingsToShell": false
 }

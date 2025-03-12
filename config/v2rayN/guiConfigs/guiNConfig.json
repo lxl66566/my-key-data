@@ -14,10 +14,10 @@
   },
   "TunModeItem": {
     "EnableTun": false,
-    "StrictRoute": true,
-    "Stack": null,
+    "StrictRoute": false,
+    "Stack": "gvisor",
     "Mtu": 9000,
-    "EnableExInbound": false,
+    "EnableExInbound": true,
     "EnableIPv6Address": true,
     "LinuxSudoPwd": null
   },
@@ -45,8 +45,8 @@
   "GuiItem": {
     "AutoRun": true,
     "EnableStatistics": true,
+    "DisplayRealTimeSpeed": false,
     "KeepOlderDedupl": false,
-    "IgnoreGeoUpdateCore": true,
     "AutoUpdateInterval": 0,
     "EnableSecurityProtocolTls13": true,
     "TrayMenuServersLimit": 20,
@@ -54,7 +54,7 @@
     "EnableLog": true
   },
   "MsgUIItem": {
-    "MainMsgFilter": "",
+    "MainMsgFilter": "ERROR",
     "AutoRefresh": true
   },
   "UiItem": {
@@ -62,12 +62,11 @@
     "EnableUpdateSubOnlyRemarksExist": false,
     "MainWidth": 1126,
     "MainHeight": 698,
-    "MainGirdHeight1": 322,
-    "MainGirdHeight2": 229,
+    "MainGirdHeight1": 249,
+    "MainGirdHeight2": 309,
     "MainGirdOrientation": 1,
-    "ColorModeDark": false,
-    "FollowSystemTheme": true,
     "ColorPrimaryName": null,
+    "CurrentTheme": null,
     "CurrentLanguage": "zh-Hans",
     "CurrentFontFamily": null,
     "CurrentFontSize": 0,
@@ -108,7 +107,7 @@
       },
       {
         "Name": "SubRemarks",
-        "Width": 100,
+        "Width": 20,
         "Index": 6
       },
       {
@@ -123,29 +122,28 @@
       },
       {
         "Name": "TodayUp",
-        "Width": -1,
+        "Width": 100,
         "Index": 9
       },
       {
         "Name": "TodayDown",
-        "Width": -1,
+        "Width": 100,
         "Index": 10
       },
       {
         "Name": "TotalUp",
-        "Width": -1,
+        "Width": 100,
         "Index": 11
       },
       {
         "Name": "TotalDown",
-        "Width": -1,
+        "Width": 100,
         "Index": 12
       }
     ],
-    "ShowInTaskbar": false
+    "ShowInTaskbar": true
   },
   "ConstItem": {
-    "DefIEProxyExceptions": "localhost;127.*;10.*;172.16.*;172.17.*;172.18.*;172.19.*;172.20.*;172.21.*;172.22.*;172.23.*;172.24.*;172.25.*;172.26.*;172.27.*;172.28.*;172.29.*;172.30.*;172.31.*;192.168.*",
     "SubConvertUrl": "",
     "GeoSourceUrl": null,
     "SrsSourceUrl": null,
@@ -154,7 +152,8 @@
   "SpeedTestItem": {
     "SpeedTestTimeout": 10,
     "SpeedTestUrl": "https://speed.cloudflare.com/__down?bytes=100000000",
-    "SpeedPingTestUrl": "https://www.google.com/generate_204"
+    "SpeedPingTestUrl": "https://www.google.com/generate_204",
+    "SpeedTestPageSize": 0
   },
   "Mux4RayItem": {
     "Concurrency": 8,
@@ -177,13 +176,12 @@
     "ProxiesSorting": 0,
     "ProxiesAutoRefresh": false,
     "ProxiesAutoDelayTestInterval": 10,
-    "ConnectionsSorting": 0,
     "ConnectionsAutoRefresh": false,
     "ConnectionsRefreshInterval": 2
   },
   "SystemProxyItem": {
     "SysProxyType": 1,
-    "SystemProxyExceptions": "",
+    "SystemProxyExceptions": "localhost;127.*;10.*;172.16.*;172.17.*;172.18.*;172.19.*;172.20.*;172.21.*;172.22.*;172.23.*;172.24.*;172.25.*;172.26.*;172.27.*;172.28.*;172.29.*;172.30.*;172.31.*;192.168.*",
     "NotProxyLocalAddress": true,
     "SystemProxyAdvancedProtocol": null
   },
@@ -195,11 +193,22 @@
   },
   "CheckUpdateItem": {
     "CheckPreReleaseUpdate": false,
-    "SelectedCoreTypes": null
+    "SelectedCoreTypes": [
+      "v2rayN",
+      "Xray",
+      "mihomo",
+      "sing_box",
+      "GeoFiles"
+    ]
+  },
+  "Fragment4RayItem": {
+    "Packets": "tlshello",
+    "Length": "100-200",
+    "Interval": "10-20"
   },
   "Inbound": [
     {
-      "LocalPort": 10449,
+      "LocalPort": 10450,
       "Protocol": "socks",
       "UdpEnabled": true,
       "SniffingEnabled": true,
@@ -211,7 +220,8 @@
       "AllowLANConn": false,
       "NewPort4LAN": false,
       "User": "",
-      "Pass": ""
+      "Pass": "",
+      "SecondLocalPortEnabled": false
     }
   ],
   "GlobalHotkeys": [

@@ -2,31 +2,46 @@
   "log": {
     "loglevel": "warning"
   },
+  "dns": {
+    "hosts": {
+      "dns.google": "8.8.8.8",
+      "proxy.example.com": "127.0.0.1"
+    },
+    "servers": [
+      {
+        "address": "1.1.1.1",
+        "domains": [
+          "geosite:geolocation-!cn"
+        ],
+        "expectIPs": [
+          "geoip:!cn"
+        ]
+      },
+      {
+        "address": "223.5.5.5",
+        "domains": [
+          "geosite:cn"
+        ],
+        "expectIPs": [
+          "geoip:cn"
+        ]
+      },
+      "8.8.8.8",
+      "https://dns.google/dns-query",
+      {
+        "address": "223.5.5.5",
+        "domains": [
+          "ali.852456.xyz"
+        ]
+      }
+    ]
+  },
   "inbounds": [
     {
       "tag": "socks",
-      "port": 10449,
-      "listen": "127.0.0.1",
-      "protocol": "socks",
-      "sniffing": {
-        "enabled": true,
-        "destOverride": [
-          "http",
-          "tls"
-        ],
-        "routeOnly": false
-      },
-      "settings": {
-        "auth": "noauth",
-        "udp": true,
-        "allowTransparent": false
-      }
-    },
-    {
-      "tag": "http",
       "port": 10450,
       "listen": "127.0.0.1",
-      "protocol": "http",
+      "protocol": "socks",
       "sniffing": {
         "enabled": true,
         "destOverride": [
@@ -59,7 +74,7 @@
         "servers": [
           {
             "address": "ali.852456.xyz",
-            "method": "chacha20",
+            "method": "",
             "ota": false,
             "password": "absxsfriends123456",
             "port": 40000,
@@ -82,55 +97,13 @@
     },
     {
       "tag": "direct",
-      "protocol": "freedom",
-      "settings": {}
+      "protocol": "freedom"
     },
     {
       "tag": "block",
-      "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      }
+      "protocol": "blackhole"
     }
   ],
-  "stats": {},
-  "metrics": {
-    "tag": "api"
-  },
-  "policy": {
-    "system": {
-      "statsOutboundUplink": true,
-      "statsOutboundDownlink": true
-    }
-  },
-  "dns": {
-    "hosts": {
-      "dns.google": "8.8.8.8",
-      "proxy.example.com": "127.0.0.1"
-    },
-    "servers": [
-      {
-        "address": "223.5.5.5",
-        "domains": [
-          "geosite:cn"
-        ],
-        "expectIPs": [
-          "geoip:cn"
-        ]
-      },
-      "1.1.1.1",
-      "8.8.8.8",
-      "https://dns.google/dns-query",
-      {
-        "address": "223.5.5.5",
-        "domains": [
-          "ali.852456.xyz"
-        ]
-      }
-    ]
-  },
   "routing": {
     "domainStrategy": "AsIs",
     "rules": [
@@ -148,7 +121,9 @@
         "outboundTag": "direct",
         "domain": [
           "domain:raindrop.io",
-          "domain:xdaforums.com"
+          "domain:xdaforums.com",
+          "geosite:cnki",
+          "domain:absx.us.kg"
         ]
       },
       {
@@ -158,6 +133,52 @@
         "outboundTag": "direct",
         "ip": [
           "124.152.95.232"
+        ]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "proxy",
+        "domain": [
+          "domain:xmr.kryptex.network"
+        ]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "proxy",
+        "ip": [
+          "157.90.32.66"
+        ]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "direct",
+        "domain": [
+          "domain:thereisnospoon.pm",
+          "domain:xmr-tw.org",
+          "domain:supportxmr.com",
+          "domain:nanopool.org",
+          "domain:c3pool.org"
+        ]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "direct",
+        "ip": [
+          "103.176.58.34",
+          "125.229.105.12"
+        ]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "direct",
+        "domain": [
+          "domain:maa.plus",
+          "domain:prts.plus"
         ]
       },
       {
@@ -272,5 +293,15 @@
         "outboundTag": "proxy"
       }
     ]
-  }
+  },
+  "metrics": {
+    "tag": "api"
+  },
+  "policy": {
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
+  "stats": {}
 }

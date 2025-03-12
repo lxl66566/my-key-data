@@ -48,12 +48,16 @@ def gfixup [] {
     GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash HEAD~2
 }
 
+# compress a folder to tar.zst, with max compression
+def tz [folder: string] {
+    tar -cf - $folder | zstd -19 -T0 -o $"($folder).tar.zst"
+}
+
 alias l = ls
 alias gp = git pull
 alias gc = git clone
 # alias e = $EDITOR
 alias grep = rg
-
 
 
 # starship
@@ -82,11 +86,5 @@ def --env f [] {
 # fnm
 
 fnm env --json | from json | load-env
-
 use std "path add"
-
-$env.FNM_BIN = $"($env.FNM_DIR)/bin"
-path add $env.FNM_BIN
-
-$env.FNM_MULTISHELL_PATH = $"($env.FNM_DIR)/nodejs"
 path add $env.FNM_MULTISHELL_PATH
