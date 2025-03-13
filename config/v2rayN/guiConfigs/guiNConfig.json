@@ -1,5 +1,5 @@
 {
-  "IndexId": "5329097233415242224",
+  "IndexId": "4644865021951411542",
   "SubIndexId": null,
   "RunningCoreType": 2,
   "CoreBasicItem": {
@@ -17,8 +17,8 @@
     "StrictRoute": false,
     "Stack": "gvisor",
     "Mtu": 9000,
-    "EnableExInbound": true,
-    "EnableIPv6Address": true,
+    "EnableExInbound": false,
+    "EnableIPv6Address": false,
     "LinuxSudoPwd": null
   },
   "KcpItem": {
@@ -54,16 +54,16 @@
     "EnableLog": true
   },
   "MsgUIItem": {
-    "MainMsgFilter": "ERROR",
+    "MainMsgFilter": "",
     "AutoRefresh": true
   },
   "UiItem": {
     "EnableAutoAdjustMainLvColWidth": true,
     "EnableUpdateSubOnlyRemarksExist": false,
-    "MainWidth": 1126,
-    "MainHeight": 698,
-    "MainGirdHeight1": 249,
-    "MainGirdHeight2": 309,
+    "MainWidth": 1026,
+    "MainHeight": 647,
+    "MainGirdHeight1": 323,
+    "MainGirdHeight2": 184,
     "MainGirdOrientation": 1,
     "ColorPrimaryName": null,
     "CurrentTheme": null,
@@ -82,7 +82,7 @@
       },
       {
         "Name": "Remarks",
-        "Width": 150,
+        "Width": 123,
         "Index": 1
       },
       {
@@ -97,12 +97,12 @@
       },
       {
         "Name": "Network",
-        "Width": 100,
+        "Width": 35,
         "Index": 4
       },
       {
         "Name": "StreamSecurity",
-        "Width": 100,
+        "Width": 61,
         "Index": 5
       },
       {

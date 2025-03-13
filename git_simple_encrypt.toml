@@ -2,6 +2,7 @@ use_zstd = true
 zstd_level = 15
 crypt_list = [
   'config/LunaTranslator/userconfig/translatorsetting.json',
-  'Browser/htu_backup_20241231.tsv',
+  'Browser/htu_backup',
   'other_games/osu/osu!.lxl.cfg',
+  'config/monero',
 ]

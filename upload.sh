@@ -24,9 +24,9 @@ windows_bk(){
     
     # galgame
     # cp -rfu "$HOME/AppData/Roaming/RenPy/DDLC-1454445547" ./galgame/DDLC
-    # cp -rfu "G:/galgame/アンレス テルミナリア/save" "./galgame/アンレス テルミナリア"
+    cp -rfu "G:/galgame/アンレス テルミナリア/save" "./galgame/アンレス テルミナリア"
     cp -rfu "$HOME/Documents/ESCUDE/Sennagi" "./galgame"
-    # cp -rfu "G:/galgame/五彩斑斓的世界 HD 4K重置版（いろとりどりのセカイ HD）/save" "./galgame/五彩斑斓的世界"
+    cp -rfu "G:/galgame/五彩斑斓的世界 HD 4K重置版（いろとりどりのセカイ HD）/save" "./galgame/五彩斑斓的世界"
     cp -rfu "$HOME/AppData/Roaming/枕/サクラノ刻" "./galgame"
     
     # config
@@ -42,7 +42,7 @@ windows_bk(){
     # wsl
     cp -rfu "$HOME/.wslconfig" ./config/.wslconfig
     # uv
-    cp -rfu "$HOME/.config/uv" ./config/uv
+    cp -rfu "$HOME/.config/uv" ./config
     # mpv
     find "$HOME/scoop/apps/mpv/current/portable_config" -maxdepth 1 -mindepth 1 -exec cp -rfu {} ./config/mpv \;
     # cargo
@@ -52,7 +52,7 @@ windows_bk(){
     # nushell
     cp -rfu "$HOME/AppData/Roaming/nushell/custom.nu" ./config/nushell
     # luna translator
-    # cp -rfu "G:/galgame/LunaTranslator/userconfig" ./config/LunaTranslator
+    cp -rfu "G:/galgame/LunaTranslator/userconfig" ./config/LunaTranslator
     
     # other games
     OSU_DIR="C:/game/osu"

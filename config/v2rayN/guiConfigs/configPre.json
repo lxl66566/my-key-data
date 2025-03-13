@@ -184,11 +184,13 @@
         ],
         "domain": [
           "raindrop.io",
-          "xdaforums.com"
+          "xdaforums.com",
+          "absx.us.kg"
         ],
         "domain_suffix": [
           ".raindrop.io",
-          ".xdaforums.com"
+          ".xdaforums.com",
+          ".absx.us.kg"
         ],
         "rule_set": [
           "geosite-cnki"

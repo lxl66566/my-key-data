@@ -31,7 +31,7 @@
       {
         "address": "223.5.5.5",
         "domains": [
-          "ali.852456.xyz"
+          "claw.852456.xyz"
         ]
       }
     ]
@@ -73,11 +73,11 @@
       "settings": {
         "servers": [
           {
-            "address": "ali.852456.xyz",
+            "address": "claw.852456.xyz",
             "method": "",
             "ota": false,
             "password": "absxsfriends123456",
-            "port": 40000,
+            "port": 50000,
             "level": 1
           }
         ]
