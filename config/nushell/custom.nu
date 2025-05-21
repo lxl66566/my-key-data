@@ -42,10 +42,16 @@ def rv [version: string] {
     git push --tags
 }
 
-# merge current unstagged changes to latest commit.
-def gfixup [] {
-    git commit -a --fixup HEAD
-    GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash HEAD~2
+# Creates a fixup commit for a specific commit and autosquashes it via interactive rebase.
+#
+# Usage:
+#   gfixup           # Creates a fixup commit for the current HEAD and rebases
+#   gfixup <hash>    # Creates a fixup commit for <hash> and rebases
+#
+def gfixup [commit_hash?: string = 'HEAD'] {
+    git commit -a --fixup $commit_hash
+    let rebase_target = if $commit_hash == 'HEAD' { 'HEAD~2' } else { ($commit_hash | str trim) + "~1" }
+    GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash $rebase_target
 }
 
 # compress a folder to tar.zst, with max compression
@@ -92,3 +98,8 @@ path add $env.FNM_MULTISHELL_PATH
 # atuin
 
 source ~/.local/share/atuin/init.nu
+
+# zoxide
+
+zoxide init nushell | save -f ~/.zoxide.nu
+source ~/.zoxide.nu

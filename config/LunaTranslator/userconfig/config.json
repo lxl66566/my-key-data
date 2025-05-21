@@ -30,7 +30,9 @@
     "allow_set_text_name": false,
     "textoutputer": {
         "clipboard": {
-            "use": false
+            "use": false,
+            "origin": true,
+            "trans": false
         },
         "websocket": {
             "use": false,
@@ -57,7 +59,8 @@
         "limittextlength_length": 40,
         "translator_2": 0,
         "use_appointed_translate": false,
-        "displaymode": 0
+        "displaymode": 0,
+        "clearText": false
     },
     "requestinterval": 1,
     "keepontop": true,
@@ -94,10 +97,10 @@
         "lines_threshold_1"
     ],
     "transoptimi": {
-        "noundict": true,
+        "noundict": false,
         "transerrorfix": true,
         "gongxiangcishu": false,
-        "vndbnamemap": false,
+        "vndbnamemap": true,
         "myprocess": false,
         "arabic_reshaper": false,
         "gptpromptdict": false
@@ -114,8 +117,8 @@
     "yuanjiao_r": 0,
     "yuanjiao_merge": false,
     "transuigeo": [
-        170,
-        676,
+        160,
+        698,
         1200,
         108
     ],
@@ -144,8 +147,8 @@
         400
     ],
     "selecthookgeo": [
-        99,
-        104,
+        147,
+        38,
         1200,
         600
     ],
@@ -168,8 +171,8 @@
         800
     ],
     "sw_geo": [
-        600,
-        73,
+        512,
+        67,
         510,
         500
     ],
@@ -237,7 +240,8 @@
         "addsuccautoclose": true,
         "tags": [],
         "ModelName6": "modelofluna",
-        "host": "127.0.0.1"
+        "host": "127.0.0.1",
+        "addsuccautocloseEx": false
     },
     "imageformat": 8,
     "ankiwindow": [
@@ -250,8 +254,8 @@
     "settingfonttype": "Arial",
     "showintab_sub": false,
     "setting_geo_2": [
-        190,
-        90,
+        72,
+        148,
         1200,
         600
     ],
@@ -335,8 +339,6 @@
             "quit",
             "ocr_once_follow",
             "noundict_direct",
-            "noundict_2",
-            "fix_2",
             "showtrans",
             "edittrans",
             "selectable",
@@ -444,13 +446,13 @@
             },
             "fix": {
                 "use": false,
-                "tip": "翻译结果修正_全局",
+                "tip": "翻译结果修正",
                 "icon": "fa.won",
                 "align": 0
             },
             "noundict": {
                 "use": false,
-                "tip": "专有名词翻译_全局",
+                "tip": "专有名词翻译",
                 "icon": "fa.book",
                 "align": 0
             },
@@ -519,7 +521,7 @@
             },
             "history": {
                 "use": true,
-                "tip": "显示/隐藏历史翻译",
+                "tip": "显示/隐藏历史文本",
                 "icon": "fa.rotate-left",
                 "align": 0
             },
@@ -726,7 +728,7 @@
             },
             "_6": {
                 "use": false,
-                "name": "显示/隐藏历史翻译",
+                "name": "显示/隐藏历史文本",
                 "keystring": ""
             },
             "_7": {
@@ -903,6 +905,21 @@
                 "use": false,
                 "name": "OCR_查词",
                 "keystring": ""
+            },
+            "41": {
+                "use": false,
+                "name": "Magpie_缩放",
+                "keystring": ""
+            },
+            "42": {
+                "use": false,
+                "name": "Magpie_窗口化缩放",
+                "keystring": ""
+            },
+            "40": {
+                "use": false,
+                "name": "取词查词_在新窗口中",
+                "keystring": ""
             }
         }
     },
@@ -990,13 +1007,35 @@
             "name": "vits-simple-api",
             "args": {
                 "URL": "http://127.0.0.1:23456",
-                "voices": "/voice/speakers",
-                "speak2": "/voice/{model_lower}?text={text}&id={id}&length={length}&lang=auto&prompt_lang=auto&format=wav&preset=default"
+                "customparams": [
+                    {
+                        "key": "lang",
+                        "value": "auto",
+                        "type": "string"
+                    },
+                    {
+                        "key": "prompt_lang",
+                        "value": "auto",
+                        "type": "string"
+                    },
+                    {
+                        "key": "format",
+                        "value": "wav",
+                        "type": "string"
+                    },
+                    {
+                        "key": "preset",
+                        "value": "default",
+                        "type": "string"
+                    }
+                ]
             },
             "type": "offline",
             "argstype": {
-                "speak2": {
-                    "name": "speak"
+                "customparams": {
+                    "name": "其他参数",
+                    "type": "custom",
+                    "function": "vitsparams"
                 }
             },
             "arg_not_sup": [
@@ -1025,7 +1064,7 @@
         "chatgpttts": {
             "use": false,
             "voice": "",
-            "name": "ChatGPT_兼容接口",
+            "name": "大模型通用接口",
             "arg_not_sup": [
                 "pitch"
             ],
@@ -1044,11 +1083,18 @@
                     "nova",
                     "sage",
                     "shimmer"
-                ]
+                ],
+                "customparams": []
             },
             "argstype": {
+                "customparams": {
+                    "name": "其他参数",
+                    "type": "custom",
+                    "function": "customparams"
+                },
                 "API接口地址": {
-                    "rank": 0
+                    "rank": 0,
+                    "type": "listedit_with_name"
                 },
                 "SECRET_KEY": {
                     "rank": 1,
@@ -1069,6 +1115,54 @@
                     "type": "textlist"
                 }
             }
+        },
+        "gptsovits": {
+            "use": false,
+            "name": "GPT-SoVITS",
+            "type": "offline",
+            "args": {
+                "URL": "http://127.0.0.1:9880",
+                "apiv": "v2",
+                "customparams": [
+                    {
+                        "key": "ref_audio_path",
+                        "value": "",
+                        "type": "string"
+                    },
+                    {
+                        "key": "prompt_text",
+                        "value": "",
+                        "type": "string"
+                    },
+                    {
+                        "key": "prompt_lang",
+                        "value": "",
+                        "type": "string"
+                    }
+                ]
+            },
+            "argstype": {
+                "apiv": {
+                    "type": "combo",
+                    "name": "API version",
+                    "list": [
+                        "v2",
+                        "v1"
+                    ],
+                    "internal": [
+                        "v2",
+                        "v1"
+                    ]
+                },
+                "customparams": {
+                    "name": "其他参数",
+                    "type": "custom",
+                    "function": "customparams"
+                }
+            },
+            "arg_not_sup": [
+                "pitch"
+            ]
         }
     },
     "hirasetting": {
@@ -1432,7 +1526,7 @@
         },
         "chatgptlike": {
             "use": false,
-            "name": "ChatGPT_兼容接口",
+            "name": "大模型通用接口",
             "args": {
                 "model": "gpt-4o-mini",
                 "modellistcache": [],
@@ -1447,9 +1541,16 @@
                 "user_user_prompt": "{sentence}",
                 "use_user_user_prompt": false,
                 "s": "",
-                "s2": ""
+                "s2": "",
+                "frequency_penalty_use": 0,
+                "customparams": []
             },
             "argstype": {
+                "customparams": {
+                    "name": "其他参数",
+                    "type": "custom",
+                    "function": "customparams"
+                },
                 "user_user_prompt": {
                     "name": "自定义_user message",
                     "refswitch": "use_user_user_prompt",
@@ -1464,7 +1565,8 @@
                     "rank": 5.12
                 },
                 "API接口地址": {
-                    "rank": 0
+                    "rank": 0,
+                    "type": "listedit_with_name"
                 },
                 "SECRET_KEY": {
                     "rank": 1,
@@ -1487,6 +1589,7 @@
                     "step": 0.01
                 },
                 "frequency_penalty": {
+                    "refswitch": "frequency_penalty_use",
                     "type": "spin",
                     "min": 0,
                     "max": 2,
@@ -1511,6 +1614,11 @@
                     "step": 0.1
                 }
             }
+        },
+        "jpdb": {
+            "use": true,
+            "useproxy": false,
+            "name": "jpdb"
         }
     },
     "darklight": 0,
@@ -1518,7 +1626,7 @@
     "lighttheme": 0,
     "usesearchword": true,
     "usecopyword": false,
-    "usewordorigin": false,
+    "usewordorigin": true,
     "ttscommon": {
         "rate": 1,
         "volume": 100,
@@ -1647,7 +1755,16 @@
         },
         "chatgptlike": {
             "use": false,
-            "name": "ChatGPT_兼容接口"
+            "name": "大模型通用接口"
+        },
+        "SnippingTool": {
+            "use": false,
+            "name": "SnippingTool",
+            "type": "offline"
+        },
+        "bing": {
+            "use": false,
+            "name": "Bing"
         }
     },
     "fanyi": {
@@ -1667,7 +1784,7 @@
         "baidu": {
             "use": false,
             "color": "#ff65db",
-            "name": "百度_v1",
+            "name": "百度",
             "useproxy": true
         },
         "baidu_ai": {
@@ -1685,7 +1802,7 @@
         "google": {
             "use": false,
             "color": "#ff0000",
-            "name": "谷歌_v1",
+            "name": "谷歌",
             "useproxy": true
         },
         "ModernMt": {
@@ -1722,7 +1839,7 @@
         "youdaodict": {
             "use": false,
             "color": "#95a5ff",
-            "name": "有道词典",
+            "name": "有道",
             "useproxy": true
         },
         "google2": {
@@ -2057,18 +2174,18 @@
             "type": "api",
             "use": false,
             "color": "blue",
-            "name": "ChatGPT_兼容接口",
+            "name": "大模型通用接口",
             "is_gpt_like": true,
             "useproxy": true
         },
         "hanshant": {
-            "type": "offline",
+            "type": "other",
             "use": false,
             "color": "blue",
             "name": "繁简转换"
         },
         "selfbuild": {
-            "type": "offline",
+            "type": "other",
             "use": false,
             "color": "blue",
             "name": "自定义翻译",
@@ -2098,8 +2215,8 @@
         "chatgpt-offline": {
             "use": false,
             "type": "offline",
-            "color": "blue",
-            "name": "ChatGPT_兼容接口",
+            "color": "#ff0000",
+            "name": "大模型通用接口",
             "is_gpt_like": true,
             "useproxy": false
         },
@@ -2364,7 +2481,8 @@
                         "type": "spin",
                         "min": 0,
                         "max": 100,
-                        "step": 0.1
+                        "step": 0.1,
+                        "dynamic": false
                     }
                 }
             }
@@ -2527,7 +2645,8 @@
         "sakura"
     ],
     "cishuvisrank": [
-        "mojidict"
+        "mojidict",
+        "jpdb"
     ],
     "ignoredict": [],
     "qwebinspectgeo": [
@@ -2647,5 +2766,81 @@
     "top_align": 0,
     "force_rect": false,
     "darktheme2": "PyQtDarkTheme",
-    "lighttheme2": "PyQtDarkTheme"
+    "lighttheme2": "PyQtDarkTheme",
+    "history": {
+        "showorigin": true,
+        "showtrans": true,
+        "showtransname": true,
+        "showtime": false,
+        "showapi": true,
+        "usewebview2": true,
+        "webviewLoadExt": true
+    },
+    "webviewLoadExt": true,
+    "webviewLoadExt_cishu": true,
+    "multihookmergeby": "\n",
+    "displayrank": 0,
+    "autodisappear_which": 0,
+    "foldstatus": {
+        "proxy": {
+            "gpt": true,
+            "api": false,
+            "free": true,
+            "external": true
+        },
+        "ts": {
+            "gptoffline": true,
+            "outdate": false,
+            "gpt": true,
+            "api": false,
+            "free": true,
+            "external": true
+        }
+    },
+    "usecustomankigen": false,
+    "networktcpport": 2333,
+    "networktcpenable": false,
+    "extensionsetting": [
+        500,
+        500,
+        800,
+        800
+    ],
+    "lineheights": {
+        "lineHeight": 1,
+        "lineHeightNormal": true,
+        "marginTop": 0,
+        "marginBottom": 0
+    },
+    "lineheightstrans": {
+        "lineHeight": 1,
+        "lineHeightNormal": true,
+        "marginTop": 0,
+        "marginBottom": 0
+    },
+    "locktoolsEx": false,
+    "settingfontbold": false,
+    "ankisplit": [
+        216,
+        222
+    ],
+    "mdictsplit": [
+        400,
+        400
+    ],
+    "hovercolor": "#80000000",
+    "anki_Orientation_V": true,
+    "myquickkeys": [],
+    "ZoomFactor2": 1,
+    "selectableEx": false,
+    "getWordFallbackClipboard": true,
+    "verticalhorizontal": false,
+    "toppest_translator": null,
+    "load_doc_or_log": [
+        8,
+        7,
+        0,
+        1
+    ],
+    "isopensettingfirsttime1": 0
 }

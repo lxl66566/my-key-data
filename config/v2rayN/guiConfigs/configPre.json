@@ -31,7 +31,7 @@
       {
         "server": "local_local",
         "domain": [
-          "ali.852456.xyz"
+          "claw.852456.xyz"
         ]
       },
       {
@@ -64,8 +64,7 @@
       "tag": "tun-in",
       "interface_name": "singbox_tun",
       "address": [
-        "172.18.0.1/30",
-        "fdfe:dcba:9876::1/126"
+        "172.18.0.1/30"
       ],
       "mtu": 9000,
       "auto_route": true,
@@ -183,17 +182,24 @@
           "0:65535"
         ],
         "domain": [
-          "raindrop.io",
-          "xdaforums.com",
-          "absx.us.kg"
+          "absx.us.kg",
+          "pceva.com.cn",
+          "prts.plus",
+          "www.aifuture-x.com",
+          "xdaforums.com"
         ],
         "domain_suffix": [
-          ".raindrop.io",
-          ".xdaforums.com",
-          ".absx.us.kg"
+          ".absx.us.kg",
+          ".pceva.com.cn",
+          ".prts.plus",
+          ".www.aifuture-x.com",
+          ".xdaforums.com"
         ],
         "rule_set": [
-          "geosite-cnki"
+          "geosite-asus",
+          "geosite-bitwarden",
+          "geosite-cnki",
+          "geosite-zhihu"
         ]
       },
       {
@@ -206,7 +212,40 @@
           "0:65535"
         ],
         "ip_cidr": [
-          "124.152.95.232"
+          "124.152.95.232",
+          "127.0.0.1",
+          "180.160.95.180"
+        ]
+      },
+      {
+        "outbound": "block",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "port_range": [
+          "0:65535"
+        ],
+        "domain": [
+          "mumu.nie.netease.com",
+          "sentry.netease.com"
+        ],
+        "domain_suffix": [
+          ".mumu.nie.netease.com",
+          ".sentry.netease.com"
+        ]
+      },
+      {
+        "outbound": "proxy",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "port_range": [
+          "0:65535"
+        ],
+        "process_name": [
+          "studio64.exe"
         ]
       },
       {
@@ -239,18 +278,18 @@
           "udp"
         ],
         "domain": [
-          "thereisnospoon.pm",
-          "xmr-tw.org",
-          "supportxmr.com",
+          "c3pool.org",
           "nanopool.org",
-          "c3pool.org"
+          "supportxmr.com",
+          "thereisnospoon.pm",
+          "xmr-tw.org"
         ],
         "domain_suffix": [
-          ".thereisnospoon.pm",
-          ".xmr-tw.org",
-          ".supportxmr.com",
+          ".c3pool.org",
           ".nanopool.org",
-          ".c3pool.org"
+          ".supportxmr.com",
+          ".thereisnospoon.pm",
+          ".xmr-tw.org"
         ]
       },
       {
@@ -262,6 +301,16 @@
         "ip_cidr": [
           "103.176.58.34",
           "125.229.105.12"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "process_name": [
+          "grass.exe"
         ]
       },
       {
@@ -403,10 +452,31 @@
     ],
     "rule_set": [
       {
+        "tag": "geosite-asus",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-asus.srs",
+        "download_detour": "proxy"
+      },
+      {
+        "tag": "geosite-bitwarden",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-bitwarden.srs",
+        "download_detour": "proxy"
+      },
+      {
         "tag": "geosite-cnki",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-cnki.srs",
+        "download_detour": "proxy"
+      },
+      {
+        "tag": "geosite-zhihu",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-zhihu.srs",
         "download_detour": "proxy"
       },
       {

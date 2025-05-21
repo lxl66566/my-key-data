@@ -120,14 +120,27 @@
         "network": "tcp,udp",
         "outboundTag": "direct",
         "domain": [
+          "domain:95vps.com",
+          "domain:absx.pages.dev",
           "domain:absx.us.kg",
+          "domain:bsbsb.top",
+          "domain:edu.cn",
           "domain:pceva.com.cn",
           "domain:prts.plus",
           "domain:www.aifuture-x.com",
           "domain:xdaforums.com",
           "geosite:asus",
+          "geosite:bilibili",
+          "geosite:bilibili-game",
           "geosite:bitwarden",
+          "geosite:bytedance",
           "geosite:cnki",
+          "geosite:coolapk",
+          "geosite:deepseek",
+          "geosite:geolocation-cn",
+          "geosite:lanzou",
+          "geosite:moji",
+          "geosite:tencent",
           "geosite:zhihu"
         ]
       },
@@ -138,6 +151,7 @@
         "outboundTag": "direct",
         "ip": [
           "124.152.95.232",
+          "127.0.0.1",
           "180.160.95.180"
         ]
       },
@@ -150,6 +164,12 @@
           "domain:mumu.nie.netease.com",
           "domain:sentry.netease.com"
         ]
+      },
+      {
+        "type": "field",
+        "port": "0-65535",
+        "network": "tcp,udp",
+        "outboundTag": "proxy"
       },
       {
         "type": "field",

@@ -23,7 +23,8 @@
     }
   },
   "files.associations": {
-    "*.cursorrules": "markdown"
+    "*.cursorrules": "markdown",
+    "*.ksy": "yaml"
   },
   "diffEditor.hideUnchangedRegions.enabled": true,
   "extensions.ignoreRecommendations": true,

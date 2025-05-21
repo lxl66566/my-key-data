@@ -4,7 +4,10 @@ c = "check"
 t = "test -- --nocapture"
 r = "run"
 u = "update"
-f = "fix --allow-dirty"
+f = "clippy --fix --all-targets --all-features --allow-staged --allow-dirty"
 
 [build]
 rustc-wrapper = "sccache"
+
+[profile.dev]
+debug = false

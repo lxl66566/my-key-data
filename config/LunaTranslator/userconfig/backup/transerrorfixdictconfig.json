@@ -1,0 +1,10 @@
+{
+    "dict_v2": [
+        {
+            "key": "<|im_end|>",
+            "value": "",
+            "escape": false,
+            "regex": false
+        }
+    ]
+}

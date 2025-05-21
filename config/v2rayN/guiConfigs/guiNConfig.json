@@ -194,10 +194,7 @@
   "CheckUpdateItem": {
     "CheckPreReleaseUpdate": false,
     "SelectedCoreTypes": [
-      "v2rayN",
       "Xray",
-      "mihomo",
-      "sing_box",
       "GeoFiles"
     ]
   },

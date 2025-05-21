@@ -27,6 +27,7 @@
 [http]
 	proxy = http://127.0.0.1:10450
 [diff]
+	external = difft
 	algorithm = histogram
 	colorMoved = plain
 	mnemonicPrefix = true
