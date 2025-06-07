@@ -40,7 +40,7 @@
     {
       "tag": "socks",
       "port": 10450,
-      "listen": "127.0.0.1",
+      "listen": "0.0.0.0",
       "protocol": "socks",
       "sniffing": {
         "enabled": true,

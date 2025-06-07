@@ -129,36 +129,24 @@
         "args": {
             "APP_KEY": "",
             "APP_SECRET": "",
-            "interface": 0
+            "interface1": 0
         },
         "argstype": {
             "APP_SECRET": {
                 "name": "应用密钥",
-                "refcombo": "interface",
-                "refcombo_l": [
-                    0,
-                    2
-                ],
                 "type": "textlist"
             },
             "APP_KEY": {
                 "name": "应用ID",
-                "refcombo": "interface",
-                "refcombo_l": [
-                    0,
-                    2
-                ],
                 "type": "textlist"
             },
-            "interface": {
+            "interface1": {
                 "rank": 0,
                 "name": "接口",
                 "type": "combo",
                 "list": [
                     "OCR_通用文字识别",
-                    "OCR_通用文字识别_试用",
-                    "图片翻译",
-                    "图片翻译_试用"
+                    "图片翻译"
                 ]
             }
         }
@@ -296,16 +284,10 @@
     },
     "local": {
         "args": {
-            "": ""
-        },
-        "argstype": {
-            "": {
-                "type": "program",
-                "route": [
-                    "ocrengines.local",
-                    "question"
-                ]
-            }
+            "thread": 4,
+            "gpu": true,
+            "luid": 0,
+            "accfirst": true
         }
     },
     "youdaodictocr": {
@@ -398,13 +380,30 @@
             "s": "",
             "modellistcache": [],
             "frequency_penalty_use": false,
-            "customparams": []
+            "customparams": [],
+            "reasoning_effort": "medium",
+            "reasoning_effort_use": false
         },
         "argstype": {
+            "reasoning_effort": {
+                "type": "combo",
+                "refswitch": "reasoning_effort_use",
+                "internal": [
+                    "low",
+                    "medium",
+                    "high"
+                ],
+                "list": [
+                    "low",
+                    "medium",
+                    "high"
+                ]
+            },
             "customparams": {
                 "name": "其他参数",
                 "type": "custom",
-                "function": "customparams"
+                "function": "customparams",
+                "rank": -1
             },
             "SECRET_KEY": {
                 "rank": 0.5,
@@ -440,7 +439,7 @@
                 "type": "spin",
                 "min": 0,
                 "max": 2,
-                "step": 0.05
+                "step": 0.01
             },
             "max_tokens": {
                 "type": "intspin",
@@ -461,7 +460,7 @@
                 "type": "spin",
                 "min": 0,
                 "max": 1,
-                "step": 0.1
+                "step": 0.01
             }
         }
     }

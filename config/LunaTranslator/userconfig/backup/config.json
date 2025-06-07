@@ -117,10 +117,10 @@
     "yuanjiao_r": 0,
     "yuanjiao_merge": false,
     "transuigeo": [
-        161,
-        666,
+        163,
+        643,
         1200,
-        105
+        108
     ],
     "hist_geo": [
         150,
@@ -147,8 +147,8 @@
         400
     ],
     "selecthookgeo": [
-        91,
-        170,
+        142,
+        85,
         1200,
         600
     ],
@@ -254,8 +254,8 @@
     "settingfonttype": "Arial",
     "showintab_sub": false,
     "setting_geo_2": [
-        124,
-        152,
+        72,
+        148,
         1200,
         600
     ],
@@ -2821,8 +2821,8 @@
     "locktoolsEx": false,
     "settingfontbold": false,
     "ankisplit": [
-        216,
-        222
+        293,
+        145
     ],
     "mdictsplit": [
         400,

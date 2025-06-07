@@ -182,14 +182,22 @@
           "0:65535"
         ],
         "domain": [
+          "95vps.com",
+          "absx.pages.dev",
           "absx.us.kg",
+          "bsbsb.top",
+          "edu.cn",
           "pceva.com.cn",
           "prts.plus",
           "www.aifuture-x.com",
           "xdaforums.com"
         ],
         "domain_suffix": [
+          ".95vps.com",
+          ".absx.pages.dev",
           ".absx.us.kg",
+          ".bsbsb.top",
+          ".edu.cn",
           ".pceva.com.cn",
           ".prts.plus",
           ".www.aifuture-x.com",
@@ -197,8 +205,17 @@
         ],
         "rule_set": [
           "geosite-asus",
+          "geosite-bilibili",
+          "geosite-bilibili-game",
           "geosite-bitwarden",
+          "geosite-bytedance",
           "geosite-cnki",
+          "geosite-coolapk",
+          "geosite-deepseek",
+          "geosite-geolocation-cn",
+          "geosite-lanzou",
+          "geosite-moji",
+          "geosite-tencent",
           "geosite-zhihu"
         ]
       },
@@ -215,6 +232,19 @@
           "124.152.95.232",
           "127.0.0.1",
           "180.160.95.180"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "port_range": [
+          "0:65535"
+        ],
+        "process_name": [
+          "Jantama_MahjongSoul.exe"
         ]
       },
       {
@@ -453,31 +483,85 @@
     "rule_set": [
       {
         "tag": "geosite-asus",
-        "type": "remote",
+        "type": "local",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-asus.srs",
-        "download_detour": "proxy"
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-asus.srs"
+      },
+      {
+        "tag": "geosite-bilibili",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-bilibili.srs"
+      },
+      {
+        "tag": "geosite-bilibili-game",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-bilibili-game.srs"
       },
       {
         "tag": "geosite-bitwarden",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-bitwarden.srs"
+      },
+      {
+        "tag": "geosite-bytedance",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-bitwarden.srs",
+        "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-bytedance.srs",
         "download_detour": "proxy"
       },
       {
         "tag": "geosite-cnki",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-cnki.srs"
+      },
+      {
+        "tag": "geosite-coolapk",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-coolapk.srs"
+      },
+      {
+        "tag": "geosite-deepseek",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-cnki.srs",
+        "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-deepseek.srs",
+        "download_detour": "proxy"
+      },
+      {
+        "tag": "geosite-geolocation-cn",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-geolocation-cn.srs"
+      },
+      {
+        "tag": "geosite-lanzou",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-lanzou.srs",
+        "download_detour": "proxy"
+      },
+      {
+        "tag": "geosite-moji",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-moji.srs"
+      },
+      {
+        "tag": "geosite-tencent",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-tencent.srs",
         "download_detour": "proxy"
       },
       {
         "tag": "geosite-zhihu",
-        "type": "remote",
+        "type": "local",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-geosite/geosite-zhihu.srs",
-        "download_detour": "proxy"
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-zhihu.srs"
       },
       {
         "tag": "geosite-binance",
@@ -514,12 +598,6 @@
         "type": "local",
         "format": "binary",
         "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geoip-cn.srs"
-      },
-      {
-        "tag": "geosite-geolocation-cn",
-        "type": "local",
-        "format": "binary",
-        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-geolocation-cn.srs"
       }
     ]
   },

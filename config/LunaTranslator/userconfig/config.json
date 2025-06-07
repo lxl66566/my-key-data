@@ -117,10 +117,10 @@
     "yuanjiao_r": 0,
     "yuanjiao_merge": false,
     "transuigeo": [
-        160,
-        698,
+        162,
+        648,
         1200,
-        108
+        114
     ],
     "hist_geo": [
         150,
@@ -147,8 +147,8 @@
         400
     ],
     "selecthookgeo": [
-        147,
-        38,
+        98,
+        96,
         1200,
         600
     ],
@@ -343,7 +343,7 @@
             "edittrans",
             "selectable",
             "searchwordW",
-            "game_ref_favorites"
+            "editable"
         ],
         "buttons": {
             "retrans": {
@@ -575,7 +575,7 @@
             },
             "noundict_direct": {
                 "use": false,
-                "tip": "专有名词翻译_直接替换",
+                "tip": "专有名词翻译_翻译前替换",
                 "icon": "fa.book",
                 "align": 0
             },
@@ -626,6 +626,12 @@
                 "use": false,
                 "tip": "收藏夹",
                 "icon": "fa.heart",
+                "align": 0
+            },
+            "editable": {
+                "use": false,
+                "tip": "可编辑的",
+                "icon": "fa.italic",
                 "align": 0
             }
         }
@@ -970,7 +976,7 @@
         "voiceroid2": {
             "use": false,
             "voice": "",
-            "name": "VoiceRoid2/VoiceRoid+",
+            "name": "VoiceRoid2",
             "args": {
                 "path": ""
             },
@@ -1538,20 +1544,37 @@
                 "top_p": 0.3,
                 "max_tokens": 1024,
                 "frequency_penalty": 0,
-                "user_user_prompt": "{sentence}",
                 "use_user_user_prompt": false,
                 "s": "",
                 "s2": "",
                 "frequency_penalty_use": 0,
-                "customparams": []
+                "customparams": [],
+                "reasoning_effort": "medium",
+                "reasoning_effort_use": false,
+                "user_user_prompt_1": "{sentence}\nword:{word}"
             },
             "argstype": {
+                "reasoning_effort": {
+                    "type": "combo",
+                    "refswitch": "reasoning_effort_use",
+                    "internal": [
+                        "low",
+                        "medium",
+                        "high"
+                    ],
+                    "list": [
+                        "low",
+                        "medium",
+                        "high"
+                    ]
+                },
                 "customparams": {
                     "name": "其他参数",
                     "type": "custom",
-                    "function": "customparams"
+                    "function": "customparams",
+                    "rank": -1
                 },
-                "user_user_prompt": {
+                "user_user_prompt_1": {
                     "name": "自定义_user message",
                     "refswitch": "use_user_user_prompt",
                     "rank": 5.1
@@ -1593,7 +1616,7 @@
                     "type": "spin",
                     "min": 0,
                     "max": 2,
-                    "step": 0.05
+                    "step": 0.01
                 },
                 "max_tokens": {
                     "type": "intspin",
@@ -1611,7 +1634,7 @@
                     "type": "spin",
                     "min": 0,
                     "max": 1,
-                    "step": 0.1
+                    "step": 0.01
                 }
             }
         },
@@ -1650,6 +1673,12 @@
         },
         "filetrans": {
             "use": false
+        },
+        "mssr": {
+            "path": "",
+            "source": "loopback",
+            "use": false,
+            "refreshinterval": 1.5
         }
     },
     "verticalocr": false,
@@ -1658,7 +1687,8 @@
         "local": {
             "use": true,
             "name": "本地OCR",
-            "type": "offline"
+            "type": "offline",
+            "argstype": "customwidget"
         },
         "windowsocr": {
             "use": false,
@@ -1787,12 +1817,6 @@
             "name": "百度",
             "useproxy": true
         },
-        "baidu_ai": {
-            "use": false,
-            "color": "#ff65db",
-            "name": "百度_v2",
-            "useproxy": true
-        },
         "bing": {
             "use": false,
             "color": "#000ff0",
@@ -1830,28 +1854,10 @@
             "name": "阿里",
             "useproxy": true
         },
-        "youdao": {
-            "use": false,
-            "color": "blue",
-            "name": "有道",
-            "useproxy": true
-        },
         "youdaodict": {
             "use": false,
             "color": "#95a5ff",
             "name": "有道",
-            "useproxy": true
-        },
-        "google2": {
-            "use": false,
-            "color": "#95a5ff",
-            "name": "谷歌_v2",
-            "useproxy": true
-        },
-        "sougou": {
-            "use": false,
-            "color": "blue",
-            "name": "搜狗",
             "useproxy": true
         },
         "caiyun": {
@@ -1866,100 +1872,6 @@
             "name": "DeepL",
             "useproxy": true,
             "type": "free"
-        },
-        "deepl2": {
-            "use": false,
-            "color": "blue",
-            "name": "deepl_v2",
-            "useproxy": true
-        },
-        "DeepLX": {
-            "use": false,
-            "color": "blue",
-            "name": "DeepLX",
-            "useproxy": false,
-            "type": "offline"
-        },
-        "dev_chatgpt": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "chatgpt",
-            "is_gpt_like": true
-        },
-        "deepl_dev": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "deepl"
-        },
-        "bing_dev": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "必应"
-        },
-        "tx_dev": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "tx"
-        },
-        "baidu_dev": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "百度"
-        },
-        "google_dev": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "谷歌"
-        },
-        "dev_youdao": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "有道"
-        },
-        "dev_sogou": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "搜狗"
-        },
-        "dev_ali": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "阿里"
-        },
-        "dev_yandex": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "yandex"
-        },
-        "dev_niutrans": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "niutrans"
-        },
-        "dev_caiyun": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "彩云"
-        },
-        "gemini": {
-            "type": "api",
-            "use": false,
-            "color": "#ff0000",
-            "name": "Gemini",
-            "is_gpt_like": true,
-            "useproxy": true
         },
         "jb7": {
             "type": "offline",
@@ -1985,24 +1897,6 @@
             "color": "#1839f0",
             "name": "快译通"
         },
-        "sougou2": {
-            "use": false,
-            "color": "blue",
-            "name": "搜狗",
-            "useproxy": true
-        },
-        "youdao3": {
-            "use": false,
-            "color": "blue",
-            "name": "有道_v3",
-            "useproxy": true
-        },
-        "youdao5": {
-            "use": false,
-            "color": "blue",
-            "name": "有道_v5",
-            "useproxy": true
-        },
         "itrans": {
             "use": false,
             "color": "blue",
@@ -2019,12 +1913,6 @@
             "use": false,
             "color": "blue",
             "name": "reverso",
-            "useproxy": true
-        },
-        "reverso_context": {
-            "use": false,
-            "color": "blue",
-            "name": "reverso_context",
             "useproxy": true
         },
         "TranslateCom": {
@@ -2094,13 +1982,6 @@
             "name": "火山",
             "useproxy": true
         },
-        "feishu": {
-            "type": "api",
-            "use": false,
-            "color": "blue",
-            "name": "飞书",
-            "useproxy": true
-        },
         "papago": {
             "use": false,
             "color": "blue",
@@ -2126,48 +2007,11 @@
             "name": "DeepL",
             "useproxy": true
         },
-        "deeplapi": {
-            "type": "api",
-            "use": false,
-            "color": "blue",
-            "name": "deeplapi",
-            "useproxy": true
-        },
         "youdaoapi": {
             "type": "api",
             "use": false,
             "color": "blue",
             "name": "有道",
-            "useproxy": true
-        },
-        "yunyi2": {
-            "use": false,
-            "color": "blue",
-            "name": "云译_v2",
-            "useproxy": true
-        },
-        "chatgpt": {
-            "type": "api",
-            "use": false,
-            "color": "blue",
-            "name": "ChatGPT",
-            "is_gpt_like": true,
-            "useproxy": true
-        },
-        "cohere": {
-            "type": "api",
-            "use": false,
-            "color": "blue",
-            "name": "cohere",
-            "is_gpt_like": true,
-            "useproxy": true
-        },
-        "claude": {
-            "type": "api",
-            "use": false,
-            "color": "blue",
-            "name": "claude",
-            "is_gpt_like": true,
             "useproxy": true
         },
         "chatgpt-3rd-party": {
@@ -2198,12 +2042,6 @@
             "name": "IBM",
             "useproxy": true
         },
-        "ort_sp": {
-            "use": false,
-            "type": "offline",
-            "color": "blue",
-            "name": "MT5"
-        },
         "sakura": {
             "use": true,
             "type": "offline",
@@ -2220,93 +2058,17 @@
             "is_gpt_like": true,
             "useproxy": false
         },
-        "TGW": {
-            "use": false,
-            "type": "offline",
-            "color": "blue",
-            "name": "TGW语言模型",
-            "is_gpt_like": true
-        },
-        "dev_theb": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "Theb.ai",
-            "is_gpt_like": true
-        },
-        "dev_moonshot": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "moonshot",
-            "is_gpt_like": true
-        },
-        "dev_qwen": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "qianwen",
-            "is_gpt_like": true
-        },
-        "dev_chatglm": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "chatglm",
-            "is_gpt_like": true
-        },
-        "dev_deepseek": {
-            "use": false,
-            "color": "#ff0000",
-            "type": "dev",
-            "name": "deepseek",
-            "is_gpt_like": true
-        },
-        "dev_chatgpt_mirror": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "chatgpt mirror",
-            "is_gpt_like": true
-        },
         "eztrans": {
             "type": "offline",
             "use": false,
             "color": "#1839f0",
             "name": "ezTrans"
         },
-        "txhunyuan": {
-            "type": "api",
-            "use": false,
-            "color": "blue",
-            "name": "腾讯混元大模型",
-            "is_gpt_like": true
-        },
-        "baiduqianfan": {
-            "type": "api",
-            "use": false,
-            "color": "blue",
-            "name": "百度千帆大模型",
-            "is_gpt_like": true
-        },
-        "realtime_edit": {
-            "use": false,
-            "type": "pre",
-            "color": "blue",
-            "name": "实时编辑"
-        },
         "yandex": {
             "use": false,
             "color": "blue",
             "name": "yandex",
             "useproxy": true
-        },
-        "dev_duckduckgo": {
-            "use": false,
-            "color": "blue",
-            "type": "dev",
-            "name": "DuckDuckGo",
-            "is_gpt_like": true
         },
         "atlas": {
             "type": "offline",
@@ -2321,18 +2083,18 @@
             "name": "华为云",
             "useproxy": false
         },
-        "cdp_chatgpt": {
-            "use": false,
-            "color": "blue",
-            "name": "CDP_ChatGPT",
-            "useproxy": false,
-            "type": "free"
-        },
         "lec": {
             "type": "offline",
             "use": false,
             "color": "#1839f0",
             "name": "LEC"
+        },
+        "deepl_1": {
+            "use": false,
+            "color": "blue",
+            "name": "DeepL",
+            "useproxy": false,
+            "type": "free"
         }
     },
     "magpiepath": "",
@@ -2450,7 +2212,6 @@
                     "fillcolor": "#eeeeee",
                     "width_rate": 0.1,
                     "width": 3,
-                    "trace": 0,
                     "reverse": true
                 },
                 "argstype": {
@@ -2475,14 +2236,6 @@
                         "min": 0,
                         "max": 10,
                         "step": 0.01
-                    },
-                    "trace": {
-                        "name": "投影距离",
-                        "type": "spin",
-                        "min": 0,
-                        "max": 100,
-                        "step": 0.1,
-                        "dynamic": false
                     }
                 }
             }
@@ -2667,7 +2420,6 @@
         1200,
         600
     ],
-    "codepage_index": 0,
     "currvislistuid": null,
     "ocr_stable_sim2": 0,
     "fontsizeori": 17.0,
@@ -2821,8 +2573,8 @@
     "locktoolsEx": false,
     "settingfontbold": false,
     "ankisplit": [
-        216,
-        222
+        283,
+        155
     ],
     "mdictsplit": [
         400,
@@ -2837,10 +2589,54 @@
     "verticalhorizontal": false,
     "toppest_translator": null,
     "load_doc_or_log": [
-        8,
-        7,
-        0,
-        1
+        10,
+        3,
+        2,
+        5
     ],
-    "isopensettingfirsttime1": 0
+    "isopensettingfirsttime1": 0,
+    "is_search_word_auto_tts_2": false,
+    "ignoredict_S_hover": [],
+    "ignoredict_S_click": [],
+    "yuanjiao_sys": false,
+    "codepage_value": 932,
+    "ocr_stable_sim_v2": 0.5,
+    "ocr_stable_sim2_v2": 0.95,
+    "ocr_diff_sim_v2": 0.95,
+    "word_hover_show_word_info": false,
+    "word_hover_action_usewb2": false,
+    "min_auto_height": 0,
+    "imageformat2": "webp",
+    "theme3": "PyQtDarkTheme",
+    "useopenlink": false,
+    "useopenlinklink1": [
+        "https://jpdb.io/search?q={word}",
+        "https://www.weblio.jp/content/{word}"
+    ],
+    "usesearchword_S": false,
+    "usesearchword_S_hover": false,
+    "wordclickkbtriggerneed": {},
+    "wordclickkbtrigger": {},
+    "usewordoriginfor": {},
+    "ocrmergelines_distance": 0.4,
+    "WordViewTooltipColor": "#c0ffc0ff",
+    "WordViewTooltipDWM": 0,
+    "WordViewTooltipDWM_1": true,
+    "WordViewTooltipContentColor": "#c0ffffff",
+    "WordViewTooltipHideFocus": true,
+    "WordViewTooltipRadius": 4,
+    "WordViewTooltipBorder": 5,
+    "word_hover_DWM": 0,
+    "word_hover_DWM_1": true,
+    "word_hover_border_R": 4,
+    "word_hover_border": 8,
+    "word_hover_bg_color": "#333",
+    "word_hover_text_color": "white",
+    "ocr_auto_method_v2": "period",
+    "editable": false,
+    "range_select_multi_dpi_capture_force": false,
+    "WordViewTooltip2": [
+        300,
+        300
+    ]
 }

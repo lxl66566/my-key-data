@@ -10,7 +10,9 @@
     },
     "shortcuts": {
         "scale": 2129,
-        "overlay": 2372
+        "overlay": 2372,
+        "windowedModeScale": 583,
+        "toolbar": 584
     },
     "autoRestore": false,
     "countdownSeconds": 3,
@@ -155,5 +157,17 @@
     ],
     "minFrameRate": 0.0,
     "benchmarkMode": false,
-    "disableFP16": false
+    "disableFP16": false,
+    "overlay": {
+        "initialToolbarState": 2,
+        "screenshotsDir": "",
+        "windows": {
+            "profiler": {
+                "hArea": 2,
+                "vArea": 1,
+                "hPos": 60.0,
+                "vPos": 0.5
+            }
+        }
+    }
 }

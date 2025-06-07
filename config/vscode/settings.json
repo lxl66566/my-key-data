@@ -10,6 +10,8 @@
   "editor.cursorBlinking": "smooth",
   "editor.fontSize": 15,
   "editor.fontFamily": "Fira Code,Consolas,monospace",
+  "editor.unicodeHighlight.invisibleCharacters": true,
+  "editor.renderWhitespace": "trailing",
   // "editor.wordWrap": "bounded",
   // "editor.wordWrapColumn": 80,
   "editor.tabCompletion": "on",
@@ -57,7 +59,7 @@
   "update.enableWindowsBackgroundUpdates": false,
   "security.workspace.trust.untrustedFiles": "open",
   "clangd.checkUpdates": false,
-  "clangd.path": "/etc/profiles/per-user/absx/bin/clangd",
+  "clangd.path": "c:\\Users\\lxl\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\19.1.2\\clangd_19.1.2\\bin\\clangd.exe",
   "clangd.arguments": ["--enable-config"],
   "codeium.enableConfig": {
     "*": true,
@@ -70,7 +72,6 @@
   "rome.rename": true,
   "rome.requireConfiguration": false,
   "redhat.telemetry.enabled": false,
-  "python.analysis.typeEvaluation.deprecateTypingAliases": true,
   "ruff.lint.ignore": ["E731"],
   "ruff.nativeServer": "auto",
   "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
@@ -180,8 +181,8 @@
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
     }
   },
   "[java][gradle]": {

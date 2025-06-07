@@ -11,6 +11,7 @@
 	pager = delta
 	excludesfile = ~/.gitignore_g
 	ignorecase = false
+	attributesfile = C:\\Users\\lxl\\.gitattributes
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
@@ -41,7 +42,7 @@
 [delta]
   navigate = true    # use n and N to move between diff sections
 [merge]
-	conflictstyle = zdiff3
+	conflictStyle = diff3
 [rebase]
 	autoSquash = true
 	autoStash = true
@@ -63,3 +64,6 @@
 [rerere]
 	enabled = true
 	autoupdate = true
+[merge "mergiraf"]
+	name = mergiraf
+	driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L

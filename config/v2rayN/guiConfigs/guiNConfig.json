@@ -214,7 +214,7 @@
         "tls"
       ],
       "RouteOnly": false,
-      "AllowLANConn": false,
+      "AllowLANConn": true,
       "NewPort4LAN": false,
       "User": "",
       "Pass": "",
