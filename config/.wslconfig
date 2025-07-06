@@ -11,6 +11,7 @@ nestedVirtualization=true   # 启用 WSL2/WSLg 子系统嵌套虚拟化功能支
 networkingMode=mirrored     # 启用镜像网络特性支持
 processors=8                # 设置 WSL2/WSLg 子系统的逻辑 CPU 核心数为 8（最大肯定没法超过硬件的物理逻辑核心数）
 vmIdleTimeout=-1            # WSL2 VM 实例空闲超时关闭时间，-1 为永不关闭，根据参数说明，目前似乎仅适用于 Win11+
+kernel=C:\\Users\\lxl\\scoop\\apps\\wsl2-rolling-kernel-stable\\current\\bzImage-x86_64
 
 [experimental]                  # 实验性功能（按照过往经验，若后续转正，则是配置在上面的 [wsl2] 选节）
 autoMemoryReclaim=gradual       # 启用空闲内存自动缓慢回收，其它选项：dropcache / disabled（立即/禁用）

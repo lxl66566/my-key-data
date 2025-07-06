@@ -117,8 +117,8 @@
     "yuanjiao_r": 0,
     "yuanjiao_merge": false,
     "transuigeo": [
-        162,
-        648,
+        165,
+        643,
         1200,
         114
     ],
@@ -2573,8 +2573,8 @@
     "locktoolsEx": false,
     "settingfontbold": false,
     "ankisplit": [
-        283,
-        155
+        271,
+        167
     ],
     "mdictsplit": [
         400,
@@ -2594,7 +2594,7 @@
         2,
         5
     ],
-    "isopensettingfirsttime1": 0,
+    "isopensettingfirsttime1": 4,
     "is_search_word_auto_tts_2": false,
     "ignoredict_S_hover": [],
     "ignoredict_S_click": [],
@@ -2617,7 +2617,9 @@
     "usesearchword_S_hover": false,
     "wordclickkbtriggerneed": {},
     "wordclickkbtrigger": {},
-    "usewordoriginfor": {},
+    "usewordoriginfor": {
+        "searchword_S_hover": true
+    },
     "ocrmergelines_distance": 0.4,
     "WordViewTooltipColor": "#c0ffc0ff",
     "WordViewTooltipDWM": 0,

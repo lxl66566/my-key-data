@@ -11,6 +11,7 @@
   "editor.fontSize": 15,
   "editor.fontFamily": "Fira Code,Consolas,monospace",
   "editor.unicodeHighlight.invisibleCharacters": true,
+  "editor.experimentalEditContextEnabled": false, // https://github.com/microsoft/vscode/issues/251608
   "editor.renderWhitespace": "trailing",
   // "editor.wordWrap": "bounded",
   // "editor.wordWrapColumn": 80,
@@ -160,7 +161,7 @@
   "fittencode.languagePreference.commentPreference": "zh-cn",
   "fittencode.action.startChat.showInEditorContextMenu": false,
   "fittencode.Unit Test Framework.Python": "unittest",
-  "nix.enableLanguageServer": true,
+  "nix.enableLanguageServer": false,
   "nix.serverPath": "nil",
   "nix.serverSettings": {
     "nil": {
@@ -172,6 +173,10 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "java.format.enabled": false,
   "java.format.settings.google.version": "1.24.0",
+  "anyformatter": {
+    "toml": { "command": "taplo fmt -" }
+    // "nix": { "command": "nixfmt -" }
+  },
   "[html]": {},
   "[css]": {},
   "[clojure]": {
@@ -212,7 +217,7 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
+    "editor.defaultFormatter": "lxl66566.anyformatter-vscode"
   },
   "ktfmt.path-to-jar": "D:/no_install_software/ktfmt-0.50-jar-with-dependencies.jar",
   "[kotlin][kotlinscript]": {
@@ -419,7 +424,8 @@
     "<C-c>": false,
     "<C-w>": false,
     "<C-x>": false,
-    "<C-r>": false
+    "<C-r>": false,
+    "<C-R>": false
   },
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.persistentSessionScrollback": 1000,

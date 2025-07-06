@@ -54,11 +54,6 @@ def gfixup [commit_hash?: string = 'HEAD'] {
     GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash $rebase_target
 }
 
-# compress a folder to tar.zst, with max compression
-def tz [folder: string] {
-    tar -cf - $folder | zstd -19 -T0 -o $"($folder).tar.zst"
-}
-
 alias l = ls
 alias gp = git pull
 alias gc = git clone

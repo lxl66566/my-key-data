@@ -25,8 +25,7 @@ windows_bk(){
     
     # galgame
     # cp -rfu "$HOME/AppData/Roaming/RenPy/DDLC-1454445547" ./galgame/DDLC
-    cp -rfu "G:/galgame/アンレス テルミナリア/save" "./galgame/アンレス テルミナリア"
-    cp -rfu "$HOME/AppData/Roaming/枕/サクラノ刻" "./galgame"
+    # cp -rfu "G:/galgame/アンレス テルミナリア/save" "./galgame/アンレス テルミナリア"
     
     # config
     # windows

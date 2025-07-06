@@ -124,16 +124,16 @@
           "domain:absx.pages.dev",
           "domain:absx.us.kg",
           "domain:bsbsb.top",
-          "domain:edu.cn",
-          "domain:pceva.com.cn",
           "domain:prts.plus",
           "domain:www.aifuture-x.com",
           "domain:xdaforums.com",
+          "domain:xiaohuazhuo.com",
           "geosite:asus",
           "geosite:bilibili",
           "geosite:bilibili-game",
           "geosite:bitwarden",
           "geosite:bytedance",
+          "geosite:category-netdisk-cn",
           "geosite:cnki",
           "geosite:coolapk",
           "geosite:deepseek",
@@ -141,7 +141,8 @@
           "geosite:lanzou",
           "geosite:moji",
           "geosite:tencent",
-          "geosite:zhihu"
+          "geosite:zhihu",
+          "regexp:\\.cn$"
         ]
       },
       {
