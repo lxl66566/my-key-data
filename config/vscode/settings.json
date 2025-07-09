@@ -147,8 +147,7 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
-  "evenBetterToml.schema.repositoryEnabled": false,
-  "code-runner.runInTerminal": true,
+  "nushellLanguageServer.hints.showInferredTypes": true,
   "remote.SSH.connectTimeout": 30,
   "supermaven.allowGitignore": true,
   "supermaven.enableFixWithSupermaven": false,
@@ -217,7 +216,7 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[toml]": {
-    "editor.defaultFormatter": "lxl66566.anyformatter-vscode"
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "ktfmt.path-to-jar": "D:/no_install_software/ktfmt-0.50-jar-with-dependencies.jar",
   "[kotlin][kotlinscript]": {
@@ -244,6 +243,21 @@
   },
   "[lua]": {
     "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+  "Lua.hint.enable": true,
+  "Lua.hint.arrayIndex": "Enable",
+  "Lua.hint.await": true,
+  "Lua.hint.setType": true,
+  "Lua.hint.paramName": "All",
+  "Lua.hint.paramType": true,
+  "Lua.hint.awaitPropagate": true,
+  "Lua.workspace.checkThirdParty": true,
+  "Lua.type.checkTableShape": true,
+  "Lua.type.inferParamType": true,
+  "Lua.type.weakNilCheck": false,
+  "Lua.type.weakUnionCheck": false,
+  "[NGINX]": {
+    "editor.defaultFormatter": "hangxingliu.vscode-nginx-conf-hint"
   },
   "[typst]": {
     "editor.defaultFormatter": "myriad-dreamin.tinymist",

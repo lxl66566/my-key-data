@@ -1,0 +1,101 @@
+sync_interval = 3600    # GSB sync interval in seconds
+version       = "0.1.2" # GSB version
+
+# (Optional) Git-related configurations
+[git]
+branch = "main"   # Branch name used for gsb sync (Optional, default = "main")
+remote = "origin" # Remote repository name used for gsb sync (Optional, default = "origin")
+
+# (Optional) Aliases for device IDs. Device IDs can be viewed via `gsb d` or `gsb device`.
+[aliases]
+main = "ff19a810-c0ea-44b0-b297-f2209a48bfc3"
+
+[[item]]
+path_in_repo   = "config/.cargo/config.toml"       
+default_source = "C:/Users/lxl/.cargo/config.toml" 
+is_hardlink    = true
+
+[[item]]
+path_in_repo   = "config/ditto/Ditto.Settings"       
+default_source = "C:/standalone_software/Ditto/Ditto.Settings"
+is_hardlink    = true
+
+[[item]]
+path_in_repo   = "config/LunaTranslator/userconfig"       
+default_source = "C:/game/galgame/LunaTranslator/userconfig"
+
+
+[[item]]
+path_in_repo   = "config/mpv"       
+default_source = "C:/Users/lxl/scoop/apps/mpv/current/portable_config"
+
+
+[[item]]
+path_in_repo   = "config/nushell/custom.nu"       
+default_source = "C:/Users/lxl/AppData/Roaming/nushell/custom.nu"
+is_hardlink    = true
+
+[[item]]
+path_in_repo = "config/uv/uv.toml"
+default_source = "C:/Users/lxl/.config/uv/uv.toml"
+is_hardlink    = true
+
+[[item]]
+path_in_repo = "config/v2rayN/guiConfigs"
+default_source = "C:/standalone_software/v2rayN/guiConfigs"
+
+
+[[item]]
+path_in_repo = "config/vscode/settings.json"
+default_source = "C:/Users/lxl/AppData/Roaming/Code/User/settings.json"
+
+
+[[item]]
+path_in_repo = "config/.bashrc"
+default_source = "C:/Users/lxl/.bashrc"
+is_hardlink    = true
+
+[[item]]
+path_in_repo = "config/.gitconfig"
+default_source = "C:/Users/lxl/.gitconfig"
+is_hardlink    = true
+
+[[item]]
+path_in_repo = "config/.wslconfig"
+default_source = "C:/Users/lxl/.wslconfig"
+is_hardlink    = true
+
+[[item]]
+path_in_repo = "other_games/osu/collection.db"
+default_source = "C:/game/osu/collection.db"
+
+
+[[item]]
+path_in_repo = "other_games/osu/scores.db"
+default_source = "C:/game/osu/scores.db"
+
+
+[[item]]
+path_in_repo = "other_games/osu/osu!.lxl.cfg"
+default_source = "C:/game/osu/osu!.lxl.cfg"
+
+
+[[item]]
+path_in_repo = "Tai/AppIcons"
+default_source = "C:/standalone_software/Tai1.5.0.5/AppIcons"
+
+
+[[item]]
+path_in_repo = "Tai/Data"
+default_source = "C:/standalone_software/Tai1.5.0.5/Data"
+
+
+
+
+
+
+
+
+
+
+

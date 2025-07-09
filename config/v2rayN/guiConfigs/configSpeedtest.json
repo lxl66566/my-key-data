@@ -1,0 +1,55 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks10473",
+      "port": 10473,
+      "listen": "127.0.0.1",
+      "protocol": "socks"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy10473",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "azure.852456.xyz",
+            "method": "chacha20",
+            "ota": false,
+            "password": "absxsfriends123456",
+            "port": 40000,
+            "level": 1
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized"
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "socks10473"
+        ],
+        "outboundTag": "proxy10473"
+      }
+    ]
+  }
+}
