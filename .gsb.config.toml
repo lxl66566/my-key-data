@@ -1,0 +1,90 @@
+sync_interval = 3600    # GSB sync interval in seconds
+version       = "0.2.1" # GSB version
+
+# (Optional) Git-related configurations
+[git]
+branch = "main"   # Branch name used for gsb sync (Optional, default = "main")
+remote = "origin" # Remote repository name used for gsb sync (Optional, default = "origin")
+
+# (Optional) Aliases for device IDs. Device IDs can be viewed via `gsb d` or `gsb device`.
+[aliases]
+main = "ff19a810-c0ea-44b0-b297-f2209a48bfc3"
+work = "d37ef0ee-3c3f-419a-8c32-66526565b4ae"
+
+[[item]]
+default_source = "~/.cargo/config.toml"
+is_hardlink    = true
+path_in_repo   = "config/.cargo/config.toml"
+
+[[item]]
+default_source = "C:/standalone_software/Ditto/Ditto.Settings"
+is_hardlink    = true
+path_in_repo   = "config/ditto/Ditto.Settings"
+
+[[item]]
+default_source = "C:/game/galgame/LunaTranslator/userconfig"
+ignore         = ["work"]
+path_in_repo   = "config/LunaTranslator/userconfig"
+
+[[item]]
+default_source = "~/scoop/apps/mpv/current/portable_config"
+path_in_repo   = "config/mpv"
+
+[[item]]
+default_source = "~/AppData/Roaming/nushell/custom.nu"
+is_hardlink    = true
+path_in_repo   = "config/nushell/custom.nu"
+
+[[item]]
+default_source = "~/.config/uv/uv.toml"
+is_hardlink    = true
+path_in_repo   = "config/uv/uv.toml"
+
+[[item]]
+default_source = "C:/standalone_software/v2rayN/guiConfigs"
+ignore         = ["work"]
+path_in_repo   = "config/v2rayN/guiConfigs"
+
+[[item]]
+default_source = "~/AppData/Roaming/Code/User/settings.json"
+path_in_repo   = "config/vscode/settings.json"
+
+[[item]]
+default_source = "~/.bashrc"
+is_hardlink    = true
+path_in_repo   = "config/.bashrc"
+
+[[item]]
+default_source = "~/.gitconfig"
+is_hardlink    = true
+path_in_repo   = "config/.gitconfig"
+
+[[item]]
+default_source = "~/.wslconfig"
+is_hardlink    = true
+path_in_repo   = "config/.wslconfig"
+
+[[item]]
+default_source = "C:/game/osu/collection.db"
+ignore         = ["work"]
+path_in_repo   = "other_games/osu/collection.db"
+
+[[item]]
+default_source = "C:/game/osu/scores.db"
+ignore         = ["work"]
+path_in_repo   = "other_games/osu/scores.db"
+
+[[item]]
+default_source = "C:/game/osu/osu!.lxl.cfg"
+ignore         = ["work"]
+path_in_repo   = "other_games/osu/osu!.lxl.cfg"
+
+[[item]]
+default_source = "C:/standalone_software/Tai1.5.0.5/AppIcons"
+ignore         = ["work"]
+path_in_repo   = "Tai/AppIcons"
+
+[[item]]
+default_source = "C:/standalone_software/Tai1.5.0.5/Data"
+ignore         = ["work"]
+path_in_repo   = "Tai/Data"

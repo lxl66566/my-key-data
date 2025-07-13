@@ -1,0 +1,618 @@
+{
+  "log": {
+    "level": "warn",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "remote",
+        "address": "tcp://8.8.8.8",
+        "strategy": "prefer_ipv4",
+        "detour": "proxy"
+      },
+      {
+        "tag": "local",
+        "address": "223.5.5.5",
+        "strategy": "prefer_ipv4",
+        "detour": "direct"
+      },
+      {
+        "tag": "block",
+        "address": "rcode://success"
+      },
+      {
+        "tag": "local_local",
+        "address": "223.5.5.5",
+        "detour": "direct"
+      }
+    ],
+    "rules": [
+      {
+        "server": "local_local",
+        "domain": [
+          "claw.852456.xyz"
+        ]
+      },
+      {
+        "server": "remote",
+        "clash_mode": "Global"
+      },
+      {
+        "server": "local_local",
+        "clash_mode": "Direct"
+      },
+      {
+        "server": "local",
+        "rule_set": [
+          "geosite-cn",
+          "geosite-geolocation-cn"
+        ]
+      },
+      {
+        "server": "block",
+        "rule_set": [
+          "geosite-category-ads-all"
+        ]
+      }
+    ],
+    "final": "remote"
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "singbox_tun",
+      "address": [
+        "172.18.0.1/30"
+      ],
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": false,
+      "stack": "gvisor",
+      "sniff": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "socks",
+      "tag": "proxy",
+      "server": "127.0.0.1",
+      "server_port": 10450,
+      "version": "5"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns_out"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "rules": [
+      {
+        "outbound": "proxy",
+        "clash_mode": "Global"
+      },
+      {
+        "outbound": "direct",
+        "clash_mode": "Direct"
+      },
+      {
+        "outbound": "dns_out",
+        "protocol": [
+          "dns"
+        ]
+      },
+      {
+        "outbound": "dns_out",
+        "port": [
+          53
+        ],
+        "process_name": [
+          "v2ray.exe",
+          "v2ray.exe",
+          "xray.exe",
+          "mihomo-windows-amd64-compatible.exe",
+          "mihomo-windows-amd64.exe",
+          "mihomo-linux-amd64.exe",
+          "clash.exe",
+          "mihomo.exe",
+          "hysteria.exe",
+          "naive.exe",
+          "naiveproxy.exe",
+          "tuic-client.exe",
+          "tuic.exe",
+          "juicity-client.exe",
+          "juicity.exe",
+          "hysteria-windows-amd64.exe",
+          "hysteria-linux-amd64.exe",
+          "hysteria.exe",
+          "brook_windows_amd64.exe",
+          "brook_linux_amd64.exe",
+          "brook.exe",
+          "overtls-bin.exe",
+          "overtls.exe"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "process_name": [
+          "v2ray.exe",
+          "v2ray.exe",
+          "xray.exe",
+          "mihomo-windows-amd64-compatible.exe",
+          "mihomo-windows-amd64.exe",
+          "mihomo-linux-amd64.exe",
+          "clash.exe",
+          "mihomo.exe",
+          "hysteria.exe",
+          "naive.exe",
+          "naiveproxy.exe",
+          "tuic-client.exe",
+          "tuic.exe",
+          "sing-box-client.exe",
+          "sing-box.exe",
+          "juicity-client.exe",
+          "juicity.exe",
+          "hysteria-windows-amd64.exe",
+          "hysteria-linux-amd64.exe",
+          "hysteria.exe",
+          "brook_windows_amd64.exe",
+          "brook_linux_amd64.exe",
+          "brook.exe",
+          "overtls-bin.exe",
+          "overtls.exe"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "port_range": [
+          "0:65535"
+        ],
+        "domain": [
+          "95vps.com",
+          "absx.pages.dev",
+          "absx.us.kg",
+          "bsbsb.top",
+          "prts.plus",
+          "www.aifuture-x.com",
+          "xdaforums.com",
+          "xiaohuazhuo.com"
+        ],
+        "domain_suffix": [
+          ".95vps.com",
+          ".absx.pages.dev",
+          ".absx.us.kg",
+          ".bsbsb.top",
+          ".prts.plus",
+          ".www.aifuture-x.com",
+          ".xdaforums.com",
+          ".xiaohuazhuo.com"
+        ],
+        "domain_regex": [
+          "\\.cn$"
+        ],
+        "rule_set": [
+          "geosite-asus",
+          "geosite-bilibili",
+          "geosite-bilibili-game",
+          "geosite-bitwarden",
+          "geosite-bytedance",
+          "geosite-category-netdisk-cn",
+          "geosite-cnki",
+          "geosite-coolapk",
+          "geosite-deepseek",
+          "geosite-geolocation-cn",
+          "geosite-lanzou",
+          "geosite-moji",
+          "geosite-tencent",
+          "geosite-zhihu"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "port_range": [
+          "0:65535"
+        ],
+        "ip_cidr": [
+          "124.152.95.232",
+          "127.0.0.1",
+          "180.160.95.180"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "port_range": [
+          "0:65535"
+        ],
+        "process_name": [
+          "Jantama_MahjongSoul.exe",
+          "gupax.exe"
+        ]
+      },
+      {
+        "outbound": "block",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "port_range": [
+          "0:65535"
+        ],
+        "domain": [
+          "mumu.nie.netease.com",
+          "sentry.netease.com"
+        ],
+        "domain_suffix": [
+          ".mumu.nie.netease.com",
+          ".sentry.netease.com"
+        ]
+      },
+      {
+        "outbound": "proxy",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "port_range": [
+          "0:65535"
+        ],
+        "process_name": [
+          "studio64.exe"
+        ]
+      },
+      {
+        "outbound": "proxy",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "domain": [
+          "xmr.kryptex.network"
+        ],
+        "domain_suffix": [
+          ".xmr.kryptex.network"
+        ]
+      },
+      {
+        "outbound": "proxy",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "ip_cidr": [
+          "157.90.32.66"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "domain": [
+          "c3pool.org",
+          "nanopool.org",
+          "supportxmr.com",
+          "thereisnospoon.pm",
+          "xmr-tw.org"
+        ],
+        "domain_suffix": [
+          ".c3pool.org",
+          ".nanopool.org",
+          ".supportxmr.com",
+          ".thereisnospoon.pm",
+          ".xmr-tw.org"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "ip_cidr": [
+          "103.176.58.34",
+          "125.229.105.12"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "process_name": [
+          "grass.exe"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "network": [
+          "tcp",
+          "udp"
+        ],
+        "domain": [
+          "maa.plus",
+          "prts.plus"
+        ],
+        "domain_suffix": [
+          ".maa.plus",
+          ".prts.plus"
+        ]
+      },
+      {
+        "outbound": "proxy",
+        "domain": [
+          "github.com",
+          "googleapis.cn",
+          "gstatic.com",
+          "parsec.app",
+          "tradingview.com"
+        ],
+        "domain_suffix": [
+          ".github.com",
+          ".googleapis.cn",
+          ".gstatic.com",
+          ".parsec.app",
+          ".tradingview.com"
+        ],
+        "rule_set": [
+          "geosite-binance",
+          "geosite-okx"
+        ]
+      },
+      {
+        "outbound": "block",
+        "network": [
+          "udp"
+        ],
+        "port": [
+          443
+        ]
+      },
+      {
+        "outbound": "block",
+        "rule_set": [
+          "geosite-category-ads-all"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "ip_is_private": true
+      },
+      {
+        "outbound": "direct",
+        "rule_set": [
+          "geosite-private"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "ip_cidr": [
+          "223.5.5.5",
+          "223.6.6.6",
+          "2400:3200::1",
+          "2400:3200:baba::1",
+          "119.29.29.29",
+          "1.12.12.12",
+          "120.53.53.53",
+          "2402:4e00::",
+          "2402:4e00:1::",
+          "180.76.76.76",
+          "2400:da00::6666",
+          "114.114.114.114",
+          "114.114.115.115",
+          "114.114.114.119",
+          "114.114.115.119",
+          "114.114.114.110",
+          "114.114.115.110",
+          "180.184.1.1",
+          "180.184.2.2",
+          "101.226.4.6",
+          "218.30.118.6",
+          "123.125.81.6",
+          "140.207.198.6",
+          "1.2.4.8",
+          "210.2.4.8",
+          "52.80.66.66",
+          "117.50.22.22",
+          "2400:7fc0:849e:200::4",
+          "2404:c2c0:85d8:901::4",
+          "117.50.10.10",
+          "52.80.52.52",
+          "2400:7fc0:849e:200::8",
+          "2404:c2c0:85d8:901::8",
+          "117.50.60.30",
+          "52.80.60.30"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "domain": [
+          "alidns.com",
+          "doh.pub",
+          "dot.pub",
+          "360.cn",
+          "onedns.net"
+        ],
+        "domain_suffix": [
+          ".alidns.com",
+          ".doh.pub",
+          ".dot.pub",
+          ".360.cn",
+          ".onedns.net"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "rule_set": [
+          "geoip-cn"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "rule_set": [
+          "geosite-cn"
+        ]
+      },
+      {
+        "outbound": "proxy",
+        "port_range": [
+          "0:65535"
+        ]
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "geosite-asus",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-asus.srs"
+      },
+      {
+        "tag": "geosite-bilibili",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-bilibili.srs"
+      },
+      {
+        "tag": "geosite-bilibili-game",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-bilibili-game.srs"
+      },
+      {
+        "tag": "geosite-bitwarden",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-bitwarden.srs"
+      },
+      {
+        "tag": "geosite-bytedance",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-bytedance.srs"
+      },
+      {
+        "tag": "geosite-category-netdisk-cn",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-category-netdisk-cn.srs"
+      },
+      {
+        "tag": "geosite-cnki",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-cnki.srs"
+      },
+      {
+        "tag": "geosite-coolapk",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-coolapk.srs"
+      },
+      {
+        "tag": "geosite-deepseek",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-deepseek.srs"
+      },
+      {
+        "tag": "geosite-geolocation-cn",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-geolocation-cn.srs"
+      },
+      {
+        "tag": "geosite-lanzou",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-lanzou.srs"
+      },
+      {
+        "tag": "geosite-moji",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-moji.srs"
+      },
+      {
+        "tag": "geosite-tencent",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-tencent.srs"
+      },
+      {
+        "tag": "geosite-zhihu",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-zhihu.srs"
+      },
+      {
+        "tag": "geosite-binance",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-binance.srs"
+      },
+      {
+        "tag": "geosite-okx",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-okx.srs"
+      },
+      {
+        "tag": "geosite-category-ads-all",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-category-ads-all.srs"
+      },
+      {
+        "tag": "geosite-private",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-private.srs"
+      },
+      {
+        "tag": "geosite-cn",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geosite-cn.srs"
+      },
+      {
+        "tag": "geoip-cn",
+        "type": "local",
+        "format": "binary",
+        "path": "C:\\standalone_software\\v2rayN\\bin\\srss\\geoip-cn.srs"
+      }
+    ]
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "C:\\standalone_software\\v2rayN\\guiConfigs\\cache.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:10456"
+    }
+  }
+}

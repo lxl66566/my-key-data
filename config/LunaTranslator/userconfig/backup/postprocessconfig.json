@@ -1,0 +1,246 @@
+{
+    "_remove_non_shiftjis_char": {
+        "use": true,
+        "name": "过滤文本中的非日语字符集字符"
+    },
+    "_remove_latin": {
+        "use": false,
+        "name": "过滤latin-1字符集"
+    },
+    "_remove_ascii": {
+        "use": false,
+        "name": "过滤ASCII字符集"
+    },
+    "_remove_control": {
+        "use": false,
+        "name": "过滤控制字符"
+    },
+    "_remove_chaos": {
+        "use": false,
+        "name": "过滤其他乱码"
+    },
+    "_remove_not_in_ja_bracket": {
+        "use": false,
+        "name": "过滤「」以外的字符"
+    },
+    "_1": {
+        "use": false,
+        "name": "去除花括号{}",
+        "isExUse": true
+    },
+    "_2": {
+        "use": false,
+        "name": "去除重复字符_AAAABBBBCCCC->ABC",
+        "args": {
+            "重复次数(若为1则自动分析去重)": 1,
+            "保持非重复字符": true
+        },
+        "argstype": {
+            "保持非重复字符": {
+                "type": "switch"
+            },
+            "重复次数(若为1则自动分析去重)": {
+                "type": "intspin",
+                "min": 1,
+                "max": 10000,
+                "step": 1
+            }
+        }
+    },
+    "_3": {
+        "use": false,
+        "name": "去除重复行_ABCDABCDABCD->ABCD",
+        "args": {
+            "重复次数(若为1则自动分析去重)": 1
+        },
+        "argstype": {
+            "重复次数(若为1则自动分析去重)": {
+                "type": "intspin",
+                "min": 1,
+                "max": 10000,
+                "step": 1
+            }
+        }
+    },
+    "_3_2": {
+        "use": false,
+        "name": "去除重复行_S1S1S1S2S2S2->S1S2"
+    },
+    "_4": {
+        "use": false,
+        "name": "过滤尖括号<>",
+        "isExUse": true
+    },
+    "_6": {
+        "use": false,
+        "name": "过滤换行符"
+    },
+    "_6EX": {
+        "use": false,
+        "name": "过滤换行符",
+        "isExUse": true
+    },
+    "_91": {
+        "use": false,
+        "name": "过滤数字"
+    },
+    "_92": {
+        "use": false,
+        "name": "过滤英文字母"
+    },
+    "_7": {
+        "use": false,
+        "name": "简单字符串替换",
+        "args": {
+            "替换内容": {}
+        }
+    },
+    "_7_zhuanyi": {
+        "use": false,
+        "name": "转义字符串替换",
+        "args": {
+            "替换内容": {}
+        }
+    },
+    "_8": {
+        "use": false,
+        "name": "正则表达式替换",
+        "args": {
+            "替换内容": {}
+        }
+    },
+    "_10": {
+        "use": false,
+        "name": "去除重复行_ABCDBCDCDD->ABCD"
+    },
+    "_13": {
+        "use": false,
+        "name": "去除重复行_AABABCABCD->ABCD"
+    },
+    "_13EX": {
+        "use": false,
+        "name": "去除重复行_AABABCABCD->ABCD"
+    },
+    "_11": {
+        "use": false,
+        "name": "自定义python处理",
+        "isExUse": true
+    },
+    "stringreplace": {
+        "use": true,
+        "name": "字符串替换",
+        "args": {
+            "internal": []
+        },
+        "isExUse": true
+    },
+    "_remove_symbo": {
+        "use": false,
+        "name": "过滤英文标点"
+    },
+    "length_threshold": {
+        "use": false,
+        "name": "按字数过滤或截断",
+        "args": {
+            "minzishu": 1,
+            "maxzishu": 99999,
+            "cut": false,
+            "cut_reverse": false
+        },
+        "argstype": {
+            "minzishu": {
+                "name": "最小字数",
+                "type": "intspin",
+                "min": 0,
+                "max": 99999999,
+                "step": 1
+            },
+            "maxzishu": {
+                "name": "最大字数",
+                "type": "intspin",
+                "min": 0,
+                "max": 99999999,
+                "step": 1
+            },
+            "cut": {
+                "name": "超过最大字数时截断而非过滤",
+                "type": "switch"
+            },
+            "cut_reverse": {
+                "name": "截断时反向截断",
+                "type": "switch"
+            }
+        }
+    },
+    "lines_threshold": {
+        "use": false,
+        "name": "按行数过滤或截断",
+        "args": {
+            "minzishu": 1,
+            "maxzishu": 99999,
+            "cut": false,
+            "cut_reverse": false
+        },
+        "argstype": {
+            "minzishu": {
+                "name": "最小行数",
+                "type": "intspin",
+                "min": 0,
+                "max": 99999999,
+                "step": 1
+            },
+            "maxzishu": {
+                "name": "最大行数",
+                "type": "intspin",
+                "min": 0,
+                "max": 99999999,
+                "step": 1
+            },
+            "cut": {
+                "name": "超过最大行数时截断而非过滤",
+                "type": "switch"
+            },
+            "cut_reverse": {
+                "name": "截断时反向截断",
+                "type": "switch"
+            }
+        }
+    },
+    "dedump": {
+        "use": false,
+        "name": "过滤历史重复_LRU",
+        "args": {
+            "cachesize": 3
+        },
+        "argstype": {
+            "cachesize": {
+                "type": "intspin",
+                "name": "缓存条数",
+                "min": -1,
+                "max": 10000,
+                "step": 1
+            }
+        }
+    },
+    "lines_threshold_1": {
+        "use": false,
+        "name": "截取指定行数",
+        "args": {
+            "maxzishu": 1,
+            "cut_reverse": true
+        },
+        "argstype": {
+            "maxzishu": {
+                "name": "截取行数",
+                "type": "intspin",
+                "min": -99999999,
+                "max": 99999999,
+                "step": 1
+            },
+            "cut_reverse": {
+                "name": "截取末尾",
+                "type": "switch"
+            }
+        }
+    }
+}

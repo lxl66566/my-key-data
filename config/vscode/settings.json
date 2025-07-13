@@ -1,0 +1,478 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.guides.bracketPairs": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.accessibilitySupport": "off",
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Fira Code,Consolas,monospace",
+  "editor.unicodeHighlight.invisibleCharacters": true,
+  "editor.experimentalEditContextEnabled": false, // https://github.com/microsoft/vscode/issues/251608
+  "editor.renderWhitespace": "trailing",
+  // "editor.wordWrap": "bounded",
+  // "editor.wordWrapColumn": 80,
+  "editor.tabCompletion": "on",
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hant": true
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+      "*.unsafe:rust": "#ecd06d"
+    }
+  },
+  "files.associations": {
+    "*.cursorrules": "markdown",
+    "*.ksy": "yaml"
+  },
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "extensions.ignoreRecommendations": true,
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.list.smoothScrolling": true,
+  "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.option"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.fileNesting.patterns": {
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "files.autoGuessEncoding": true,
+  "window.commandCenter": false,
+  "git.openRepositoryInParentFolders": "never",
+  "git.autofetch": false,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "update.showReleaseNotes": false,
+  "update.enableWindowsBackgroundUpdates": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "clangd.checkUpdates": false,
+  "clangd.path": "c:\\Users\\lxl\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\19.1.2\\clangd_19.1.2\\bin\\clangd.exe",
+  "clangd.arguments": ["--enable-config"],
+  "codeium.enableConfig": {
+    "*": true,
+    "requirements.txt": true,
+    "typst": true
+  },
+  "continue.enableTabAutocomplete": false,
+  "Lingma.PreferredLanguage forCommitMessage": "English",
+  "rome_lsp.trace.server": "messages",
+  "rome.rename": true,
+  "rome.requireConfiguration": false,
+  "redhat.telemetry.enabled": false,
+  "ruff.lint.ignore": ["E731"],
+  "ruff.nativeServer": "auto",
+  "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
+  "rust-analyzer.cargo.sysroot": "discover",
+  "rust-analyzer.diagnostics.experimental.enable": true,
+  "rust-analyzer.showUnlinkedFileNotification": false,
+  "rust-analyzer.runnables.extraEnv": {
+    "RUST_LOG": "debug"
+  },
+  "rust-analyzer.testExplorer": true,
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
+  "rust-analyzer.initializeStopped": true,
+  "rust-analyzer.completion.snippets.custom": {
+    "thiserror": {
+      "prefix": ["te"],
+      "body": ["#[derive(Error, Debug)]", "pub enum ${1:Error} {", "\t$0", "}"],
+      "requires": ["Error"],
+      "scope": "item"
+    },
+    "Arc::new": {
+      "postfix": "arc",
+      "body": "Arc::new(${receiver})",
+      "requires": "std::sync::Arc",
+      "description": "Put the expression into an `Arc`",
+      "scope": "expr"
+    },
+    "Rc::new": {
+      "postfix": "rc",
+      "body": "Rc::new(${receiver})",
+      "requires": "std::rc::Rc",
+      "description": "Put the expression into an `Rc`",
+      "scope": "expr"
+    },
+    "Box::pin": {
+      "postfix": "pinbox",
+      "body": "Box::pin(${receiver})",
+      "requires": "std::boxed::Box",
+      "description": "Put the expression into a pinned `Box`",
+      "scope": "expr"
+    },
+    "Ok": {
+      "postfix": "ok",
+      "body": "Ok(${receiver})",
+      "description": "Wrap the expression in a `Result::Ok`",
+      "scope": "expr"
+    },
+    "Err": {
+      "postfix": "err",
+      "body": "Err(${receiver})",
+      "description": "Wrap the expression in a `Result::Err`",
+      "scope": "expr"
+    },
+    "Some": {
+      "postfix": "some",
+      "body": "Some(${receiver})",
+      "description": "Wrap the expression in an `Option::Some`",
+      "scope": "expr"
+    }
+  },
+  "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+  "markdown.validate.enabled": false,
+  "Codegeex.Privacy": true,
+  "Codegeex.Comment.LanguagePreference": "中文",
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.callArgumentNames": "all",
+  "python.analysis.typeCheckingMode": "standard",
+  "pylyzer.inlayHints": true,
+  "svelte.enable-ts-plugin": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "nushellLanguageServer.hints.showInferredTypes": true,
+  "remote.SSH.connectTimeout": 30,
+  "supermaven.allowGitignore": true,
+  "supermaven.enableFixWithSupermaven": false,
+  "typst-lsp.experimentalFormatterMode": "on",
+  "typst-preview.pinPreviewFile": true,
+  "tinymist.exportPdf": "onSave",
+  "tinymist.formatterMode": "typstyle",
+  "accessibility.voice.speechLanguage": "zh-CN",
+  "fittencode.languagePreference.displayPreference": "zh-cn",
+  "fittencode.languagePreference.commentPreference": "zh-cn",
+  "fittencode.action.startChat.showInEditorContextMenu": false,
+  "fittencode.Unit Test Framework.Python": "unittest",
+  "nix.enableLanguageServer": false,
+  "nix.serverPath": "nil",
+  "nix.serverSettings": {
+    "nil": {
+      "formatting": {
+        "command": ["nixfmt"]
+      }
+    }
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "java.format.enabled": false,
+  "java.format.settings.google.version": "1.24.0",
+  "anyformatter": {
+    "toml": { "command": "taplo fmt -" }
+    // "nix": { "command": "nixfmt -" }
+  },
+  "[html]": {},
+  "[css]": {},
+  "[clojure]": {
+    "editor.defaultFormatter": "pedrorgirardi.vscode-cljfmt"
+  },
+  "[jsonc]": {},
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+  "[java][gradle]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "java.configuration.runtimes": [
+    {
+      "name": "OpenJDK-22",
+      "path": "D:/scoop/apps/openjdk22/current",
+      "default": true
+    }
+  ],
+  "[javascript][typescript][javascriptreact][typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[c][h][cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "ktfmt.path-to-jar": "D:/no_install_software/ktfmt-0.50-jar-with-dependencies.jar",
+  "[kotlin][kotlinscript]": {
+    "editor.defaultFormatter": "crdrost.ktfmt"
+  },
+  "[markdown]": {
+    // "editor.wordWrap": "bounded",
+    // "editor.wordWrapColumn": 105,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "[octave]": {
+    "editor.defaultFormatter": "tusindfryd.octave-formatter"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "shakram02.bash-beautify"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+  "Lua.hint.enable": true,
+  "Lua.hint.arrayIndex": "Enable",
+  "Lua.hint.await": true,
+  "Lua.hint.setType": true,
+  "Lua.hint.paramName": "All",
+  "Lua.hint.paramType": true,
+  "Lua.hint.awaitPropagate": true,
+  "Lua.workspace.checkThirdParty": true,
+  "Lua.type.checkTableShape": true,
+  "Lua.type.inferParamType": true,
+  "Lua.type.weakNilCheck": false,
+  "Lua.type.weakUnionCheck": false,
+  "[NGINX]": {
+    "editor.defaultFormatter": "hangxingliu.vscode-nginx-conf-hint"
+  },
+  "[typst]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist",
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+  },
+  "[nix]": {
+    "editor.defaultFormatter": "brettm12345.nixfmt-vscode"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
+  "[typst-code]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+  },
+  "sonarlint.rules": {
+    "python:S125": {
+      "level": "off"
+    },
+    "java:S106": {
+      "level": "off"
+    },
+    "java:S100": {
+      "level": "off"
+    },
+    "java:S125": {
+      "level": "off"
+    },
+    "java:S2293": {
+      "level": "off"
+    },
+    "java:S101": {
+      "level": "off"
+    },
+    "java:S1602": {
+      "level": "off"
+    },
+    "java:S1659": {
+      "level": "off"
+    },
+    "java:S3973": {
+      "level": "off"
+    },
+    "java:S117": {
+      "level": "off"
+    },
+    "java:S135": {
+      "level": "off"
+    },
+    "java:S115": {
+      "level": "off"
+    },
+    "python:S3776": {
+      "level": "off"
+    },
+    "java:S1186": {
+      "level": "off"
+    },
+    "python:S117": {
+      "level": "off"
+    },
+    "java:S116": {
+      "level": "off"
+    },
+    "java:S3776": {
+      "level": "off"
+    },
+    "javascript:S125": {
+      "level": "off"
+    },
+    "typescript:S125": {
+      "level": "off"
+    },
+    "python:S1192": {
+      "level": "off"
+    },
+    "python:S1542": {
+      "level": "off"
+    },
+    "python:S101": {
+      "level": "off"
+    },
+    "javascript:S3358": {
+      "level": "off"
+    },
+    "Web:TableWithoutCaptionCheck": {
+      "level": "off"
+    },
+    "python:S2208": {
+      "level": "off"
+    }
+  },
+  "errorLens.excludeBySource": ["Java(1610612976)"],
+  "prettier.printWidth": 160,
+  "prettier.trailingComma": "all",
+  "vim.useSystemClipboard": true,
+  "vim.history": 100,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "x"]
+    },
+    {
+      "before": ["X"],
+      "after": ["\"", "_", "X"]
+    },
+    {
+      "before": ["("],
+      "after": ["s", "(", ")", "<esc>", "h", "p", "l"]
+    },
+    {
+      "before": ["["],
+      "after": ["s", "[", "]", "<esc>", "h", "p", "l"]
+    },
+    {
+      "before": ["{"],
+      "after": ["s", "{", "}", "<esc>", "h", "p", "l"]
+    },
+    {
+      "before": ["h"],
+      "after": ["i"]
+    },
+    {
+      "before": ["i"],
+      "after": ["k"]
+    },
+    {
+      "before": ["k"],
+      "after": ["j"]
+    },
+    {
+      "before": ["j"],
+      "after": ["h"]
+    },
+    {
+      "before": ["<C-x>"],
+      "commands": ["editor.action.clipboardCutAction"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [],
+  "vim.normalModeKeyBindings": [],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "x"]
+    },
+    {
+      "before": ["h"],
+      "after": ["i"]
+    },
+    {
+      "before": ["i"],
+      "after": ["k"]
+    },
+    {
+      "before": ["k"],
+      "after": ["j"]
+    },
+    {
+      "before": ["j"],
+      "after": ["h"]
+    },
+    {
+      "before": ["X"],
+      "after": ["\"", "_", "X"]
+    },
+    {
+      "before": ["d", "x"],
+      "after": ["\"", "_", "d", "d"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-e>": false,
+    "<C-s>": false,
+    "<C-d>": false,
+    "<C-g>": false,
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-w>": false,
+    "<C-x>": false,
+    "<C-r>": false,
+    "<C-R>": false
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.persistentSessionScrollback": 1000,
+  "terminal.integrated.scrollback": 3000,
+  "terminal.integrated.profiles.windows": {
+    "Nushell": {
+      "path": "C:/Users/lxl/AppData/Local/Programs/nu/bin/nu",
+      "icon": "star-add"
+    },
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": ["${env:windir}\\System32\\cmd.exe", "${env:windir}\\Sysnative\\cmd.exe"],
+      "args": ["/K chcp 65001 >nul", "\n"],
+      "icon": "terminal-cmd"
+    },
+    "Bash": {
+      "path": "bash.exe"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Nushell",
+  "terminal.external.windowsExec": "bash.exe",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "fish": {
+      "path": "/usr/bin/fish"
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.sendKeybindingsToShell": false
+}

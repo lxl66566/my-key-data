@@ -1,0 +1,467 @@
+{
+    "baiduocr_X": {
+        "args": {
+            "API Key": "",
+            "Secret Key": "",
+            "接口": 0,
+            "app_id": "",
+            "app_key": ""
+        },
+        "argstype": {
+            "API Key": {
+                "refcombo": "接口",
+                "refcombo_i_r": 5,
+                "type": "textlist"
+            },
+            "Secret Key": {
+                "refcombo": "接口",
+                "refcombo_i_r": 5,
+                "type": "textlist"
+            },
+            "app_key": {
+                "name": "密钥",
+                "refcombo": "接口",
+                "refcombo_i": 5,
+                "type": "textlist"
+            },
+            "app_id": {
+                "name": "APP ID",
+                "refcombo": "接口",
+                "refcombo_i": 5,
+                "type": "textlist"
+            },
+            "接口": {
+                "rank": 0,
+                "type": "combo",
+                "list": [
+                    "百度智能云_OCR_通用文字识别（标准版）",
+                    "百度智能云_OCR_通用文字识别（标准含位置版）",
+                    "百度智能云_OCR_通用文字识别（高精度版）",
+                    "百度智能云_OCR_通用文字识别（高精度含位置版）",
+                    "百度智能云_图片翻译",
+                    "百度翻译开放平台_图片翻译"
+                ]
+            }
+        }
+    },
+    "txocr": {
+        "args": {
+            "SecretId": "",
+            "SecretKey": "",
+            "Region": 0,
+            "ProjectId": "0",
+            "interface": 0
+        },
+        "argstype": {
+            "SecretId": {
+                "type": "textlist"
+            },
+            "SecretKey": {
+                "type": "textlist"
+            },
+            "ProjectId": {
+                "refcombo": "interface",
+                "refcombo_i": 1,
+                "type": "textlist"
+            },
+            "Region": {
+                "rank": 1,
+                "type": "combo",
+                "list": [
+                    "ap-beijing",
+                    "ap-guangzhou",
+                    "ap-hongkong",
+                    "ap-seoul",
+                    "ap-shanghai",
+                    "ap-singapore"
+                ]
+            },
+            "interface": {
+                "rank": 0,
+                "name": "接口",
+                "type": "combo",
+                "list": [
+                    "OCR_通用印刷体识别",
+                    "图片翻译"
+                ]
+            }
+        }
+    },
+    "txocrtrans": {
+        "args": {
+            "注册网址": "https://cloud.tencent.com/document/product/551/17232",
+            "SecretId": "",
+            "SecretKey": "",
+            "ProjectId": "0",
+            "Region": 0
+        },
+        "argstype": {
+            "注册网址": {
+                "type": "label",
+                "islink": true
+            },
+            "Region": {
+                "type": "combo",
+                "list": [
+                    "ap-beijing",
+                    "ap-guangzhou",
+                    "ap-hongkong",
+                    "ap-seoul",
+                    "ap-shanghai",
+                    "ap-singapore",
+                    "na-toronto"
+                ]
+            }
+        }
+    },
+    "feishu": {
+        "args": {
+            "app_id": "",
+            "app_secret": ""
+        }
+    },
+    "docsumo": {
+        "args": {
+            "token": ""
+        }
+    },
+    "youdaocr": {
+        "args": {
+            "APP_KEY": "",
+            "APP_SECRET": "",
+            "interface1": 0
+        },
+        "argstype": {
+            "APP_SECRET": {
+                "name": "应用密钥",
+                "type": "textlist"
+            },
+            "APP_KEY": {
+                "name": "应用ID",
+                "type": "textlist"
+            },
+            "interface1": {
+                "rank": 0,
+                "name": "接口",
+                "type": "combo",
+                "list": [
+                    "OCR_通用文字识别",
+                    "图片翻译"
+                ]
+            }
+        }
+    },
+    "youdaocrtrans": {
+        "args": {
+            "注册网址": "https://ai.youdao.com/product-fanyi-picture.s",
+            "接口": 0,
+            "APP_KEY": "",
+            "APP_SECRET": "",
+            "次数统计": "0"
+        },
+        "argstype": {
+            "注册网址": {
+                "type": "label",
+                "islink": true
+            },
+            "接口": {
+                "type": "combo",
+                "list": [
+                    "免费试用",
+                    "图片翻译 API"
+                ]
+            }
+        }
+    },
+    "ocrspace": {
+        "args": {
+            "apikey": "",
+            "interface": 0
+        },
+        "argstype": {
+            "apikey": {
+                "type": "textlist"
+            },
+            "interface": {
+                "rank": 0,
+                "type": "combo",
+                "list": [
+                    "pro",
+                    "free"
+                ]
+            }
+        }
+    },
+    "volcengine": {
+        "args": {
+            "Access Key ID": "",
+            "Secret Access Key": ""
+        },
+        "argstype": {
+            "Access Key ID": {
+                "type": "textlist"
+            },
+            "Secret Access Key": {
+                "type": "textlist"
+            }
+        }
+    },
+    "tesseract5": {
+        "args": {
+            "路径": "",
+            "语言": 0,
+            "附加参数": "--psm 6"
+        },
+        "argstype": {
+            "路径": {
+                "type": "file",
+                "dir": false,
+                "filter": "tesseract.exe"
+            },
+            "语言": {
+                "type": "combo",
+                "list_function": [
+                    "ocrengines.tesseract5",
+                    "list_langs"
+                ]
+            }
+        }
+    },
+    "googlecloudvision": {
+        "args": {
+            "key": ""
+        },
+        "argstype": {
+            "key": {
+                "type": "textlist"
+            }
+        }
+    },
+    "xunfei": {
+        "args": {
+            "APPId": "",
+            "APISecret": "",
+            "APIKey": "",
+            "interface": "hh_ocr_recognize_doc"
+        },
+        "argstype": {
+            "APPId": {
+                "type": "textlist"
+            },
+            "APISecret": {
+                "type": "textlist"
+            },
+            "APIKey": {
+                "type": "textlist"
+            },
+            "interface": {
+                "rank": 0,
+                "name": "接口",
+                "type": "combo",
+                "list": [
+                    "通用文字识别 intsig",
+                    "印刷文字识别（多语种）"
+                ],
+                "internal": [
+                    "hh_ocr_recognize_doc",
+                    "ocr"
+                ]
+            }
+        }
+    },
+    "mangaocr": {
+        "args": {
+            "Port": 5665
+        },
+        "argstype": {
+            "Port": {
+                "type": "intspin",
+                "min": 1,
+                "max": 65535,
+                "step": 1
+            }
+        }
+    },
+    "local": {
+        "args": {
+            "thread": 4,
+            "gpu": true,
+            "luid": 0,
+            "accfirst": true
+        }
+    },
+    "youdaodictocr": {
+        "args": {
+            "Translate": false
+        },
+        "argstype": {
+            "Translate": {
+                "type": "switch",
+                "name": "翻译"
+            }
+        }
+    },
+    "windowsocr": {
+        "args": {
+            "": ""
+        },
+        "argstype": {
+            "": {
+                "type": "program",
+                "route": [
+                    "ocrengines.windowsocr",
+                    "question"
+                ]
+            }
+        }
+    },
+    "baiduocr_ts": {
+        "args": {
+            "注册网址": "https://fanyi-api.baidu.com/product/223",
+            "app_id": "",
+            "app_key": ""
+        },
+        "argstype": {
+            "注册网址": {
+                "type": "label",
+                "islink": true
+            }
+        }
+    },
+    "geminiocr": {
+        "args": {
+            "key": "",
+            "model": "gemini-1.5-flash",
+            "use_custom_prompt": false,
+            "custom_prompt": "",
+            "modellistcache": [],
+            "BASE_URL": "https://generativelanguage.googleapis.com/"
+        },
+        "argstype": {
+            "BASE_URL": {
+                "name": "API接口地址",
+                "rank": 0
+            },
+            "key": {
+                "rank": 2,
+                "name": "API Key"
+            },
+            "custom_prompt": {
+                "name": "自定义_promt",
+                "type": "multiline",
+                "refswitch": "use_custom_prompt"
+            },
+            "use_custom_prompt": {
+                "type": "switch_ref",
+                "name": "使用自定义promt"
+            },
+            "model": {
+                "rank": 3,
+                "type": "lineedit_or_combo",
+                "list_function": "list_models",
+                "list_cache": "modellistcache"
+            },
+            "modellistcache": {
+                "type": "list_cache"
+            }
+        }
+    },
+    "chatgptlike": {
+        "args": {
+            "model": "gpt-4",
+            "apiurl": "https://api.openai.com/v1",
+            "SECRET_KEY": "",
+            "use_custom_prompt": false,
+            "custom_prompt": "",
+            "Temperature": 0.3,
+            "top_p": 0.3,
+            "max_tokens": 128,
+            "frequency_penalty": 0,
+            "s": "",
+            "modellistcache": [],
+            "frequency_penalty_use": false,
+            "customparams": [],
+            "reasoning_effort": "medium",
+            "reasoning_effort_use": false
+        },
+        "argstype": {
+            "reasoning_effort": {
+                "type": "combo",
+                "refswitch": "reasoning_effort_use",
+                "internal": [
+                    "low",
+                    "medium",
+                    "high"
+                ],
+                "list": [
+                    "low",
+                    "medium",
+                    "high"
+                ]
+            },
+            "customparams": {
+                "name": "其他参数",
+                "type": "custom",
+                "function": "customparams",
+                "rank": -1
+            },
+            "SECRET_KEY": {
+                "rank": 0.5,
+                "name": "API Key",
+                "type": "textlist"
+            },
+            "s": {
+                "type": "split",
+                "rank": 1.5
+            },
+            "apiurl": {
+                "name": "API接口地址",
+                "rank": 0,
+                "type": "listedit_with_name"
+            },
+            "model": {
+                "rank": 1,
+                "type": "lineedit_or_combo",
+                "list_function": "list_models",
+                "list_cache": "modellistcache"
+            },
+            "modellistcache": {
+                "type": "list_cache"
+            },
+            "top_p": {
+                "type": "spin",
+                "min": 0,
+                "max": 1,
+                "step": 0.01
+            },
+            "frequency_penalty": {
+                "refswitch": "frequency_penalty_use",
+                "type": "spin",
+                "min": 0,
+                "max": 2,
+                "step": 0.01
+            },
+            "max_tokens": {
+                "type": "intspin",
+                "min": 1,
+                "max": 1000000,
+                "step": 1
+            },
+            "custom_prompt": {
+                "name": "自定义_prompt",
+                "type": "multiline",
+                "refswitch": "use_custom_prompt"
+            },
+            "use_custom_prompt": {
+                "type": "switch_ref",
+                "name": "使用自定义promt"
+            },
+            "Temperature": {
+                "type": "spin",
+                "min": 0,
+                "max": 1,
+                "step": 0.01
+            }
+        }
+    }
+}

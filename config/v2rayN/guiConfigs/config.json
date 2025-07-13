@@ -1,0 +1,344 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "hosts": {
+      "dns.google": "8.8.8.8",
+      "proxy.example.com": "127.0.0.1"
+    },
+    "servers": [
+      {
+        "address": "1.1.1.1",
+        "domains": [
+          "geosite:geolocation-!cn"
+        ],
+        "expectIPs": [
+          "geoip:!cn"
+        ]
+      },
+      {
+        "address": "223.5.5.5",
+        "domains": [
+          "geosite:cn"
+        ],
+        "expectIPs": [
+          "geoip:cn"
+        ]
+      },
+      "8.8.8.8",
+      "https://dns.google/dns-query",
+      {
+        "address": "223.5.5.5",
+        "domains": [
+          "claw.852456.xyz"
+        ]
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10450,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "api",
+      "port": 10454,
+      "listen": "127.0.0.1",
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "127.0.0.1"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "claw.852456.xyz",
+            "method": "",
+            "ota": false,
+            "password": "absxsfriends123456",
+            "port": 50000,
+            "level": 1
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized"
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom"
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api"
+      },
+      {
+        "type": "field",
+        "port": "0-65535",
+        "network": "tcp,udp",
+        "outboundTag": "direct",
+        "domain": [
+          "domain:95vps.com",
+          "domain:absx.pages.dev",
+          "domain:absx.us.kg",
+          "domain:bsbsb.top",
+          "domain:prts.plus",
+          "domain:www.aifuture-x.com",
+          "domain:xdaforums.com",
+          "domain:xiaohuazhuo.com",
+          "geosite:asus",
+          "geosite:bilibili",
+          "geosite:bilibili-game",
+          "geosite:bitwarden",
+          "geosite:bytedance",
+          "geosite:category-netdisk-cn",
+          "geosite:cnki",
+          "geosite:coolapk",
+          "geosite:deepseek",
+          "geosite:geolocation-cn",
+          "geosite:lanzou",
+          "geosite:moji",
+          "geosite:tencent",
+          "geosite:zhihu",
+          "regexp:\\.cn$"
+        ]
+      },
+      {
+        "type": "field",
+        "port": "0-65535",
+        "network": "tcp,udp",
+        "outboundTag": "direct",
+        "ip": [
+          "124.152.95.232",
+          "127.0.0.1",
+          "180.160.95.180"
+        ]
+      },
+      {
+        "type": "field",
+        "port": "0-65535",
+        "network": "tcp,udp",
+        "outboundTag": "block",
+        "domain": [
+          "domain:mumu.nie.netease.com",
+          "domain:sentry.netease.com"
+        ]
+      },
+      {
+        "type": "field",
+        "port": "0-65535",
+        "network": "tcp,udp",
+        "outboundTag": "proxy"
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "proxy",
+        "domain": [
+          "domain:xmr.kryptex.network"
+        ]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "proxy",
+        "ip": [
+          "157.90.32.66"
+        ]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "direct",
+        "domain": [
+          "domain:c3pool.org",
+          "domain:nanopool.org",
+          "domain:supportxmr.com",
+          "domain:thereisnospoon.pm",
+          "domain:xmr-tw.org"
+        ]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "direct",
+        "ip": [
+          "103.176.58.34",
+          "125.229.105.12"
+        ]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "direct",
+        "domain": [
+          "domain:maa.plus",
+          "domain:prts.plus"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "domain": [
+          "domain:github.com",
+          "domain:googleapis.cn",
+          "domain:gstatic.com",
+          "domain:parsec.app",
+          "geosite:binance",
+          "geosite:okx",
+          "domain:tradingview.com"
+        ]
+      },
+      {
+        "type": "field",
+        "port": "443",
+        "network": "udp",
+        "outboundTag": "block"
+      },
+      {
+        "type": "field",
+        "outboundTag": "block",
+        "domain": [
+          "geosite:category-ads-all"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "ip": [
+          "geoip:private"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "geosite:private"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "ip": [
+          "223.5.5.5",
+          "223.6.6.6",
+          "2400:3200::1",
+          "2400:3200:baba::1",
+          "119.29.29.29",
+          "1.12.12.12",
+          "120.53.53.53",
+          "2402:4e00::",
+          "2402:4e00:1::",
+          "180.76.76.76",
+          "2400:da00::6666",
+          "114.114.114.114",
+          "114.114.115.115",
+          "114.114.114.119",
+          "114.114.115.119",
+          "114.114.114.110",
+          "114.114.115.110",
+          "180.184.1.1",
+          "180.184.2.2",
+          "101.226.4.6",
+          "218.30.118.6",
+          "123.125.81.6",
+          "140.207.198.6",
+          "1.2.4.8",
+          "210.2.4.8",
+          "52.80.66.66",
+          "117.50.22.22",
+          "2400:7fc0:849e:200::4",
+          "2404:c2c0:85d8:901::4",
+          "117.50.10.10",
+          "52.80.52.52",
+          "2400:7fc0:849e:200::8",
+          "2404:c2c0:85d8:901::8",
+          "117.50.60.30",
+          "52.80.60.30"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "domain:alidns.com",
+          "domain:doh.pub",
+          "domain:dot.pub",
+          "domain:360.cn",
+          "domain:onedns.net"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "ip": [
+          "geoip:cn"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "geosite:cn"
+        ]
+      },
+      {
+        "type": "field",
+        "port": "0-65535",
+        "outboundTag": "proxy"
+      }
+    ]
+  },
+  "metrics": {
+    "tag": "api"
+  },
+  "policy": {
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
+  "stats": {}
+}
