@@ -24,6 +24,7 @@ path_in_repo   = "config/ditto/Ditto.Settings"
 [[item]]
 default_source = "C:/game/galgame/LunaTranslator/userconfig"
 ignore         = ["work"]
+ignore_restore = ["main"]
 path_in_repo   = "config/LunaTranslator/userconfig"
 
 [[item]]
@@ -47,6 +48,7 @@ path_in_repo   = "config/v2rayN/guiConfigs"
 
 [[item]]
 default_source = "~/AppData/Roaming/Code/User/settings.json"
+ignore_restore = ["work", "main"]
 path_in_repo   = "config/vscode/settings.json"
 
 [[item]]
@@ -67,24 +69,29 @@ path_in_repo   = "config/.wslconfig"
 [[item]]
 default_source = "C:/game/osu/collection.db"
 ignore         = ["work"]
+ignore_restore = ["main"]
 path_in_repo   = "other_games/osu/collection.db"
 
 [[item]]
 default_source = "C:/game/osu/scores.db"
 ignore         = ["work"]
+ignore_restore = ["main"]
 path_in_repo   = "other_games/osu/scores.db"
 
 [[item]]
 default_source = "C:/game/osu/osu!.lxl.cfg"
 ignore         = ["work"]
+ignore_restore = ["main"]
 path_in_repo   = "other_games/osu/osu!.lxl.cfg"
 
 [[item]]
 default_source = "C:/standalone_software/Tai1.5.0.5/AppIcons"
 ignore         = ["work"]
+ignore_restore = ["main"]
 path_in_repo   = "Tai/AppIcons"
 
 [[item]]
 default_source = "C:/standalone_software/Tai1.5.0.5/Data"
 ignore         = ["work"]
+ignore_restore = ["main"]
 path_in_repo   = "Tai/Data"

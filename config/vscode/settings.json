@@ -50,6 +50,8 @@
     "*.sdb": "${capture}.${extname}-*",
     "*.s3db": "${capture}.${extname}-*"
   },
+  "explorer.copyPathSeparator": "/",
+  "explorer.copyRelativePathSeparator": "/",
   "files.autoGuessEncoding": true,
   "window.commandCenter": false,
   "git.openRepositoryInParentFolders": "never",
@@ -242,8 +244,10 @@
     "editor.defaultFormatter": "shakram02.bash-beautify"
   },
   "[lua]": {
-    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+    "editor.defaultFormatter": "sumneko.lua"
   },
+  "Lua.runtime.version": "LuaJIT",
+  "Lua.diagnostics.globals": ["ngx"],
   "Lua.hint.enable": true,
   "Lua.hint.arrayIndex": "Enable",
   "Lua.hint.await": true,
