@@ -23,3 +23,7 @@ rustflags = ["-C", "target-cpu=native"]
 # 默认不带调试符号，减小编译大小
 [profile.dev]
 debug = false
+
+[profile.release]
+panic = "abort"
+opt-level = "s"

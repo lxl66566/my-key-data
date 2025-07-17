@@ -9,7 +9,7 @@ remote = "origin" # Remote repository name used for gsb sync (Optional, default 
 # (Optional) Aliases for device IDs. Device IDs can be viewed via `gsb d` or `gsb device`.
 [aliases]
 main = "ff19a810-c0ea-44b0-b297-f2209a48bfc3"
-work = "d37ef0ee-3c3f-419a-8c32-66526565b4ae"
+work = "db6e5fc4-3e26-4ceb-b465-5032089066fb"
 
 [[item]]
 default_source = "~/.cargo/config.toml"
